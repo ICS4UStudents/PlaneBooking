@@ -35,5 +35,24 @@ public class Plane{
             //Enter Mikes's code for Information
         }
     }
+     /**
+     * Cancel a reservation
+     */
+
+    int getCancel() {
+        boolean valid = false;  // is the seat number valid?
+        int seat;               // seat number to cancel
+        do {
+            System.out.print("Enter the seat to cancel: ");
+       //     seat = add buffer reader
+            if (1 <= seat && seat <= FULL_PLANE) {
+                valid = true;
+            } else {
+                System.out.println("Invalid seat number");
+            }
+        } while (!valid);
+ 
+        return seat-1;
+    }
 
   }
