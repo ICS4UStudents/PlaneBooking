@@ -24,4 +24,16 @@ public class Plane{
         } while ();
  
   */  }
+   /**
+     * Make a reservation
+     */
+    public void makeSeatReservation(String[][] seats) {
+          // index of first empty seat (Yi's code needed)
+        if (seatIndex == seats.length) {
+            System.out.println("All seats are full. Sorry, for the inconvenience...");
+        } else {
+            //Enter Mikes's code for Information
+        }
+    }
+
   }
