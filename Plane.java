@@ -2,33 +2,47 @@ import java.io.*;
 public class Plane{ 
   public int FULL_PLANE = 10; //Maximum seats
   String[][] seats = new String[2][5];
+  /*Plane's seats will resemble
+   * | [A1] [B1] [C1] [D1] [E1] |
+   * | [A2] [B2] [C2] [D2] [E2] |
+   */
   public static void main(String[] args){
+    //Try & Catch needed!
      /*   do {
-            printMainMenu();
+            printMenu();
             int choice = add buffer();       // Gives the user a choice in a menu
              {
-            case 1:
+            option 1:
                 makeSeatReservation(seats);
                 break;
-            case 2:
+            option 2:
                 cancel(seats);
                 break;
-           // case 3:
-              //  printSeatingChart(seats);
-             //   break;
-            case 4:
-                done = true;
+            option 3:
+                printSeating(seats);
                 break;
+            option 4:
+                done = true;
+                System.exit(0); //Terminates the console
             }
- 
         } while ();
  
   */  }
-   /**
+  public void printMenu();
+  {
+ System.out.println(" Booking Menu "); 
+ System.out.println("                ");
+ System.out.println("Please press the corresponding numbers to perform a specific action");
+ System.out.println("1. Make a reservation");
+ System.out.println("2. Cancel a reserved seat");
+ System.out.println("3. View the current availabe/reserved seats remaining");
+ System.out.println("4. Quit"); //More options can be added
+  }
+  /**
      * Make a reservation
      */
     public void makeSeatReservation(String[][] seats) {
-          // index of first empty seat (Yi's code needed)
+          // Enter Yi's code for reserving a seat ++ Seat Index is a temp variable that will get replaced
         if (seatIndex == seats.length) {
             System.out.println("All seats are full. Sorry, for the inconvenience...");
         } else {
@@ -54,5 +68,13 @@ public class Plane{
  
         return seat-1;
     }
-
+    public boolean done(){
+     if(choice==4)
+     {
+       return true;
+     }
+     else{
+       return false;
+    }
+    }
   }
