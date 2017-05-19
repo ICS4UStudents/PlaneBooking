@@ -65,31 +65,30 @@ public class Plane{
         if (seatIndex == seats.length) {
             System.out.println("All seats are full. Sorry, for the inconvenience...");
         } else {
-		//
             try{
-   System.out.println("Wlecome fly by night airline pls enter your personal information befor the payment. \n first name and last name:");
+   System.out.println("First name:");
    
-   String userName =bufRead.readLine();
+   String firstName =bufRead.readLine();
+		    
+   System.out.println("Last name:");
    
-   System.out.println("please enter your address");
-   String useraddress = bufRead.readLine();
+   String lastName = bufRead.readLine();
+		    
+   System.out.println("Address:");
+   String userAddress = bufRead.readLine();
 
-   System.out.println("please enter your phone number so we can contecet you after.");
-   String userphonenbString = bufReas.readLine();
-   double phonenumber = Double.parseDouble(userphonenbString);
-
-   System.our.println("you have complte the );
-   
-   
+   System.out.println("Phone number:");
+   String phoneNumberString = bufReas.readLine();
+   double phoneNumber = Double.parseDouble(phoneNumberString);
+		    
+//MAKE SURE THIS INFO IS ABLE TO BE CALLED UPON, THE ATTENDANT NEEDS THE CUSTOMER INFO LATER ON!!!	    
   }
-  chach(IOException err)
- {
- System.out.println("Error reading line");
+     catch (IOException e) {
+	      System.out.println("Error Reading from File");
+     }
+		catch(NumberFormatException err) {
+ System.out.println("Error Converting Number from file");
  }
- catch(NumberFormatException err) {
- System.out.println("enter the wrong tryp of number,try again");
- } 
-    
 }
 
         }
