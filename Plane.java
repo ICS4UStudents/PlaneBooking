@@ -7,7 +7,7 @@ public class Plane{
    * | [A2] [B2] [C2] [D2] [E2] |
    */
   public static void main(String[] args){
-    //Try & Catch needed!
+    //OPTION NEEDED TO ALLOW THE FLIGHT ATTENDANT TO CHOOSE BEWTEEN FLIGHTS!
     InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);
     
@@ -86,14 +86,6 @@ public class Plane{
         } while (!valid);
  
         return seat-1;
-    }
-    public boolean done(){
-     if(choice==4)
-     {
-       return true;
-     }
-     else{
-       return false;
     }
     }
   }
