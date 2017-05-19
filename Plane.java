@@ -65,7 +65,32 @@ public class Plane{
         if (seatIndex == seats.length) {
             System.out.println("All seats are full. Sorry, for the inconvenience...");
         } else {
-            //Enter Mikes's code for Information
+            try{
+   System.out.println("First name:");
+   
+   String firstName =bufRead.readLine();
+		    
+   System.out.println("Last name:");
+   
+   String lastName = bufRead.readLine();
+		    
+   System.out.println("Address:");
+   String userAddress = bufRead.readLine();
+
+   System.out.println("Phone number:");
+   String phoneNumberString = bufReas.readLine();
+   double phoneNumber = Double.parseDouble(phoneNumberString);
+		    
+//MAKE SURE THIS INFO IS ABLE TO BE CALLED UPON, THE ATTENDANT NEEDS THE CUSTOMER INFO LATER ON!!!	    
+  }
+     catch (IOException e) {
+	      System.out.println("Error Reading from File");
+     }
+		catch(NumberFormatException err) {
+ System.out.println("Error Converting Number from file");
+ }
+}
+
         }
     }
      /**
