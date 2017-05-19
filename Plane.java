@@ -8,24 +8,43 @@ public class Plane{
    */
   public static void main(String[] args){
     //Try & Catch needed!
-     /*   do {
-            printMenu();
-            int choice = add buffer();       // Gives the user a choice in a menu
-             {
-            option 1:
-                makeSeatReservation(seats);
-                break;
-            option 2:
-                cancel(seats);
-                break;
-            option 3:
-                printSeating(seats);
-                break;
-            option 4:
-                done = true;
-                System.exit(0); //Terminates the console
-            }
-        } while ();
+    InputStreamReader inStream = new InputStreamReader(System.in);
+		BufferedReader bufRead = new BufferedReader(inStream);
+    
+    do{
+        printMenu();
+        String enterType = bufRead.readLine();
+			  int choiceNumber = Integer.parseInt(enterType);
+        if(choiceNumber = 1)
+        {
+         makeSeatReservation(seats);
+        }
+      
+        eles if(choiceNumber == 2)
+        {
+          cancel(seats);
+        }
+      
+        else if(choiceNumber == 3)
+        {
+          printSeating(seats);
+        }
+      
+        else if(choiceNumber == 4)
+        {
+          
+          System.exit(0);
+        }
+       
+        else
+        {
+          System.out.println("Invalid number, please type again.")
+        }
+    }while(choiceNumber != 4)
+    
+      
+      
+      
  
   */  }
   public void printMenu();
