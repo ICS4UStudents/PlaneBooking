@@ -8,42 +8,38 @@ public class Plane{
    */
   public static void main(String[] args){
     //OPTION NEEDED TO ALLOW THE FLIGHT ATTENDANT TO CHOOSE BEWTEEN FLIGHTS!
-    InputStreamReader inStream = new InputStreamReader(System.in);
+	        InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);
-    
+                 
     do{
-        printMenu();
-        String enterType = bufRead.readLine();
-			  int choiceNumber = Integer.parseInt(enterType);
+          printMenu();
+          String enterType = bufRead.readLine();
+	  int choiceNumber = Integer.parseInt(enterType);
         if(choiceNumber = 1)
         {
          makeSeatReservation(seats);
         }
       
-        eles if(choiceNumber == 2)
+         if(choiceNumber == 2)
         {
           cancel(seats);
         }
       
-        else if(choiceNumber == 3)
+         if(choiceNumber == 3)
         {
           printSeating(seats);
         }
-      
-        else if(choiceNumber == 4)
+	  if(choiceNumber == 4)
         {
           
           System.exit(0);
         }
-       
         else
         {
           System.out.println("Invalid number, please type again.")
         }
     }while(choiceNumber != 4)
     
-      
-      
       
  
   */  }
@@ -54,15 +50,15 @@ public class Plane{
  System.out.println("Please press the corresponding numbers to perform a specific action");
  System.out.println("1. Make a reservation");
  System.out.println("2. Cancel a reserved seat");
- System.out.println("3. View the current availabe/reserved seats remaining");
+ System.out.println("3. View the current availabe/reserved seats remaining");	  
  System.out.println("4. Quit"); //More options can be added
   }
   /**
      * Make a reservation
      */
     public void makeSeatReservation(String[][] seats) {
-          // Enter Yi's code for reserving a seat ++ Seat Index is a temp variable that will get replaced
-        if (seatIndex == seats.length) {
+          // Enter Yi's code for reserving a seat ++  *(SeatIndex is not a actually variable)
+        if (seatsIndex == seats.length) {
             System.out.println("All seats are full. Sorry, for the inconvenience...");
         } else {
 		    try {
@@ -89,13 +85,13 @@ public class Plane{
 				}
 				else
 				{
-					System.out.println("The seat you have selected has been currently booked");
+					System.out.println("The seat you have selected has been currently booked.");
 				}
 				catch (IOException e) {
-	      System.out.println("Error Reading from File");
+	        System.out.println("Error Reading from File");
      }
 		catch(NumberFormatException err) {
- System.out.println("Error Converting Number from file");
+                System.out.println("Error Converting Number from file");
  }
 		    }
 //If the seat is full, you need a way to allow the attendant to choose another seat
