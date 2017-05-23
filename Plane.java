@@ -10,7 +10,12 @@ public class Plane{
     //OPTION NEEDED TO ALLOW THE FLIGHT ATTENDANT TO CHOOSE BEWTEEN FLIGHTS!
 	        InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);
-                 
+	     // {                          //Loop needed 
+         System.out.println("1 = Flight#0678993 2 = Flight#3789262 3 = Flight#8674386");
+         String Flight = bufRead.readLine();
+         int choiceFlight =  Integer.parseInt(choiceFlight);
+            // }  
+	//Next class -- add loops to allow flights a,b,c to lead to print menu();
     do{
           printMenu();
           String enterType = bufRead.readLine();
@@ -29,7 +34,11 @@ public class Plane{
         {
           printSeating(seats);
         }
-	  if(choiceNumber == 4)
+	 if(choiceNumber == 4)
+        {
+          FlightCancel(seats);       
+        }
+	  if(choiceNumber == 5)
         {
           
           System.exit(0);
@@ -41,7 +50,6 @@ public class Plane{
     }while(choiceNumber != 4)
     
       
- 
   */  }
   public void printMenu();
   {
@@ -50,8 +58,9 @@ public class Plane{
  System.out.println("Please press the corresponding numbers to perform a specific action");
  System.out.println("1. Make a reservation");
  System.out.println("2. Cancel a reserved seat");
- System.out.println("3. View the current availabe/reserved seats remaining");	  
- System.out.println("4. Quit"); //More options can be added
+ System.out.println("3. View the current availabe/reserved seats remaining");
+ System.out.println("4. Cancel the flight");
+ System.out.println("5. Quit"); //More options can be added
   }
   /**
      * Make a reservation
@@ -117,5 +126,13 @@ public class Plane{
  
         return seat-1;
     }
+	    int getFlightCancel(){
+		    //Mikes beginning code 
+		    
+		    
+		    
+		    
+		    
+	    }
     }
   }
