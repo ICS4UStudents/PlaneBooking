@@ -66,6 +66,36 @@ public class Plane{
             System.out.println("All seats are full. Sorry, for the inconvenience...");
         } else {
             try{
+		    try {
+			choiceSeat = bufRead.readLine();
+			while(choiceSeat)
+			if(choiceSeat == "A1")
+		    {
+				if(seats[0][0] == null)
+				{
+					System.out.println("In order to book this seat, please typy in your name, address and phone number.");
+				
+					System.out.println("First name:");
+   
+                                        String firstName =bufRead.readLine();
+		    
+                                        System.out.println("Last name:");
+   
+                                        String lastName = bufRead.readLine();
+		    
+                                        System.out.println("Address:");
+                                        String userAddress = bufRead.readLine();
+
+                                        System.out.println("Phone number:");
+                                        String phoneNumberString = bufReas.readLine();
+                                        double phoneNumber = Double.parseDouble(phoneNumberString);
+				}
+				
+				else
+				{
+					System.out.println("The seat has been booked, please choose anthor seat.");
+				}
+		    }
    System.out.println("First name:");
    
    String firstName =bufRead.readLine();
