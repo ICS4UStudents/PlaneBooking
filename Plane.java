@@ -18,7 +18,8 @@ public class Plane{
          System.out.println("1 = Flight#AC006 2 = Flight#AC023 3 = Flight#AC064");
          String Flight = bufRead.readLine();
          int choiceFlight =  Integer.parseInt(choiceFlight);
-             } while(choiceFlight 
+             } while(choiceFlight != 3)
+	   //Depending on what flight they choose the program branches into 1 ,2, 3
 	//Next class -- add loops to allow flights a,b,c to lead to print menu();
     do{
           printMenu();
@@ -53,8 +54,11 @@ public class Plane{
         }
     }while(choiceNumber != 5)
     
+	    /**
+     * Menu
+     */
       
-  */  }
+   }
   public void printMenu();
   {
  System.out.println(" Booking Menu "); 
@@ -75,9 +79,9 @@ public class Plane{
             System.out.println("All seats are full. Sorry, for the inconvenience...");
         } else {
 		    try {
-			choiceSeat = bufRead.readLine();
+			choiceSeat = bufRead.readLine();  //<-- Yi' replace this code with your own.
 			while(choiceSeat)
-			if(choiceSeat == "A1")
+			if(choiceSeat.equals == "A1")
 		    {
 				if(seats[0][0] == null)
 				{
@@ -130,6 +134,9 @@ public class Plane{
  
         return seat-1;
     }
+	    /**
+     * Cancel a Flight
+     */
 	    int getFlightCancel(){
 		    //Mikes beginning code 
 		    
