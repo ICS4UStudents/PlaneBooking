@@ -6,15 +6,19 @@ public class Plane{
    * | [A1] [B1] [C1] [D1] [E1] |
    * | [A2] [B2] [C2] [D2] [E2] |
    */
+//Flights as objects
+	public String flight1;
+	public String flight2;
+	public String flight3;
   public static void main(String[] args){
     //OPTION NEEDED TO ALLOW THE FLIGHT ATTENDANT TO CHOOSE BEWTEEN FLIGHTS!
 	        InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);
-	     // {                          //Loop needed 
-         System.out.println("1 = Flight#0678993 2 = Flight#3789262 3 = Flight#8674386");
+	     do {                          //Loop needed 
+         System.out.println("1 = Flight#AC006 2 = Flight#AC023 3 = Flight#AC064");
          String Flight = bufRead.readLine();
          int choiceFlight =  Integer.parseInt(choiceFlight);
-            // }  
+             } while(choiceFlight 
 	//Next class -- add loops to allow flights a,b,c to lead to print menu();
     do{
           printMenu();
@@ -47,7 +51,7 @@ public class Plane{
         {
           System.out.println("Invalid number, please type again.")
         }
-    }while(choiceNumber != 4)
+    }while(choiceNumber != 5)
     
       
   */  }
@@ -111,7 +115,7 @@ public class Plane{
      * Cancel a reservation
      */
 
-    int getCancel() {
+    int getCancel() { //THIS METHOD ISNT COMPLETED!!! THIS IS JUST HOW THE METHOD WILL FUNCTION
         boolean valid = false;  // is the seat number valid?
         int seat;               // seat number to cancel
         do {
