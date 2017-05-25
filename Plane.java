@@ -88,7 +88,7 @@ public class Plane{
 			    {
 					if(seats[0][0] == null)
 					{	
-						System.out.println("In order to book this seat, please typy in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -110,7 +110,7 @@ public class Plane{
 					
 					else
 					{
-						System.out.println("The seat has been booked, please choose anthor seat.");
+						System.out.println("The seat has been booked, please choose another seat.");
 					}
 			    }
 				
@@ -118,7 +118,7 @@ public class Plane{
 			    {
 					if(seats[1][0] == null)
 					{
-						System.out.println("In order to book this seat, please typy in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -140,14 +140,14 @@ public class Plane{
 					
 					else
 					{
-						System.out.println("The seat has been booked, please choose anthor seat.");
+						System.out.println("The seat has been booked, please choose another seat.");
 					}
 			    }
 				if(choiceSeat.equals("B1"))
 			    {
 					if(seats[0][1] == null)
 					{
-						System.out.println("In order to book this seat, please typy in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -168,14 +168,14 @@ public class Plane{
 					
 					else
 					{
-						System.out.println("The seat has been booked, please choose anthor seat.");
+						System.out.println("The seat has been booked, please choose another seat.");
 					}
 			    }
 				if(choiceSeat.equals("B2"))
 			    {
 					if(seats[1][1] == null)
 					{
-						System.out.println("In order to book this seat, please typy in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -196,14 +196,14 @@ public class Plane{
 					
 					else
 					{
-						System.out.println("The seat has been booked, please choose anthor seat.");
+						System.out.println("The seat has been booked, please choose another seat.");
 					}
 			    }
 				if(choiceSeat.equals("C1"))
 			    {
 					if(seats[0][2] == null)
 					{
-						System.out.println("In order to book this seat, please typy in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -224,14 +224,14 @@ public class Plane{
 					
 					else
 					{
-						System.out.println("The seat has been booked, please choose anthor seat.");
+						System.out.println("The seat has been booked, please choose another seat.");
 					}
 			    }
 				if(choiceSeat.equals("C2"))
 			    {
 					if(seats[1][2] == null)
 					{
-						System.out.println("In order to book this seat, please typy in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -252,14 +252,14 @@ public class Plane{
 					
 					else
 					{
-						System.out.println("The seat has been booked, please choose anthor seat.");
+						System.out.println("The seat has been booked, please choose another seat.");
 					}
 			    }
 				if(choiceSeat.equals("D1"))
 			    {
 					if(seats[0][3] == null)
 					{
-						System.out.println("In order to book this seat, please typy in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -280,14 +280,14 @@ public class Plane{
 					
 					else
 					{
-						System.out.println("The seat has been booked, please choose anthor seat.");
+						System.out.println("The seat has been booked, please choose another seat.");
 					}
 			    }
 				if(choiceSeat.equals("D2"))
 			    {
 					if(seats[1][3] == null)
 					{
-						System.out.println("In order to book this seat, please typy in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -308,14 +308,14 @@ public class Plane{
 					
 					else
 					{
-						System.out.println("The seat has been booked, please choose anthor seat.");
+						System.out.println("The seat has been booked, please choose another seat.");
 					}
 			    }
 				if(choiceSeat.equals("E1"))
 			    {
 					if(seats[0][4] == null)
 					{
-						System.out.println("In order to book this seat, please typy in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -336,14 +336,14 @@ public class Plane{
 					
 					else
 					{
-						System.out.println("The seat has been booked, please choose anthor seat.");
+						System.out.println("The seat has been booked, please choose another seat.");
 					}
 			    }
 				if(choiceSeat.equals("E2"))
 			    {
 					if(seats[1][4] == null)
 					{
-						System.out.println("In order to book this seat, please typy in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -364,18 +364,10 @@ public class Plane{
 					
 					else
 					{
-						System.out.println("The seat has been booked, please choose anthor seat.");
+						System.out.println("The seat has been booked, please choose another seat.");
 					}
 			    }
 			
-					
-					else
-					{
-						System.out.println("The seat has been booked, please choose anthor seat.");
-					}
-			    
-				
-			}
 			
 			catch(IOException e){
 				 System.out.println("Error Reading from File");
