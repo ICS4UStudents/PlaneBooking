@@ -66,7 +66,7 @@ public class Plane{
  System.out.println("Please press the corresponding numbers to perform a specific action");
  System.out.println("1. Make a reservation");
  System.out.println("2. Cancel a reserved seat");
- System.out.println("3. View the current availabe/reserved seats remaining");
+ System.out.println("3. View the current available/reserved seats remaining");
  System.out.println("4. Cancel the flight");
  System.out.println("5. Quit"); //More options can be added
   }
@@ -88,7 +88,7 @@ public class Plane{
 			    {
 					if(seats[0][0] == null)
 					{	
-						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in the customers name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -118,7 +118,7 @@ public class Plane{
 			    {
 					if(seats[1][0] == null)
 					{
-						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type the customers name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -147,7 +147,7 @@ public class Plane{
 			    {
 					if(seats[0][1] == null)
 					{
-						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in the customers, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -175,7 +175,7 @@ public class Plane{
 			    {
 					if(seats[1][1] == null)
 					{
-						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type the customers name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -203,7 +203,7 @@ public class Plane{
 			    {
 					if(seats[0][2] == null)
 					{
-						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in the customers, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -231,7 +231,7 @@ public class Plane{
 			    {
 					if(seats[1][2] == null)
 					{
-						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type the customers name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -259,7 +259,7 @@ public class Plane{
 			    {
 					if(seats[0][3] == null)
 					{
-						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type the customers name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -287,7 +287,7 @@ public class Plane{
 			    {
 					if(seats[1][3] == null)
 					{
-						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type the customers name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -315,7 +315,7 @@ public class Plane{
 			    {
 					if(seats[0][4] == null)
 					{
-						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type the customers name, address and phone number.");
 						
 						System.out.println("First name:");
 						   
@@ -343,7 +343,7 @@ public class Plane{
 			    {
 					if(seats[1][4] == null)
 					{
-						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						System.out.println("In order to book this seat, please type in the customers, address and phone number.");
 						
 						System.out.println("First name:");
 						   
