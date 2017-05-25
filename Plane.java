@@ -78,39 +78,306 @@ public class Plane{
         if (seatsIndex == seats.length) {
             System.out.println("All seats are full. Sorry, for the inconvenience...");
         } else {
-		    try {
-			choiceSeat = bufRead.readLine();  //<-- Yi' replace this code with your own.
-			while(choiceSeat)
-			if(choiceSeat.equals == "A1")
-		    {
-				if(seats[0][0] == null)
-				{
-	   System.out.println("First name:");
+		    String choiceSeat;
+		
+		int full = 0;
+		while(full == 0){
+			try {
+				choiceSeat = bufRead.readLine();
+				if(choiceSeat.equals("A1"))
+			    {
+					if(seats[0][0] == null)
+					{	
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						
+						System.out.println("First name:");
+						   
+						   String firstName =bufRead.readLine();
+								    
+						   System.out.println("Last name:");
+						   
+						   String lastName = bufRead.readLine();
+								    
+						   System.out.println("Address:");
+						   String userAddress = bufRead.readLine();
 
-	   String firstName =bufRead.readLine();
+						   System.out.println("Phone number:");
+						   String phoneNumberString = bufRead.readLine();
+						  double phoneNumber = Double.parseDouble(phoneNumberString);
+						   
+						   full++;
+					}
+					
+					else
+					{
+						System.out.println("The seat has been booked, please choose another seat.");
+					}
+			    }
+				
+				if(choiceSeat.equals("A2"))
+			    {
+					if(seats[1][0] == null)
+					{
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						
+						System.out.println("First name:");
+						   
+						   String firstName =bufRead.readLine();
+								    
+						   System.out.println("Last name:");
+						   
+						   String lastName = bufRead.readLine();
+								    
+						   System.out.println("Address:");
+						   String userAddress = bufRead.readLine();
 
-	   System.out.println("Last name:");
+						   System.out.println("Phone number:");
+						   String phoneNumberString = bufRead.readLine();
+						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   
+						   full++;
+					}
+					
+					else
+					{
+						System.out.println("The seat has been booked, please choose another seat.");
+					}
+			    }
+				if(choiceSeat.equals("B1"))
+			    {
+					if(seats[0][1] == null)
+					{
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						
+						System.out.println("First name:");
+						   
+						   String firstName =bufRead.readLine();
+								    
+						   System.out.println("Last name:");
+						   
+						   String lastName = bufRead.readLine();
+								    
+						   System.out.println("Address:");
+						   String userAddress = bufRead.readLine();
 
-	   String lastName = bufRead.readLine();
+						   System.out.println("Phone number:");
+						   String phoneNumberString = bufRead.readLine();
+						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   full++;
+					}
+					
+					else
+					{
+						System.out.println("The seat has been booked, please choose another seat.");
+					}
+			    }
+				if(choiceSeat.equals("B2"))
+			    {
+					if(seats[1][1] == null)
+					{
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						
+						System.out.println("First name:");
+						   
+						   String firstName =bufRead.readLine();
+								    
+						   System.out.println("Last name:");
+						   
+						   String lastName = bufRead.readLine();
+								    
+						   System.out.println("Address:");
+						   String userAddress = bufRead.readLine();
 
-	   System.out.println("Address:");
-	   String userAddress = bufRead.readLine();
+						   System.out.println("Phone number:");
+						   String phoneNumberString = bufRead.readLine();
+						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   full++;
+					}
+					
+					else
+					{
+						System.out.println("The seat has been booked, please choose another seat.");
+					}
+			    }
+				if(choiceSeat.equals("C1"))
+			    {
+					if(seats[0][2] == null)
+					{
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						
+						System.out.println("First name:");
+						   
+						   String firstName =bufRead.readLine();
+								    
+						   System.out.println("Last name:");
+						   
+						   String lastName = bufRead.readLine();
+								    
+						   System.out.println("Address:");
+						   String userAddress = bufRead.readLine();
 
-	   System.out.println("Phone number:");
-	   String phoneNumberString = bufReas.readLine();
-	   double phoneNumber = Double.parseDouble(phoneNumberString);
-				}
-				else
-				{
-					System.out.println("The seat you have selected has been currently booked.");
-				}
-				catch (IOException e) {
-	        System.out.println("Error Reading from File");
-     }
-		catch(NumberFormatException err) {
-                System.out.println("Error Converting Number from file");
- }
-		    }
+						   System.out.println("Phone number:");
+						   String phoneNumberString = bufRead.readLine();
+						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   full++;
+					}
+					
+					else
+					{
+						System.out.println("The seat has been booked, please choose another seat.");
+					}
+			    }
+				if(choiceSeat.equals("C2"))
+			    {
+					if(seats[1][2] == null)
+					{
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						
+						System.out.println("First name:");
+						   
+						   String firstName =bufRead.readLine();
+								    
+						   System.out.println("Last name:");
+						   
+						   String lastName = bufRead.readLine();
+								    
+						   System.out.println("Address:");
+						   String userAddress = bufRead.readLine();
+
+						   System.out.println("Phone number:");
+						   String phoneNumberString = bufRead.readLine();
+						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   full++;
+					}
+					
+					else
+					{
+						System.out.println("The seat has been booked, please choose another seat.");
+					}
+			    }
+				if(choiceSeat.equals("D1"))
+			    {
+					if(seats[0][3] == null)
+					{
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						
+						System.out.println("First name:");
+						   
+						   String firstName =bufRead.readLine();
+								    
+						   System.out.println("Last name:");
+						   
+						   String lastName = bufRead.readLine();
+								    
+						   System.out.println("Address:");
+						   String userAddress = bufRead.readLine();
+
+						   System.out.println("Phone number:");
+						   String phoneNumberString = bufRead.readLine();
+						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   full++;
+					}
+					
+					else
+					{
+						System.out.println("The seat has been booked, please choose another seat.");
+					}
+			    }
+				if(choiceSeat.equals("D2"))
+			    {
+					if(seats[1][3] == null)
+					{
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						
+						System.out.println("First name:");
+						   
+						   String firstName =bufRead.readLine();
+								    
+						   System.out.println("Last name:");
+						   
+						   String lastName = bufRead.readLine();
+								    
+						   System.out.println("Address:");
+						   String userAddress = bufRead.readLine();
+
+						   System.out.println("Phone number:");
+						   String phoneNumberString = bufRead.readLine();
+						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   full++;
+					}
+					
+					else
+					{
+						System.out.println("The seat has been booked, please choose another seat.");
+					}
+			    }
+				if(choiceSeat.equals("E1"))
+			    {
+					if(seats[0][4] == null)
+					{
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						
+						System.out.println("First name:");
+						   
+						   String firstName =bufRead.readLine();
+								    
+						   System.out.println("Last name:");
+						   
+						   String lastName = bufRead.readLine();
+								    
+						   System.out.println("Address:");
+						   String userAddress = bufRead.readLine();
+
+						   System.out.println("Phone number:");
+						   String phoneNumberString = bufRead.readLine();
+						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   full++;
+					}
+					
+					else
+					{
+						System.out.println("The seat has been booked, please choose another seat.");
+					}
+			    }
+				if(choiceSeat.equals("E2"))
+			    {
+					if(seats[1][4] == null)
+					{
+						System.out.println("In order to book this seat, please type in your name, address and phone number.");
+						
+						System.out.println("First name:");
+						   
+						   String firstName =bufRead.readLine();
+								    
+						   System.out.println("Last name:");
+						   
+						   String lastName = bufRead.readLine();
+								    
+						   System.out.println("Address:");
+						   String userAddress = bufRead.readLine();
+
+						   System.out.println("Phone number:");
+						   String phoneNumberString = bufRead.readLine();
+						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   full++;
+					}
+					
+					else
+					{
+						System.out.println("The seat has been booked, please choose another seat.");
+					}
+			    }
+			
+			
+			catch(IOException e){
+				 System.out.println("Error Reading from File");
+				 }
+				 catch(NumberFormatException err) {
+				 System.out.println("Error Converting Number");
+				 }
+		}
+	
+
 //If the seat is full, you need a way to allow the attendant to choose another seat
 
         }
