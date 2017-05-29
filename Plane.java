@@ -75,6 +75,8 @@ public class Plane{
      */
     public void makeSeatReservation(String[][] seats) {
           // Enter Yi's code for reserving a seat ++  *(SeatIndex is not a actually variable)
+	     InputStreamReader inStream = new InputStreamReader(System.in);
+		BufferedReader bufRead = new BufferedReader(inStream);
         if (seatsIndex == seats.length) {
             System.out.println("All seats are full. Sorry, for the inconvenience...");
         } else {
@@ -102,9 +104,7 @@ public class Plane{
 						   String userAddress = bufRead.readLine();
 
 						   System.out.println("Phone number:");
-						   String phoneNumberString = bufRead.readLine();
-						  double phoneNumber = Double.parseDouble(phoneNumberString);
-						   
+						   String phoneNumberString = bufRead.readLine();   
 						   full++;
 					}
 					
@@ -132,9 +132,7 @@ public class Plane{
 						   String userAddress = bufRead.readLine();
 
 						   System.out.println("Phone number:");
-						   String phoneNumberString = bufRead.readLine();
-						   double phoneNumber = Double.parseDouble(phoneNumberString);
-						   
+						   String phoneNumberString = bufRead.readLine();						   
 						   full++;
 					}
 					
@@ -162,7 +160,6 @@ public class Plane{
 
 						   System.out.println("Phone number:");
 						   String phoneNumberString = bufRead.readLine();
-						   double phoneNumber = Double.parseDouble(phoneNumberString);
 						   full++;
 					}
 					
@@ -189,8 +186,7 @@ public class Plane{
 						   String userAddress = bufRead.readLine();
 
 						   System.out.println("Phone number:");
-						   String phoneNumberString = bufRead.readLine();
-						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   String phoneNumberString = bufRead.readLine();						  
 						   full++;
 					}
 					
@@ -217,8 +213,7 @@ public class Plane{
 						   String userAddress = bufRead.readLine();
 
 						   System.out.println("Phone number:");
-						   String phoneNumberString = bufRead.readLine();
-						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   String phoneNumberString = bufRead.readLine();						  
 						   full++;
 					}
 					
@@ -245,8 +240,7 @@ public class Plane{
 						   String userAddress = bufRead.readLine();
 
 						   System.out.println("Phone number:");
-						   String phoneNumberString = bufRead.readLine();
-						   double phoneNumber = Double.parseDouble(phoneNumberString);
+						   String phoneNumberString = bufRead.readLine();						   
 						   full++;
 					}
 					
@@ -274,7 +268,6 @@ public class Plane{
 
 						   System.out.println("Phone number:");
 						   String phoneNumberString = bufRead.readLine();
-						   double phoneNumber = Double.parseDouble(phoneNumberString);
 						   full++;
 					}
 					
@@ -302,7 +295,6 @@ public class Plane{
 
 						   System.out.println("Phone number:");
 						   String phoneNumberString = bufRead.readLine();
-						   double phoneNumber = Double.parseDouble(phoneNumberString);
 						   full++;
 					}
 					
@@ -330,7 +322,6 @@ public class Plane{
 
 						   System.out.println("Phone number:");
 						   String phoneNumberString = bufRead.readLine();
-						   double phoneNumber = Double.parseDouble(phoneNumberString);
 						   full++;
 					}
 					
@@ -358,7 +349,6 @@ public class Plane{
 
 						   System.out.println("Phone number:");
 						   String phoneNumberString = bufRead.readLine();
-						   double phoneNumber = Double.parseDouble(phoneNumberString);
 						   full++;
 					}
 					
@@ -384,7 +374,9 @@ public class Plane{
      */
 
     int getCancel() { //THIS METHOD ISNT COMPLETED!!! THIS IS JUST HOW THE METHOD WILL FUNCTION
-        boolean valid = false;  // is the seat number valid?
+                InputStreamReader inStream = new InputStreamReader(System.in);
+		BufferedReader bufRead = new BufferedReader(inStream);
+	    boolean valid = false;  // is the seat number valid?
         int seat;               // seat number to cancel
         do {
             System.out.print("Enter the seat to cancel: ");
@@ -410,4 +402,3 @@ public class Plane{
 		    
 	    }
     }
-  }
