@@ -367,21 +367,18 @@ public class Plane{
 						System.out.println("The seat has been booked, please choose another seat.");
 					}
 			    }
-			
+			}
 			
 			catch(IOException e){
-				 System.out.println("Error Reading from File");
+				 System.out.println("Error Reading");
 				 }
 				 catch(NumberFormatException err) {
 				 System.out.println("Error Converting Number");
 				 }
 		}
-	
-
-//If the seat is full, you need a way to allow the attendant to choose another seat
-
-        }
+	}
     }
+//If the seat is full, you need a way to allow the attendant to choose another seat
      /**
      * Cancel a reservation
      */
