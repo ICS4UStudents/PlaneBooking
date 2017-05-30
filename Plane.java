@@ -43,7 +43,11 @@ public class Plane{
         {
           FlightCancel(seats);       
         }
-	  if(choiceNumber == 5)
+	 if(choiceNumber == 5)
+	 {
+	  FlightTakeoff();
+	 }
+	  if(choiceNumber == 6)
         {
           
           System.exit(0);
@@ -52,7 +56,7 @@ public class Plane{
         {
           System.out.println("Invalid number, please type again.")
         }
-    }while(choiceNumber != 5)
+    }while(choiceNumber != 6)
     
 	    /**
      * Menu
@@ -68,7 +72,8 @@ public class Plane{
  System.out.println("2. Cancel a reserved seat");
  System.out.println("3. View the current available/reserved seats remaining");
  System.out.println("4. Cancel the flight");
- System.out.println("5. Quit"); //More options can be added
+ System.out.println("5. Flight takeoff");
+ System.out.println("6. Quit"); //More options can be added
   }
   /**
      * Make a reservation
@@ -401,4 +406,13 @@ public class Plane{
 		    
 		    
 	    }
+	/**
+     * Flight Print out (Take off time)
+     */
+	int getFlightTakeoff(String[][] seats){
+		//Prints passengers seats and who has it
+	//Needs customer objects in order to do 
+		
+		
+	}
     }
