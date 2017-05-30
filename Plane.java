@@ -16,6 +16,7 @@ public class Plane{
 		BufferedReader bufRead = new BufferedReader(inStream);
 	     do {                          //Loop needed 
          System.out.println("1 = Flight#AC006 2 = Flight#AC023 3 = Flight#AC064");
+	try{
          String Flight = bufRead.readLine();
          int choiceFlight =  Integer.parseInt(choiceFlight);
              } while(choiceFlight != 3)
@@ -57,7 +58,13 @@ public class Plane{
           System.out.println("Invalid number, please type again.")
         }
     }while(choiceNumber != 6)
-    
+	     }
+	  catch(IOException e){
+				 System.out.println("Error Reading");
+				 }
+				 catch(NumberFormatException err) {
+				 System.out.println("Error Converting Number");
+				 }
 	    /**
      * Menu
      */
@@ -412,7 +419,21 @@ public class Plane{
 	int getFlightTakeoff(String[][] seats){
 		//Prints passengers seats and who has it
 	//Needs customer objects in order to do 
-		
+		 InputStreamReader inStream = new InputStreamReader(System.in);
+		BufferedReader bufRead = new BufferedReader(inStream);
+		System.out.println("Is the plane ready to takeoff?");
+		System.out.println("1. Yes");
+		System.out.println("2. No");
+		 String done = bufRead.readLine();
+	  int confirmDone = Integer.parseInt(done);
+		if(confirmDone == 1)
+		{
+		//passengers manifest
+		}
+		if(confirmDone == 2)
+		{
+		//return to printMenu();
+		}
 		
 	}
     }
