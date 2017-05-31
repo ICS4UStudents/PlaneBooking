@@ -11,18 +11,19 @@ public class Plane{
 	public String flight2;
 	public String flight3;
   public static void main(String[] args){
-    //OPTION NEEDED TO ALLOW THE FLIGHT ATTENDANT TO CHOOSE BEWTEEN FLIGHTS!
 	        InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);
-	     do {                          //Loop needed 
+	     do {                        
          System.out.println("1 = Flight#AC006 2 = Flight#AC023 3 = Flight#AC064");
 	try{
          String Flight = bufRead.readLine();
          int choiceFlight =  Integer.parseInt(choiceFlight);
              } while(choiceFlight != 3)
-	   //Depending on what flight they choose the program branches into 1 ,2, 3
-	//Next class -- add loops to allow flights a,b,c to lead to print menu();
-    do{
+		
+	    if(choiceFlight == 1)
+         {
+		    //Needs to be a way where flight#1 holds all this info
+		    do{
           printMenu();
           String enterType = bufRead.readLine();
 	  int choiceNumber = Integer.parseInt(enterType);
@@ -65,6 +66,104 @@ public class Plane{
 				 catch(NumberFormatException err) {
 				 System.out.println("Error Converting Number");
 				 }
+         }
+	  
+         if(choiceFlight == 2)
+         {
+		 //Needs to be a way where flight#2 holds all this info
+           do{
+          printMenu();
+          String enterType2 = bufRead.readLine();
+	  int choiceNumber2 = Integer.parseInt(enterType2);
+        if(choiceNumber2 = 1)
+        {
+         makeSeatReservation(seats);
+        }
+      
+         if(choiceNumber2 == 2)
+        {
+          cancel(seats);
+        }
+      
+         if(choiceNumber2 == 3)
+        {
+          printSeating(seats);
+        }
+	 if(choiceNumber2 == 4)
+        {
+          FlightCancel(seats);       
+        }
+	 if(choiceNumber2 == 5)
+	 {
+	  FlightTakeoff();
+	 }
+	  if(choiceNumber2 == 6)
+        {
+          
+          System.exit(0);
+        }
+        else
+        {
+          System.out.println("Invalid number, please type again.")
+        }
+    }while(choiceNumber2 != 6)
+	     }
+	  catch(IOException e){
+				 System.out.println("Error Reading");
+				 }
+				 catch(NumberFormatException err) {
+				 System.out.println("Error Converting Number");
+				 }
+         }
+	
+         if(choiceFlight == 3)
+		 //Needs to be a way where flight#3 holds all this info
+         {         
+           do{
+          printMenu();
+          String enterType3 = bufRead.readLine();
+	  int choiceNumber3 = Integer.parseInt(enterType);
+        if(choiceNumber3 = 1)
+        {
+         makeSeatReservation(seats);
+        }
+      
+         if(choiceNumber3 == 2)
+        {
+          cancel(seats);
+        }
+      
+         if(choiceNumber3 == 3)
+        {
+          printSeating(seats);
+        }
+	 if(choiceNumber3 == 4)
+        {
+          FlightCancel(seats);       
+        }
+	 if(choiceNumber3 == 5)
+	 {
+	  FlightTakeoff();
+	 }
+	  if(choiceNumber3 == 6)
+        {
+          
+          System.exit(0);
+        }
+        else
+        {
+          System.out.println("Invalid number, please type again.")
+        }
+    }while(choiceNumber3 != 6)
+	     }
+	  catch(IOException e){
+				 System.out.println("Error Reading");
+				 }
+				 catch(NumberFormatException err) {
+				 System.out.println("Error Converting Number");
+				 }
+         }
+   
 	    /**
      * Menu
      */
