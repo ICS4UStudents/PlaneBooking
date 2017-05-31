@@ -12,17 +12,16 @@ public class Plane{
 	public String flight3;
   public static void main(String[] args){
 	        InputStreamReader inStream = new InputStreamReader(System.in);
-		BufferedReader bufRead = new BufferedReader(inStream);
-	     do {                        
+		BufferedReader bufRead = new BufferedReader(inStream);                       
          System.out.println("1 = Flight#AC006 2 = Flight#AC023 3 = Flight#AC064");
-	try{
+try{
          String Flight = bufRead.readLine();
          int choiceFlight =  Integer.parseInt(choiceFlight);
-             } while(choiceFlight != 3)
+  
 		
 	    if(choiceFlight == 1)
          {
-		    //Needs to be a way where flight#1 holds all this info
+		  //Object flight1 needs to be used
 		    do{
           printMenu();
           String enterType = bufRead.readLine();
@@ -59,18 +58,12 @@ public class Plane{
           System.out.println("Invalid number, please type again.")
         }
     }while(choiceNumber != 6)
-	     }
-	  catch(IOException e){
-				 System.out.println("Error Reading");
-				 }
-				 catch(NumberFormatException err) {
-				 System.out.println("Error Converting Number");
-				 }
+	    }
          }
 	  
          if(choiceFlight == 2)
          {
-		 //Needs to be a way where flight#2 holds all this info
+		 //Object Flight2 needs to be used
            do{
           printMenu();
           String enterType2 = bufRead.readLine();
@@ -107,17 +100,11 @@ public class Plane{
           System.out.println("Invalid number, please type again.")
         }
     }while(choiceNumber2 != 6)
-	     }
-	  catch(IOException e){
-				 System.out.println("Error Reading");
-				 }
-				 catch(NumberFormatException err) {
-				 System.out.println("Error Converting Number");
-				 }
+	   
          }
 	
          if(choiceFlight == 3)
-		 //Needs to be a way where flight#3 holds all this info
+		 //Object flight3 needs to be used
          {         
            do{
           printMenu();
@@ -156,14 +143,13 @@ public class Plane{
         }
     }while(choiceNumber3 != 6)
 	     }
-	  catch(IOException e){
+     catch(IOException e){
 				 System.out.println("Error Reading");
 				 }
 				 catch(NumberFormatException err) {
 				 System.out.println("Error Converting Number");
 				 }
-         }
-   
+  }
 	    /**
      * Menu
      */
@@ -188,9 +174,7 @@ public class Plane{
           // Enter Yi's code for reserving a seat ++  *(SeatIndex is not a actually variable)
 	     InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);
-        if (seatsIndex == seats.length) {
-            System.out.println("All seats are full. Sorry, for the inconvenience...");
-        } else {
+  
 		    String choiceSeat;
 		
 		int full = 0;
