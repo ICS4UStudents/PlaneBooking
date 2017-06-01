@@ -10,6 +10,26 @@ public class Plane{
 	        InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);                       
          System.out.println("1 = Flight#AC006 2 = Flight#AC023 3 = Flight#AC064");
+	  
+	customer A1 = new customer(null, null, null, null);
+			
+	customer A2 = new customer(null, null, null, null);
+			
+	customer B1 = new customer(null, null, null, null);
+			
+	customer B2 = new customer(null, null, null, null);
+			
+	customer C1 = new customer(null, null, null, null);
+			
+        customer C2 = new customer(null, null, null, null);
+			
+	customer D1 = new customer(null, null, null, null);
+			
+	customer D2 = new customer(null, null, null, null);
+			
+	customer E1 = new customer(null, null, null, null);
+			
+        customer E2 = new customer(null, null, null, null);
 try{
          String Flight = bufRead.readLine();
          int choiceFlight =  Integer.parseInt(choiceFlight);
@@ -168,27 +188,7 @@ try{
 		
 		int full = 0;
 		while(full == 0){
-			try {
-				
-				customer A1 = new customer(null, null, null, null);
-			
-			        customer A2 = new customer(null, null, null, null);
-			
-			        customer B1 = new customer(null, null, null, null);
-			
-			        customer B2 = new customer(null, null, null, null);
-			
-			        customer C1 = new customer(null, null, null, null);
-			
-			        customer C2 = new customer(null, null, null, null);
-			
-			        customer D1 = new customer(null, null, null, null);
-			
-			        customer D2 = new customer(null, null, null, null);
-			
-			        customer E1 = new customer(null, null, null, null);
-			
-			        customer E2 = new customer(null, null, null, null);
+			try (
 				
 				choiceSeat = bufRead.readLine();
 				if(choiceSeat.equals("A1"))
