@@ -180,6 +180,27 @@ try{
 		int full = 0;
 		while(full == 0){
 			try {
+				
+				customer A1 = new customer(null, null, null, null);
+			
+			        customer A2 = new customer(null, null, null, null);
+			
+			        customer B1 = new customer(null, null, null, null);
+			
+			        customer B2 = new customer(null, null, null, null);
+			
+			        customer C1 = new customer(null, null, null, null);
+			
+			        customer C2 = new customer(null, null, null, null);
+			
+			        customer D1 = new customer(null, null, null, null);
+			
+			        customer D2 = new customer(null, null, null, null);
+			
+			        customer E1 = new customer(null, null, null, null);
+			
+			        customer E2 = new customer(null, null, null, null);
+				
 				choiceSeat = bufRead.readLine();
 				if(choiceSeat.equals("A1"))
 			    {
