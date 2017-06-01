@@ -10,6 +10,26 @@ public class Plane{
 	        InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);                       
          System.out.println("1 = Flight#AC006 2 = Flight#AC023 3 = Flight#AC064");
+	  
+	  customer A1 = new customer(null, null, null, null);
+			
+	  customer A2 = new customer(null, null, null, null);
+				        
+	  customer B1 = new customer(null, null, null, null);
+				        
+	  customer B2 = new customer(null, null, null, null);
+				        
+	  customer C1 = new customer(null, null, null, null);
+				        
+	  customer C2 = new customer(null, null, null, null);
+				        
+	  customer D1 = new customer(null, null, null, null);
+				        
+	  customer D2 = new customer(null, null, null, null);
+			        
+	  customer E1 = new customer(null, null, null, null);
+					        
+	  customer E2 = new customer(null, null, null, null);
 try{
          String Flight = bufRead.readLine();
          int choiceFlight =  Integer.parseInt(choiceFlight);
@@ -73,7 +93,7 @@ try{
       
          if(choiceNumber2 == 3)
         {
-          printSeating(seats);
+          printSeating(A1,A2,B1,B2,C1,C2,D1,D2,E1,E2);;
         }
 	 if(choiceNumber2 == 4)
         {
@@ -170,25 +190,7 @@ try{
 		while(full == 0){
 			try {
 				
-				customer A1 = new customer(null, null, null, null);
-			
-			        customer A2 = new customer(null, null, null, null);
-			
-			        customer B1 = new customer(null, null, null, null);
-			
-			        customer B2 = new customer(null, null, null, null);
-			
-			        customer C1 = new customer(null, null, null, null);
-			
-			        customer C2 = new customer(null, null, null, null);
-			
-			        customer D1 = new customer(null, null, null, null);
-			
-			        customer D2 = new customer(null, null, null, null);
-			
-			        customer E1 = new customer(null, null, null, null);
-			
-			        customer E2 = new customer(null, null, null, null);
+				
 				
 				choiceSeat = bufRead.readLine();
 				if(choiceSeat.equals("A1"))
@@ -633,5 +635,104 @@ try{
 		//return to printMenu();
 		}
 		
+		
 	}
+        public static void printSeating(customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2) {
+
+		if(A1.firstName == null)
+		{
+			System.out.println("Seat A1 is avaliable.");
+		}
+		else
+		{
+			System.out.println("Seat A1 is not avaliable.");
+		}
+		
+		if(A2.firstName == null)
+		{
+			System.out.println("Seat A2 is avaliable.");
+		}
+		else
+		{
+			System.out.println("Seat A2 is not avaliable.");
+		}
+		
+		if(B1.firstName == null)
+		{
+			System.out.println("Seat B1 is avaliable.");
+		}
+		else
+		{
+			System.out.println("Seat B1 is not avaliable.");
+		}
+		
+		if(B2.firstName == null)
+		{
+			System.out.println("Seat B2 is avaliable.");
+		}
+		else
+		{
+			System.out.println("Seat B2 is not avaliable.");
+		}
+		
+		if(C1.firstName == null)
+		{
+			System.out.println("Seat C1 is avaliable.");
+		}
+		else
+		{
+			System.out.println("Seat C1 is not avaliable.");
+		}
+		
+		if(C2.firstName == null)
+		{
+			System.out.println("Seat C2 is avaliable.");
+		}
+		else
+		{
+			System.out.println("Seat C2 is not avaliable.");
+		}
+		
+		if(D1.firstName == null)
+		{
+			System.out.println("Seat D1 is avaliable.");
+		}
+		else
+		{
+			System.out.println("Seat D1 is not avaliable.");
+		}
+		
+		if(D2.firstName == null)
+		{
+			System.out.println("Seat D2 is avaliable.");
+		}
+		else
+		{
+			System.out.println("Seat D2 is not avaliable.");
+		}
+		
+		if(A1.firstName == null)
+		{
+			System.out.println("Seat E1 is avaliable.");
+		}
+		else
+		{
+			System.out.println("Seat E1 is not avaliable.");
+		}
+		
+		if(A1.firstName == null)
+		{
+			System.out.println("Seat E2 is avaliable.");
+		}
+		else
+		{
+			System.out.println("Seat E2 is not avaliable.");
+		}
+		
+		
+		
+		
+
+	}
+
     }
