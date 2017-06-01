@@ -161,7 +161,6 @@ try{
      * Make a reservation
      */
     public void makeSeatReservation(String[][] seats) {
-          // Enter Yi's code for reserving a seat ++  *(SeatIndex is not a actually variable)
 	     InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);
   
@@ -479,28 +478,133 @@ try{
      * Cancel a reservation
      */
 
-    int getCancel() { //THIS METHOD ISNT COMPLETED!!! THIS IS JUST HOW THE METHOD WILL FUNCTION
-                InputStreamReader inStream = new InputStreamReader(System.in);
+    int getCancel() { 
+	//Revert all the seats that are taken back to null    
+	    InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);
-	    boolean valid = false;  // is the seat number valid?
-        int seat;               // seat number to cancel
-        do {
-            System.out.print("Enter the seat to cancel: ");
-       //     seat = add buffer reader
-            if (1 <= seat && seat <= FULL_PLANE) {
-                valid = true;
-            } else {
-                System.out.println("Invalid seat number");
-            }
-        } while (!valid);
- 
-        return seat-1;
+	    System.out.println("Enter the seat that you wish to cancel:");
+	    String cancelSeat = bufRead.readLine();
+	    if(cancelSeat.equals("A1"))
+	    {
+		    if(seats[0][0] != null)
+		    {
+			seat[0][0] = null;
+		    }
+		    else 
+		    {
+			System.out.println("This seat hasn't been reserved yet");
+		    }
+	    }
+	    if(cancelSeat.equals("A2"))
+	    {
+		    if(seats[1][0] != null)
+		    {
+			seat[1][0] = null;
+		    }
+		    else 
+		    {
+			System.out.println("This seat hasn't been reserved yet");
+		    }
+	    }     
+		 if(cancelSeat.equals("B1"))
+	    {
+		    if(seats[0][1] != null)
+		    {
+			seat[0][1] = null;
+		    }
+		    else 
+		    {
+			System.out.println("This seat hasn't been reserved yet");
+		    }
+		 }
+	     if(cancelSeat.equals("B2"))
+	    {
+		    if(seats[1][1] != null)
+		    {
+			seat[1][1] = null;
+		    }
+		    else 
+		    {
+			System.out.println("This seat hasn't been reserved yet");
+		    }
+		 }
+	     if(cancelSeat.equals("C1"))
+	    {
+		    if(seats[0][2] != null)
+		    {
+			seat[0][2] = null;
+		    }
+		    else 
+		    {
+			System.out.println("This seat hasn't been reserved yet");
+		    }
+		 }
+	     if(cancelSeat.equals("C2"))
+	    {
+		    if(seats[1][2] != null)
+		    {
+			seat[1][2] = null;
+		    }
+		    else 
+		    {
+			System.out.println("This seat hasn't been reserved yet");
+		    }
+		 }
+	      if(cancelSeat.equals("D1"))
+	    {
+		    if(seats[0][3] != null)
+		    {
+			seat[0][3] = null;
+		    }
+		    else 
+		    {
+			System.out.println("This seat hasn't been reserved yet");
+		    }
+		 }
+	      if(cancelSeat.equals("D2"))
+	    {
+		    if(seats[1][3] != null)
+		    {
+			seat[1][3] = null;
+		    }
+		    else 
+		    {
+			System.out.println("This seat hasn't been reserved yet");
+		    }
+		 }
+	        if(cancelSeat.equals("E1"))
+	    {
+		    if(seats[0][4] != null)
+		    {
+			seat[0][4] = null;
+		    }
+		    else 
+		    {
+			System.out.println("This seat hasn't been reserved yet");
+		    }
+		 }
+	        if(cancelSeat.equals("E2"))
+	    {
+		    if(seats[1][4] != null)
+		    {
+			seat[1][4] = null;
+		    }
+		    else 
+		    {
+			System.out.println("This seat hasn't been reserved yet");
+		    }
+	 }
+	    else
+	    {
+		System.out.println("This seat does not exsist.");
+	    }
     }
+            
 	    /**
      * Cancel a Flight
      */
 	    int getFlightCancel(){
-		    //Mikes beginning code 
+	
 		    
 		    
 		    
