@@ -6,10 +6,6 @@ public class Plane{
    * | [A1] [B1] [C1] [D1] [E1] |
    * | [A2] [B2] [C2] [D2] [E2] |
    */
-//Flights as objects
-	public String flight1;
-	public String flight2;
-	public String flight3;
   public static void main(String[] args){
 	        InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);                       
@@ -17,11 +13,9 @@ public class Plane{
 try{
          String Flight = bufRead.readLine();
          int choiceFlight =  Integer.parseInt(choiceFlight);
-  
-		
+ 
 	    if(choiceFlight == 1)
-         {
-		  //Object flight1 needs to be used
+         {		
 		    do{
           printMenu();
           String enterType = bufRead.readLine();
@@ -63,7 +57,6 @@ try{
 	  
          if(choiceFlight == 2)
          {
-		 //Object Flight2 needs to be used
            do{
           printMenu();
           String enterType2 = bufRead.readLine();
@@ -99,12 +92,9 @@ try{
         {
           System.out.println("Invalid number, please type again.")
         }
-    }while(choiceNumber2 != 6)
-	   
+    }while(choiceNumber2 != 6)   
          }
-	
          if(choiceFlight == 3)
-		 //Object flight3 needs to be used
          {         
            do{
           printMenu();
