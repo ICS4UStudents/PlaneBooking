@@ -480,17 +480,17 @@ try{
      * Cancel a reservation
      */
 
-    int getCancel() { 
+  public void Cancel(String[][] seats) { 
 	//Revert all the seats that are taken back to null    
 	    InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);
 	    System.out.println("Enter the seat that you wish to cancel:");
-	    String cancelSeat = bufRead.readLine();
+	     String cancelSeat = bufRead.readLine();
 	    if(cancelSeat.equals("A1"))
 	    {
 		    if(seats[0][0] != null)
 		    {
-			seat[0][0] = null;
+			seats[0][0] = null;
 		    }
 		    else 
 		    {
@@ -501,7 +501,7 @@ try{
 	    {
 		    if(seats[1][0] != null)
 		    {
-			seat[1][0] = null;
+			seats[1][0] = null;
 		    }
 		    else 
 		    {
@@ -512,7 +512,7 @@ try{
 	    {
 		    if(seats[0][1] != null)
 		    {
-			seat[0][1] = null;
+			seats[0][1] = null;
 		    }
 		    else 
 		    {
@@ -523,7 +523,7 @@ try{
 	    {
 		    if(seats[1][1] != null)
 		    {
-			seat[1][1] = null;
+			seats[1][1] = null;
 		    }
 		    else 
 		    {
@@ -534,7 +534,7 @@ try{
 	    {
 		    if(seats[0][2] != null)
 		    {
-			seat[0][2] = null;
+			seats[0][2] = null;
 		    }
 		    else 
 		    {
@@ -545,7 +545,7 @@ try{
 	    {
 		    if(seats[1][2] != null)
 		    {
-			seat[1][2] = null;
+			seats[1][2] = null;
 		    }
 		    else 
 		    {
@@ -556,7 +556,7 @@ try{
 	    {
 		    if(seats[0][3] != null)
 		    {
-			seat[0][3] = null;
+			seats[0][3] = null;
 		    }
 		    else 
 		    {
@@ -567,7 +567,7 @@ try{
 	    {
 		    if(seats[1][3] != null)
 		    {
-			seat[1][3] = null;
+			seats[1][3] = null;
 		    }
 		    else 
 		    {
@@ -589,7 +589,7 @@ try{
 	    {
 		    if(seats[1][4] != null)
 		    {
-			seat[1][4] = null;
+			seats[1][4] = null;
 		    }
 		    else 
 		    {
