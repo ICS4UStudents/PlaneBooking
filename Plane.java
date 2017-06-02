@@ -481,7 +481,7 @@ try{
      */
 
   public void Cancel(String[][] seats) { 
-	//Revert all the seats that are taken back to null    
+	//Revert all the seats that are taken back to null    (needed: able to go back after choosing a seat)
 	    InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);
 	    System.out.println("Enter the seat that you wish to cancel:");
@@ -491,6 +491,7 @@ try{
 		    if(seats[0][0] != null)
 		    {
 			seats[0][0] = null;
+		       System.out.println("The seat is now available again!");	    
 		    }
 		    else 
 		    {
@@ -502,6 +503,7 @@ try{
 		    if(seats[1][0] != null)
 		    {
 			seats[1][0] = null;
+			    System.out.println("The seat is now available again!");	
 		    }
 		    else 
 		    {
@@ -513,6 +515,7 @@ try{
 		    if(seats[0][1] != null)
 		    {
 			seats[0][1] = null;
+			    System.out.println("The seat is now available again!");	
 		    }
 		    else 
 		    {
@@ -524,6 +527,7 @@ try{
 		    if(seats[1][1] != null)
 		    {
 			seats[1][1] = null;
+			    System.out.println("The seat is now available again!");	
 		    }
 		    else 
 		    {
@@ -546,6 +550,7 @@ try{
 		    if(seats[1][2] != null)
 		    {
 			seats[1][2] = null;
+			    System.out.println("The seat is now available again!");	
 		    }
 		    else 
 		    {
@@ -557,6 +562,7 @@ try{
 		    if(seats[0][3] != null)
 		    {
 			seats[0][3] = null;
+			    System.out.println("The seat is now available again!");	
 		    }
 		    else 
 		    {
@@ -568,6 +574,7 @@ try{
 		    if(seats[1][3] != null)
 		    {
 			seats[1][3] = null;
+			    System.out.println("The seat is now available again!");	
 		    }
 		    else 
 		    {
@@ -579,6 +586,7 @@ try{
 		    if(seats[0][4] != null)
 		    {
 			seat[0][4] = null;
+		   System.out.println("The seat is now available again!");	
 		    }
 		    else 
 		    {
@@ -590,6 +598,8 @@ try{
 		    if(seats[1][4] != null)
 		    {
 			seats[1][4] = null;
+			    System.out.println("The seat is now available again!");	
+			    
 		    }
 		    else 
 		    {
