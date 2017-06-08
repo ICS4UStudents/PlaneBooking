@@ -9,7 +9,7 @@ public class Plane{
   public static void main(String[] args){
 	        InputStreamReader inStream = new InputStreamReader(System.in);
 		BufferedReader bufRead = new BufferedReader(inStream);                       
-         System.out.println("1 = Flight#AC006 2 = Flight#AC023 3 = Flight#AC064");
+        
 	  
 	  customer A1 = new customer(null, null, null, null);
 			
@@ -30,7 +30,9 @@ public class Plane{
 	  customer E1 = new customer(null, null, null, null);
 					        
 	  customer E2 = new customer(null, null, null, null);
-try{
+try{   
+	do{
+	System.out.println("1 = Flight#AC006 2 = Flight#AC023 3 = Flight#AC064");
          String Flight = bufRead.readLine();
          int choiceFlight =  Integer.parseInt(choiceFlight);
  
@@ -153,6 +155,7 @@ try{
         }
     }while(choiceNumber3 != 6)
 	     }
+}while(choiceFlight!=3)
      catch(IOException e){
 				 System.out.println("Error Reading");
 				 }
