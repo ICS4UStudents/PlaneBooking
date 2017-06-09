@@ -630,24 +630,9 @@ try{
      * Flight Print out (Take off time)
      */
 	int getFlightTakeoff(String[][] seats){
-		//Prints passengers seats and who has it
-	//Needs customer objects in order to do 
-		 InputStreamReader inStream = new InputStreamReader(System.in);
-		BufferedReader bufRead = new BufferedReader(inStream);
-		System.out.println("Is the plane ready to takeoff?");
-		System.out.println("1. Yes");
-		System.out.println("2. No");
-		 String done = bufRead.readLine();
-	  int confirmDone = Integer.parseInt(done);
-		if(confirmDone == 1)
-		{
-		//passengers manifest
-		}
-		if(confirmDone == 2)
-		{
-		//return to printMenu();
-		}
-		
+		//Prints passengers seats and who has i
+		System.out.println("The plane will now begin preparation in order to take off");
+	//Passengers Manifest
 		
 	}
         public static void printSeating(customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2) {
