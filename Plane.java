@@ -32,7 +32,7 @@ public class Plane{
 	  customer E2 = new customer(null, null, null, null);
 try{   
 	do{
-	System.out.println("1 = Flight#AC006 2 = Flight#AC023 3 = Flight#AC064");
+	System.out.println("1 = Flight#AC001 2 = Flight#AC002 3 = Flight#AC003");
          String Flight = bufRead.readLine();
          int choiceFlight =  Integer.parseInt(choiceFlight);
  
