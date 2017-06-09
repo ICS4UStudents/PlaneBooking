@@ -1,1 +1,41 @@
+Fly-By-Night Airline Booking - Guide
+    The booking system has six different functions accessible by the flight attendant. 
+  The six tasks that the system can achieve include booking a seat, canceling a seat, viewing the seats remaining, canceling the 
+  entire flight, and terminating the system which serves as a reset. 
+  
+   Once opening the software you will be greeted with a choice based on which flight you would like to do the given tasks on. 
+   The airline will always have three options for flights as they are ordered based on flight time so add passengers onto flight one first. After choosing a flight a basic menu will appear with the six prompts mentioned. 
+
+Prompt#1
+     Choosing prompt one will allow you to book a seat. The program will ask which seat you would like to book, as you must type 
+     in the correct seat number to book the seat. The seats go as follows: A1, A2, B1, B2, C1, C2, D1, D2, E1, E2. If you incorrectly type
+     the seat, or type an non existing seat (Ex.b1) the program will tell you that it is an invalid seat. In this case make sure the seat
+     number is correct before going into the next step. If the seat is booked however, it will tell you. Once you correctly input the seat
+     number the program will need the information of the customer you are booking for. After entering the information the seat will be 
+     booked and it will be placed into the database.
+Prompt#2
+     Canceling a seat works very similar to booking one. The program works the same way starting with inputting the seat that you wish
+     to reopen for purchase. If the seat is recognized, it will automatically free up the seat, as well as refunding the customer. 
+     Remember if the seat is typed incorrectly or you input an incorrect seat the program will recognize it and allow you to choose again.
+Prompt#3
+      If you choose the third prompt it allows you to see what seats are still available for sale. A window will appear giving you the 
+      current information on each seat. This will allow you to see what seats are still open and which ones not to book. This function 
+      is used in order to avoid overbooking.
+Prompt#4
+       In the case of an emergency, you must be prepared to cancel the flight as a whole. The prompt allows you to do in a clean
+       and organized manner. After entering the designated number you will see that a list of information is printed in front of you. 
+       This information is of the current passengers on the flight, as it provides you with the last name, first name, address, and 
+       phone number you entered prior. You must reach out to the individuals listed in the case of a cancel in order to provide them
+       with a full refund. No compensations will be made in this situation, only refunds.
+Prompt#5
+       This prompt is used when it reaches time for the flight to take off. The plane does not need to be full in order to take off 
+       as there might be situations where it’s flight time and some seats might be empty. Once it has reached flight time it and it 
+       is confirmed with the staff you may proceed. Once you enter the corresponding number in the menu it will automatically print 
+       the passengers manifest so be aware when the time is to do so. At this point there is no possible way for you to sell another 
+       seat, as past this point it’s final. The information of the seats will be instantly sent to the staff aboard the plane. After 
+       the manifest is printed the flight program must be reopened as this flight will no longer be on the available database.
+Prompt#6
+     This prompt will rarely be used but it’s purpose is simple. This will terminate the entire program as it used to prevent 
+     undesignated individuals using the flight after work hours. After the final shift you must quit the program to make it ready 
+     for the following day.
 
