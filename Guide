@@ -3,8 +3,9 @@ Fly-By-Night Airline Booking - Guide
   The six tasks that the system can achieve include booking a seat, canceling a seat, viewing the seats remaining, canceling the 
   entire flight, and terminating the system which serves as a reset. 
   
-   Once opening the software you will be greeted with a choice based on which flight you would like to do the given tasks on. 
-   The airline will always have three options for flights as they are ordered based on flight time so add passengers onto flight one first. After choosing a flight a basic menu will appear with the six prompts mentioned. 
+     Once opening the software you will be greeted with a choice based on which flight you would like to do the given tasks on. 
+   The airline will always have three options for flights as they are ordered based on flight time so add passengers onto flight one 
+   first. After choosing a flight a basic menu will appear with the six prompts mentioned. 
 
 Prompt#1
      Choosing prompt one will allow you to book a seat. The program will ask which seat you would like to book, as you must type 
