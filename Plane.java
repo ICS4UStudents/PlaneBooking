@@ -629,12 +629,27 @@ try{
 	/**
      * Flight Print out (Take off time)
      */
-	int getFlightTakeoff(String[][] seats){
-		//Prints passengers seats and who has i
+	public void FlightTakeoff(customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2){
+		//Prints passengers seats and who has it
 		System.out.println("The plane will now begin preparation in order to take off");
-	//Passengers Manifest
+	        System.out.println("Passengers attending the flight:");
+		System.out.println("Seat A1: " + A1);
+		System.out.println("Seat A2: " + A2);
+		System.out.println("Seat B1: " + B1);
+		System.out.println("Seat B2: " + B2);
+		System.out.println("Seat C1: " + C1);
+		System.out.println("Seat C2: " + C2);
+		System.out.println("Seat D1: " + D1);
+		System.out.println("Seat D2: " + D2);
+		System.out.println("Seat E1: " + E1);
+		System.out.println("Seat E2: " + E2);
+		 System.out.println("Note: This is FINAL no tickets will able to be sold past this point");
 		
 	}
+
+       /**
+       * View the available seats for sale
+       */
         public static void printSeating(customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2) {
 
 		if(A1.firstName == null)
