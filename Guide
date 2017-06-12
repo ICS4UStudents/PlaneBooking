@@ -35,6 +35,7 @@ Prompt#5
        the passengers manifest so be aware when the time is to do so. At this point there is no possible way for you to sell another 
        seat, as past this point it’s final. The information of the seats will be instantly sent to the staff aboard the plane. After 
        the manifest is printed the flight program must be reopened as this flight will no longer be on the available database.
+       If a seat is not reserved the program will report 'null' which declares that the seat is unavailable.
 Prompt#6
      This prompt will rarely be used but it’s purpose is simple. This will terminate the entire program as it used to prevent 
      undesignated individuals using the flight after work hours. After the final shift you must quit the program to make it ready 
