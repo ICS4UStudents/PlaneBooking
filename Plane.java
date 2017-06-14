@@ -48,7 +48,7 @@ public class Plane{
   /**
      * Make a reservation
      */
-  public void makeSeatReservation(String[][] seats) {
+  public void makeSeatReservation(String[][] seats, customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2) {
       InputStreamReader inStream = new InputStreamReader(System.in);
   BufferedReader bufRead = new BufferedReader(inStream);
   
