@@ -167,7 +167,6 @@ try{
      * Menu
      */
       
-   }
   public void printMenu();
   {
  System.out.println(" Booking Menu "); 
@@ -777,16 +776,16 @@ try{
 		//Prints passengers seats and who has it
 		System.out.println("The plane will now begin preparation in order to take off");
 	        System.out.println("Passengers attending the flight:");
-		System.out.println("Seat A1: " + A1 + " Information: " );
-		System.out.println("Seat A2: " + A2 + " Information: " );
-		System.out.println("Seat B1: " + B1 + " Information: " );
-		System.out.println("Seat B2: " + B2 + " Information: " );
-		System.out.println("Seat C1: " + C1 + " Information: " );
-		System.out.println("Seat C2: " + C2 + " Information: " );
-		System.out.println("Seat D1: " + D1 + " Information: "  );
-		System.out.println("Seat D2: " + D2 + " Information: " );
-		System.out.println("Seat E1: " + E1 + " Information: " );
-		System.out.println("Seat E2: " + E2 + " Information: ");
+		System.out.println("Seat A1: " + A1 + " Information: " + A1.firstName + A1.lastName + A1.address + A1.phoneNumber);
+		System.out.println("Seat A2: " + A2 + " Information: " + A2.firstName + A2.lastName + A2.address + A2.phoneNumber);
+		System.out.println("Seat B1: " + B1 + " Information: " + B1.firstName + B1.lastName + B1.address + B1.phoneNumber);
+		System.out.println("Seat B2: " + B2 + " Information: " + B2.firstName + B2.lastName + B2.address + B2.phoneNumber);
+		System.out.println("Seat C1: " + C1 + " Information: " + C1.firstName + C1.lastName + C1.address + C1.phoneNumber);
+		System.out.println("Seat C2: " + C2 + " Information: " + C2.firstName + C2.lastName + C2.address + C2.phoneNumber);
+		System.out.println("Seat D1: " + D1 + " Information: " + D1.firstName + D1.lastName + D1.address + D1.phoneNumber);
+		System.out.println("Seat D2: " + D2 + " Information: " + D2.firstName + D2.lastName + D2.address + D2.phoneNumber);
+		System.out.println("Seat E1: " + E1 + " Information: " + E1.firstName + E1.lastName + E1.address + E1.phoneNumber);
+		System.out.println("Seat E2: " + E2 + " Information: " + E2.firstName + E2.lastName + E2.address + E2.phoneNumber);
 		
 		 System.out.println("Note: This is FINAL no tickets will able to be sold past this point");
 		
