@@ -7,10 +7,7 @@ public class Plane{
    * | [A2] [B2] [C2] [D2] [E2] |
    */
   public static void main(String[] args){
-         InputStreamReader inStream = new InputStreamReader(System.in);
-  BufferedReader bufRead = new BufferedReader(inStream);                       
-        
-   
+                          
    customer A1 = new customer(null, null, null, null);
    
    customer A2 = new customer(null, null, null, null);
@@ -30,137 +27,7 @@ public class Plane{
    customer E1 = new customer(null, null, null, null);
              
    customer E2 = new customer(null, null, null, null);
-   try {  
-     do{
- System.out.println("1 = Flight#AC001 2 = Flight#AC002 3 = Flight#AC003");
-         String Flight = bufRead.readLine();
-         int choiceFlight =  Integer.parseInt(choiceFlight);
- 
-     if(choiceFlight == 1)
-     {    
-       do{
-          printMenu();
-          String enterType = bufRead.readLine();
-   int choiceNumber = Integer.parseInt(enterType);
-        if(choiceNumber = 1)
-        {
-         makeSeatReservation(seats);
-        }
-      
-         if(choiceNumber == 2)
-         {
-          cancel(seats);
-         }
-      
-         if(choiceNumber == 3)
-         {       
-           printSeating(A1,A2,B1,B2,C1,C2,D1,D2,E1,E2);;
-         }
-  if(choiceNumber == 4)
-  {
-          FlightCancel(seats);       
-  }     
-  if(choiceNumber == 5)
-  {
-   FlightTakeoff();
-  }
-   if(choiceNumber == 6)
-   {      
-          
-          System.exit(0);
-   }       
-        else
-        {    
-          System.out.println("Invalid number, please type again.");
-        } 
-       }
-        while(choiceNumber != 6);
-     }
-         if(choiceFlight == 2)
-         {
-           do{
-          printMenu();
-          String enterType2 = bufRead.readLine();
-   int choiceNumber2 = Integer.parseInt(enterType2);
-        if(choiceNumber2 = 1)
-        {
-         makeSeatReservation(seats);
-        }
-      
-         if(choiceNumber2 == 2)
-         {
-          cancel(seats);
-         }
-      
-         if(choiceNumber2 == 3)
-         {
-          printSeating(A1,A2,B1,B2,C1,C2,D1,D2,E1,E2);;
-         }
-  if(choiceNumber2 == 4)
-  {
-          FlightCancel(seats);       
-  }      
-  if(choiceNumber2 == 5)
-  {
-   FlightTakeoff();
-  }
-   if(choiceNumber2 == 6)
-   { 
-          
-          System.exit(0);
-   }    
-        else
-        {
-          System.out.println("Invalid number, please type again.");
-        }
-           } while(choiceNumber2 != 6);   
-         }
-         if(choiceFlight == 3)
-         {    
-           do{
-          printMenu();
-          String enterType3 = bufRead.readLine();
-   int choiceNumber3 = Integer.parseInt(enterType);
-        if(choiceNumber3 = 1)
-        {
-         makeSeatReservation(seats);
-        }
-      
-         if(choiceNumber3 == 2)
-         {
-          cancel(seats);
-         }
-      
-         if(choiceNumber3 == 3)
-         {
-           printSeating(A1,A2,B1,B2,C1,C2,D1,D2,E1,E2);;
-         }
-  if(choiceNumber3 == 4)
-  {
-          FlightCancel(seats);       
-  }     
-  if(choiceNumber3 == 5)
-  {
-   FlightTakeoff();
-  }
-   if(choiceNumber3 == 6)
-   {          
-          System.exit(0);
-   }   
-        else
-        {
-          System.out.println("Invalid number, please type again.");
-        }
-           }while(choiceNumber3 != 6);
-         }
-         }while(choiceFlight != 3);
-   }
-         catch(IOException e){
-     System.out.println("Error Reading");
-           }
-           catch(NumberFormatException err) {
-     System.out.println("Error Converting Number");
-           }
+  
   }
        /**
      * Menu
@@ -190,8 +57,7 @@ public class Plane{
   String input;
    int full = 0;
    while(full == 0)
-   
-    
+   { 
     try{
      
      System.out.println("Please enter a seat number to book the seat.");
@@ -225,7 +91,7 @@ public class Plane{
           }
           else
           {
-           System.out.println("Thanks for using the programme.");
+           System.out.println("Thanks for using the program.");
            full++;
           }
           
@@ -267,7 +133,7 @@ public class Plane{
           }
           else
           {
-           System.out.println("Thanks for using the programme.");
+           System.out.println("Thanks for using the program.");
            full++;
           }
       }
@@ -307,7 +173,7 @@ public class Plane{
           }
           else
           {
-           System.out.println("Thanks for using the programme.");
+           System.out.println("Thanks for using the program.");
            full++;
           }
       }
@@ -346,7 +212,7 @@ public class Plane{
           }
           else
           {
-           System.out.println("Thanks for using the programme.");
+           System.out.println("Thanks for using the program.");
            full++;
           }
       }
@@ -385,7 +251,7 @@ public class Plane{
           }
           else
           {
-           System.out.println("Thanks for using the programme.");
+           System.out.println("Thanks for using the program.");
            full++;
           }
       }
@@ -424,7 +290,7 @@ public class Plane{
           }
           else
           {
-           System.out.println("Thanks for using the programme.");
+           System.out.println("Thanks for using the program.");
            full++;
           }
       }
@@ -463,7 +329,7 @@ public class Plane{
           }
           else
           {
-           System.out.println("Thanks for using the programme.");
+           System.out.println("Thanks for using the program.");
            full++;
           }
       }
@@ -502,7 +368,7 @@ public class Plane{
           }
           else
           {
-           System.out.println("Thanks for using the programme.");
+           System.out.println("Thanks for using the program.");
            full++;
           }
       }
@@ -541,7 +407,7 @@ public class Plane{
           }
           else
           {
-           System.out.println("Thanks for using the programme.");
+           System.out.println("Thanks for using the program.");
            full++;
           }
       }
@@ -580,7 +446,7 @@ public class Plane{
           }
           else
           {
-           System.out.println("Thanks for using the programme.");
+           System.out.println("Thanks for using the program.");
            full++;
           }
       }
@@ -607,15 +473,13 @@ public class Plane{
        }
  
    printSeating(A1,A2,B1,B2,C1,C2,D1,D2,E1,E2);
-  
+   }
    
     catch(NumberFormatException err) 
     {
      System.out.println("Error Converting Number");
        }
-       
-   
-  
+ 
  }
 
 //If the seat is full, you need a way to allow the attendant to choose another seat
@@ -627,6 +491,7 @@ public class Plane{
  //Revert all the seats that are taken back to null    (needed: able to go back after choosing a seat)
      InputStreamReader inStream = new InputStreamReader(System.in);
   BufferedReader bufRead = new BufferedReader(inStream);
+    
      System.out.println("Enter the seat that you wish to cancel:");
       String cancelSeat = bufRead.readLine();
      if(cancelSeat.equals("A1"))
@@ -634,11 +499,12 @@ public class Plane{
       if(seats[0][0] != null)
       {
    seats[0][0] = null;
-         System.out.println("The seat is now available again!");     
+         System.out.println("The seat is now available again!");  
       }
       else 
       {
    System.out.println("This seat hasn't been reserved yet");
+         
       }
      }
      if(cancelSeat.equals("A2"))
@@ -728,7 +594,7 @@ public class Plane{
      {
       if(seats[0][4] != null)
       {
-   seat[0][4] = null;
+   seats[0][4] = null;
      System.out.println("The seat is now available again!"); 
       }
       else 
@@ -753,8 +619,7 @@ public class Plane{
      {
   System.out.println("This seat does not exsist.");
      }
-    }
-            
+    }        
      /**
      * Cancel a Flight
      */
