@@ -20,7 +20,7 @@ public class customer {
 		// TODO Auto-generated constructor stub
 		this.set(f,l,a,p);
 	
-		System.out.println("The information about the customer: " + "\n" + firstName + "\n" + lastName + "\n" + address + "\n" + phoneNumber);
+		
 	}
 
 	
