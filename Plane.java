@@ -494,14 +494,7 @@ public class Plane{
 				
 			}
 			
-		}
-			
-				catch(NumberFormatException err) 
-				{
-					System.out.println("Error Converting Number");
-			    }
-							
-			
+		}				
 		
 	}
 
