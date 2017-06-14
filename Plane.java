@@ -1,6 +1,5 @@
 import java.io.*;
 public class Plane{ 
-  String[][] seats = new String[2][5];
   /*Plane's seats will resemble
    * | [A1] [B1] [C1] [D1] [E1] |
    * | [A2] [B2] [C2] [D2] [E2] |
@@ -47,7 +46,7 @@ public class Plane{
   /**
      * Make a reservation
      */
-  public void makeSeatReservation(String[][] seats, customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2) {
+  public void makeSeatReservation(customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2) {
       InputStreamReader inStream = new InputStreamReader(System.in);
   BufferedReader bufRead = new BufferedReader(inStream);
   
@@ -503,7 +502,7 @@ public class Plane{
      * Cancel a reservation
      */
 
-  public void Cancel(String[][] seats) { 
+  public void Cancel() { 
  //Revert all the seats that are taken back to null    (needed: able to go back after choosing a seat)
      InputStreamReader inStream = new InputStreamReader(System.in);
   BufferedReader bufRead = new BufferedReader(inStream);
@@ -512,9 +511,9 @@ public class Plane{
       String cancelSeat = bufRead.readLine();
      if(cancelSeat.equals("A1"))
      {
-      if(seats[0][0] != null)
+      if(A1.firstName != null)
       {
-   seats[0][0] = null;
+  A1.firstName = null;
          System.out.println("The seat is now available again!");  
       }
       else 
@@ -525,9 +524,9 @@ public class Plane{
      }
      if(cancelSeat.equals("A2"))
      {
-      if(seats[1][0] != null)
+      if(A2.firstName != null)
       {
-   seats[1][0] = null;
+  A2.firstName = null;
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -537,9 +536,9 @@ public class Plane{
      }     
    if(cancelSeat.equals("B1"))
      {
-      if(seats[0][1] != null)
+      if(B1.firstName != null)
       {
-   seats[0][1] = null;
+   B1.firstName = null;
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -549,9 +548,9 @@ public class Plane{
    }
       if(cancelSeat.equals("B2"))
      {
-      if(seats[1][1] != null)
+      if(B2.firstName != null)
       {
-   seats[1][1] = null;
+   B2.firstName = null;
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -561,9 +560,9 @@ public class Plane{
    }
       if(cancelSeat.equals("C1"))
      {
-      if(seats[0][2] != null)
+      if(C1.firstName != null)
       {
-   seats[0][2] = null;
+   C1.firstName = null;
       }
       else 
       {
@@ -572,9 +571,9 @@ public class Plane{
    }
       if(cancelSeat.equals("C2"))
      {
-      if(seats[1][2] != null)
+      if(C2.firstName != null)
       {
-   seats[1][2] = null;
+  C2.firstName = null;
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -584,9 +583,9 @@ public class Plane{
    }
        if(cancelSeat.equals("D1"))
      {
-      if(seats[0][3] != null)
+      if(D1.firstName != null)
       {
-   seats[0][3] = null;
+     D1.firstName = null;
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -596,9 +595,9 @@ public class Plane{
    }
        if(cancelSeat.equals("D2"))
      {
-      if(seats[1][3] != null)
+      if(D2.firstName != null)
       {
-   seats[1][3] = null;
+   D2.firstName = null;
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -608,9 +607,9 @@ public class Plane{
    }
          if(cancelSeat.equals("E1"))
      {
-      if(seats[0][4] != null)
+      if(E1.firstName != null)
       {
-   seats[0][4] = null;
+   E1.firstName = null;
      System.out.println("The seat is now available again!"); 
       }
       else 
@@ -620,9 +619,9 @@ public class Plane{
    }
          if(cancelSeat.equals("E2"))
      {
-      if(seats[1][4] != null)
+      if(E2.firstName != null)
       {
-   seats[1][4] = null;
+   E2.firstName = null;
        System.out.println("The seat is now available again!"); 
        
       }
