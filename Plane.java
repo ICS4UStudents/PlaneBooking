@@ -55,432 +55,458 @@ public class Plane{
       String choiceSeat;
   
   String input;
-   int full = 0;
-   while(full == 0)
-   { 
-    try{
-     
-     System.out.println("Please enter a seat number to book the seat.");
-     input = bufRead.readLine();
-     if(input.equals("A1"))
-        {
-      if(A1.firstName == null)
-      { 
-       System.out.println("In order to book this seat, please type in the customers name, address and phone number.");
-       
-       System.out.println("First name:");
-          
-          A1.firstName =bufRead.readLine();
-             
-          System.out.println("Last name:");
-          
-          A1.lastName = bufRead.readLine();
-             
-          System.out.println("Address:");
-          A1.address = bufRead.readLine();
+			int full = 0;
+			
+			while(full == 0)
+			{
+				
+				try{
+					
+					System.out.println("Please enter a seat number to book the seat.");
+					input = bufRead.readLine();
+					if(input.equals("A1"))
+				    {
+						if(A1.firstName == null)
+						{	
+							System.out.println("In order to book this seat, please type in the customers name, address and phone number.");
+							
+							System.out.println("First name:");
+							   
+							   A1.firstName =bufRead.readLine();
+									    
+							   System.out.println("Last name:");
+							   
+							   A1.lastName = bufRead.readLine();
+									    
+							   System.out.println("Address:");
+							   A1.address = bufRead.readLine();
  
-          System.out.println("Phone number:");
-          A1.phoneNumber = bufRead.readLine();   
-          
-          System.out.println("Do you want to book another seat? Type 1 to continue booking.");
-          String continueBooking = bufRead.readLine();
-          
-          if(continueBooking == "1")
-          {
-           System.out.println("Next seat:");
-          }
-          else
-          {
-           System.out.println("Thanks for using the program.");
-           full++;
-          }
-          
-         
-      }
-      
-      else
-      {
-       System.out.println("The seat has been booked, please choose another seat.");
-      }
-        }
-     
-     else if(input.equals("A2"))
-        {
-      if(A2.firstName == null)
-      {
-       System.out.println("In order to book this seat, please type the customers name, address and phone number.");
-       
-       System.out.println("First name:");
-          
-          A2.firstName =bufRead.readLine();
-             
-          System.out.println("Last name:");
-          
-          A2.lastName = bufRead.readLine();
-             
-          System.out.println("Address:");
-          A2.address = bufRead.readLine();
+							   System.out.println("Phone number:");
+							   A1.phoneNumber = bufRead.readLine();   
+							   
+							   System.out.println("Do you want to book another seat? Type 1 to continue booking.");
+							   String enterType = bufRead.readLine();
+							   int continueBooking = Integer.parseInt(enterType);
+							
+							   
+							   if(continueBooking == 1)
+							   {
+								   System.out.println("Next seat:");
+							   }
+							   else
+							   {
+								   System.out.println("Thanks for using the programme.");
+								   full++;
+							   }
+							   
+							  
+						}
+						
+						else
+						{
+							System.out.println("The seat has been booked, please choose another seat.");
+						}
+				    }
+					
+					else if(input.equals("A2"))
+				    {
+						if(A2.firstName == null)
+						{
+							System.out.println("In order to book this seat, please type the customers name, address and phone number.");
+							
+							System.out.println("First name:");
+							   
+							   A2.firstName =bufRead.readLine();
+									    
+							   System.out.println("Last name:");
+							   
+							   A2.lastName = bufRead.readLine();
+									    
+							   System.out.println("Address:");
+							   A2.address = bufRead.readLine();
  
-          System.out.println("Phone number:");
-          A2.phoneNumber = bufRead.readLine();         
-          
-          System.out.println("Do you want to book another seat? Type 1 to continue booking.");
-          String continueBooking = bufRead.readLine();
-          
-          if(continueBooking == "1")
-          {
-           System.out.println("Next seat:");
-          }
-          else
-          {
-           System.out.println("Thanks for using the program.");
-           full++;
-          }
-      }
-      
-      else
-      {
-       System.out.println("The seat has been booked, please choose another seat.");
-       
-      }
-        }
-     else if(input.equals("B1"))
-        {
-      if(B1.firstName == null)
-      {
-       System.out.println("In order to book this seat, please type in the customers, address and phone number.");
-       
-       System.out.println("First name:");
-          
-          B1.firstName =bufRead.readLine();
-             
-          System.out.println("Last name:");
-          
-          B1.lastName = bufRead.readLine();
-             
-          System.out.println("Address:");
-          B1.address = bufRead.readLine();
+							   System.out.println("Phone number:");
+							   A2.phoneNumber = bufRead.readLine();						   
+							   
+							   System.out.println("Do you want to book another seat? Type 1 to continue booking.");
+							   String enterType = bufRead.readLine();
+							   int continueBooking = Integer.parseInt(enterType);
+							
+							   
+							   if(continueBooking == 1)
+							   {
+								   System.out.println("Next seat:");
+							   }
+							   else
+							   {
+								   System.out.println("Thanks for using the programme.");
+								   full++;
+							   }
+						}
+						
+						else
+						{
+							System.out.println("The seat has been booked, please choose another seat.");
+							
+						}
+				    }
+					else if(input.equals("B1"))
+				    {
+						if(B1.firstName == null)
+						{
+							System.out.println("In order to book this seat, please type in the customers, address and phone number.");
+							
+							System.out.println("First name:");
+							   
+							   B1.firstName =bufRead.readLine();
+									    
+							   System.out.println("Last name:");
+							   
+							   B1.lastName = bufRead.readLine();
+									    
+							   System.out.println("Address:");
+							   B1.address = bufRead.readLine();
  
-          System.out.println("Phone number:");
-          B1.phoneNumber = bufRead.readLine();
-         
-          System.out.println("Do you want to book another seat? Type 1 to continue booking.");
-          String continueBooking = bufRead.readLine();
-          
-          if(continueBooking == "1")
-          {
-           System.out.println("Next seat:");
-          }
-          else
-          {
-           System.out.println("Thanks for using the program.");
-           full++;
-          }
-      }
-      
-      else
-      {
-       System.out.println("The seat has been booked, please choose another seat.");
-      }
-        }
-     else if(input.equals("B2"))
-        {
-      if(B2.firstName == null)
-      {
-       System.out.println("In order to book this seat, please type the customers name, address and phone number.");
-       
-       System.out.println("First name:");
-          
-          B2.firstName =bufRead.readLine();
-             
-          System.out.println("Last name:");
-          
-          B2.lastName = bufRead.readLine();
-             
-          System.out.println("Address:");
-          B2.address = bufRead.readLine();
+							   System.out.println("Phone number:");
+							   B1.phoneNumber = bufRead.readLine();
+							  
+							   System.out.println("Do you want to book another seat? Type 1 to continue booking.");
+							   String enterType = bufRead.readLine();
+							   int continueBooking = Integer.parseInt(enterType);
+							
+							   
+							   if(continueBooking == 1)
+							   {
+								   System.out.println("Next seat:");
+							   }
+							   else
+							   {
+								   System.out.println("Thanks for using the programme.");
+								   full++;
+							   }
+						}
+						
+						else
+						{
+							System.out.println("The seat has been booked, please choose another seat.");
+						}
+				    }
+					else if(input.equals("B2"))
+				    {
+						if(B2.firstName == null)
+						{
+							System.out.println("In order to book this seat, please type the customers name, address and phone number.");
+							
+							System.out.println("First name:");
+							   
+							   B2.firstName =bufRead.readLine();
+									    
+							   System.out.println("Last name:");
+							   
+							   B2.lastName = bufRead.readLine();
+									    
+							   System.out.println("Address:");
+							   B2.address = bufRead.readLine();
  
-          System.out.println("Phone number:");
-          B2.phoneNumber = bufRead.readLine();        
-          
-          System.out.println("Do you want to book another seat? Type 1 to continue booking.");
-          String continueBooking = bufRead.readLine();
-          
-          if(continueBooking == "1")
-          {
-           System.out.println("Next seat:");
-          }
-          else
-          {
-           System.out.println("Thanks for using the program.");
-           full++;
-          }
-      }
-      
-      else
-      {
-       System.out.println("The seat has been booked, please choose another seat.");
-      }
-        }
-     else if(input.equals("C1"))
-        {
-      if(C1.firstName == null)
-      {
-       System.out.println("In order to book this seat, please type in the customers, address and phone number.");
-       
-       System.out.println("First name:");
-          
-          C1.firstName =bufRead.readLine();
-             
-          System.out.println("Last name:");
-          
-          C1.lastName = bufRead.readLine();
-             
-          System.out.println("Address:");
-          C1.address = bufRead.readLine();
+							   System.out.println("Phone number:");
+							   B2.phoneNumber = bufRead.readLine();						  
+							   
+							   System.out.println("Do you want to book another seat? Type 1 to continue booking.");
+							   String enterType = bufRead.readLine();
+							   int continueBooking = Integer.parseInt(enterType);
+							
+							   
+							   if(continueBooking == 1)
+							   {
+								   System.out.println("Next seat:");
+							   }
+							   else
+							   {
+								   System.out.println("Thanks for using the programme.");
+								   full++;
+							   }
+						}
+						
+						else
+						{
+							System.out.println("The seat has been booked, please choose another seat.");
+						}
+				    }
+					else if(input.equals("C1"))
+				    {
+						if(C1.firstName == null)
+						{
+							System.out.println("In order to book this seat, please type in the customers, address and phone number.");
+							
+							System.out.println("First name:");
+							   
+							   C1.firstName =bufRead.readLine();
+									    
+							   System.out.println("Last name:");
+							   
+							   C1.lastName = bufRead.readLine();
+									    
+							   System.out.println("Address:");
+							   C1.address = bufRead.readLine();
  
-          System.out.println("Phone number:");
-          C1.phoneNumber = bufRead.readLine();        
-         
-          System.out.println("Do you want to book another seat? Type 1 to continue booking.");
-          String continueBooking = bufRead.readLine();
-          
-          if(continueBooking == "1")
-          {
-           System.out.println("Next seat:");
-          }
-          else
-          {
-           System.out.println("Thanks for using the program.");
-           full++;
-          }
-      }
-      
-      else
-      {
-       System.out.println("The seat has been booked, please choose another seat.");
-      }
-        }
-     else if(input.equals("C2"))
-        {
-      if(C1.firstName == null)
-      {
-       System.out.println("In order to book this seat, please type the customers name, address and phone number.");
-       
-       System.out.println("First name:");
-          
-          C2.firstName =bufRead.readLine();
-             
-          System.out.println("Last name:");
-          
-          C2.lastName = bufRead.readLine();
-             
-          System.out.println("Address:");
-          C2.address = bufRead.readLine();
+							   System.out.println("Phone number:");
+							   C1.phoneNumber = bufRead.readLine();						  
+							  
+							   System.out.println("Do you want to book another seat? Type 1 to continue booking.");
+							   String enterType = bufRead.readLine();
+							   int continueBooking = Integer.parseInt(enterType);
+							
+							   
+							   if(continueBooking == 1)
+							   {
+								   System.out.println("Next seat:");
+							   }
+							   else
+							   {
+								   System.out.println("Thanks for using the programme.");
+								   full++;
+							   }
+						}
+						
+						else
+						{
+							System.out.println("The seat has been booked, please choose another seat.");
+						}
+				    }
+					else if(input.equals("C2"))
+				    {
+						if(C1.firstName == null)
+						{
+							System.out.println("In order to book this seat, please type the customers name, address and phone number.");
+							
+							System.out.println("First name:");
+							   
+							   C2.firstName =bufRead.readLine();
+									    
+							   System.out.println("Last name:");
+							   
+							   C2.lastName = bufRead.readLine();
+									    
+							   System.out.println("Address:");
+							   C2.address = bufRead.readLine();
  
-          System.out.println("Phone number:");
-          C2.phoneNumber = bufRead.readLine();         
-         
-          System.out.println("Do you want to book another seat? Type 1 to continue booking.");
-          String continueBooking = bufRead.readLine();
-          
-          if(continueBooking == "1")
-          {
-           System.out.println("Next seat:");
-          }
-          else
-          {
-           System.out.println("Thanks for using the program.");
-           full++;
-          }
-      }
-      
-      else
-      {
-       System.out.println("The seat has been booked, please choose another seat.");
-      }
-        }
-     else if(input.equals("D1"))
-        {
-      if(C1.firstName == null)
-      {
-       System.out.println("In order to book this seat, please type the customers name, address and phone number.");
-       
-       System.out.println("First name:");
-          
-          D1.firstName =bufRead.readLine();
-             
-          System.out.println("Last name:");
-          
-          D1.lastName = bufRead.readLine();
-             
-          System.out.println("Address:");
-          D1.address = bufRead.readLine();
+							   System.out.println("Phone number:");
+							   C2.phoneNumber = bufRead.readLine();						   
+							  
+							   System.out.println("Do you want to book another seat? Type 1 to continue booking.");
+							   String enterType = bufRead.readLine();
+							   int continueBooking = Integer.parseInt(enterType);
+							
+							   
+							   if(continueBooking == 1)
+							   {
+								   System.out.println("Next seat:");
+							   }
+							   else
+							   {
+								   System.out.println("Thanks for using the programme.");
+								   full++;
+							   }
+						}
+						
+						else
+						{
+							System.out.println("The seat has been booked, please choose another seat.");
+						}
+				    }
+					else if(input.equals("D1"))
+				    {
+						if(C1.firstName == null)
+						{
+							System.out.println("In order to book this seat, please type the customers name, address and phone number.");
+							
+							System.out.println("First name:");
+							   
+							   D1.firstName =bufRead.readLine();
+									    
+							   System.out.println("Last name:");
+							   
+							   D1.lastName = bufRead.readLine();
+									    
+							   System.out.println("Address:");
+							   D1.address = bufRead.readLine();
  
-          System.out.println("Phone number:");
-          D1.phoneNumber = bufRead.readLine();
-          
-          System.out.println("Do you want to book another seat? Type 1 to continue booking.");
-          String continueBooking = bufRead.readLine();
-          
-          if(continueBooking == "1")
-          {
-           System.out.println("Next seat:");
-          }
-          else
-          {
-           System.out.println("Thanks for using the program.");
-           full++;
-          }
-      }
-      
-      else
-      {
-       System.out.println("The seat has been booked, please choose another seat.");
-      }
-        }
-     else if(input.equals("D2"))
-        {
-      if(D2.firstName == null)
-      {
-       System.out.println("In order to book this seat, please type the customers name, address and phone number.");
-       
-       System.out.println("First name:");
-          
-          D2.firstName =bufRead.readLine();
-             
-          System.out.println("Last name:");
-          
-          D2.lastName = bufRead.readLine();
-             
-          System.out.println("Address:");
-          D2.address = bufRead.readLine();
+							   System.out.println("Phone number:");
+							   D1.phoneNumber = bufRead.readLine();
+							   
+							   System.out.println("Do you want to book another seat? Type 1 to continue booking.");
+							   String enterType = bufRead.readLine();
+							   int continueBooking = Integer.parseInt(enterType);
+							
+							   
+							   if(continueBooking == 1)
+							   {
+								   System.out.println("Next seat:");
+							   }
+							   else
+							   {
+								   System.out.println("Thanks for using the programme.");
+								   full++;
+							   }
+						}
+						
+						else
+						{
+							System.out.println("The seat has been booked, please choose another seat.");
+						}
+				    }
+					else if(input.equals("D2"))
+				    {
+						if(D2.firstName == null)
+						{
+							System.out.println("In order to book this seat, please type the customers name, address and phone number.");
+							
+							System.out.println("First name:");
+							   
+							   D2.firstName =bufRead.readLine();
+									    
+							   System.out.println("Last name:");
+							   
+							   D2.lastName = bufRead.readLine();
+									    
+							   System.out.println("Address:");
+							   D2.address = bufRead.readLine();
  
-          System.out.println("Phone number:");
-          D2.phoneNumber = bufRead.readLine();
-         
-          System.out.println("Do you want to book another seat? Type 1 to continue booking.");
-          String continueBooking = bufRead.readLine();
-          
-          if(continueBooking == "1")
-          {
-           System.out.println("Next seat:");
-          }
-          else
-          {
-           System.out.println("Thanks for using the program.");
-           full++;
-          }
-      }
-      
-      else
-      {
-       System.out.println("The seat has been booked, please choose another seat.");
-      }
-        }
-     else if(input.equals("E1"))
-        {
-      if(E1.firstName == null)
-      {
-       System.out.println("In order to book this seat, please type the customers name, address and phone number.");
-       
-       System.out.println("First name:");
-          
-          E1.firstName =bufRead.readLine();
-             
-          System.out.println("Last name:");
-          
-          E1.lastName = bufRead.readLine();
-             
-          System.out.println("Address:");
-          E1.address = bufRead.readLine();
+							   System.out.println("Phone number:");
+							   D2.phoneNumber = bufRead.readLine();
+							  
+							   System.out.println("Do you want to book another seat? Type 1 to continue booking.");
+							   String enterType = bufRead.readLine();
+							   int continueBooking = Integer.parseInt(enterType);
+							
+							   
+							   if(continueBooking == 1)
+							   {
+								   System.out.println("Next seat:");
+							   }
+							   else
+							   {
+								   System.out.println("Thanks for using the programme.");
+								   full++;
+							   }
+						}
+						
+						else
+						{
+							System.out.println("The seat has been booked, please choose another seat.");
+						}
+				    }
+					else if(input.equals("E1"))
+				    {
+						if(E1.firstName == null)
+						{
+							System.out.println("In order to book this seat, please type the customers name, address and phone number.");
+							
+							System.out.println("First name:");
+							   
+							   E1.firstName =bufRead.readLine();
+									    
+							   System.out.println("Last name:");
+							   
+							   E1.lastName = bufRead.readLine();
+									    
+							   System.out.println("Address:");
+							   E1.address = bufRead.readLine();
  
-          System.out.println("Phone number:");
-          E1.phoneNumber = bufRead.readLine();
-          
-          System.out.println("Do you want to book another seat? Type 1 to continue booking.");
-          String continueBooking = bufRead.readLine();
-          
-          if(continueBooking == "1")
-          {
-           System.out.println("Next seat:");
-          }
-          else
-          {
-           System.out.println("Thanks for using the program.");
-           full++;
-          }
-      }
-      
-      else
-      {
-       System.out.println("The seat has been booked, please choose another seat.");
-      }
-        }
-     else if(input.equals("E2"))
-        {
-      if(E2.firstName == null)
-      {
-       System.out.println("In order to book this seat, please type in the customers, address and phone number.");
-       
-       System.out.println("First name:");
-          
-          E2.firstName =bufRead.readLine();
-             
-          System.out.println("Last name:");
-          
-          E2.lastName = bufRead.readLine();
-             
-          System.out.println("Address:");
-          E2.address = bufRead.readLine();
+							   System.out.println("Phone number:");
+							   E1.phoneNumber = bufRead.readLine();
+							   
+							   System.out.println("Do you want to book another seat? Type 1 to continue booking.");
+							   String enterType = bufRead.readLine();
+							   int continueBooking = Integer.parseInt(enterType);
+							
+							   
+							   if(continueBooking == 1)
+							   {
+								   System.out.println("Next seat:");
+							   }
+							   else
+							   {
+								   System.out.println("Thanks for using the programme.");
+								   full++;
+							   }
+						}
+						
+						else
+						{
+							System.out.println("The seat has been booked, please choose another seat.");
+						}
+				    }
+					else if(input.equals("E2"))
+				    {
+						if(E2.firstName == null)
+						{
+							System.out.println("In order to book this seat, please type in the customers, address and phone number.");
+							
+							System.out.println("First name:");
+							   
+							   E2.firstName =bufRead.readLine();
+									    
+							   System.out.println("Last name:");
+							   
+							   E2.lastName = bufRead.readLine();
+									    
+							   System.out.println("Address:");
+							   E2.address = bufRead.readLine();
  
-          System.out.println("Phone number:");
-          E2.phoneNumber = bufRead.readLine();
-          
-          System.out.println("Do you want to book another seat? Type 1 to continue booking.");
-          String continueBooking = bufRead.readLine();
-          
-          if(continueBooking == "1")
-          {
-           System.out.println("Next seat:");
-          }
-          else
-          {
-           System.out.println("Thanks for using the program.");
-           full++;
-          }
-      }
-      
-      else
-      {
-       System.out.println("The seat has been booked, please choose another seat.");
-      }
-        }
-     
-     else
-     {
-      System.out.println("Please enter a valid number.");
-     }
-    }
-    
-    catch(NumberFormatException err) 
-    {
-     System.out.println("Error Converting Number");
-       } 
-    catch (IOException e) {
-     // TODO Auto-generated catch block
-     e.printStackTrace();
-       }
- 
-   printSeating(A1,A2,B1,B2,C1,C2,D1,D2,E1,E2);
-   }
-   
-    catch(NumberFormatException err) 
-    {
-     System.out.println("Error Converting Number");
-       }
- 
- }
+							   System.out.println("Phone number:");
+							   E2.phoneNumber = bufRead.readLine();
+							   
+							   System.out.println("Do you want to book another seat? Type 1 to continue booking.");
+							   String enterType = bufRead.readLine();
+							   int continueBooking = Integer.parseInt(enterType);
+							
+							   
+							   if(continueBooking == 1)
+							   {
+								   System.out.println("Next seat:");
+							   }
+							   else
+							   {
+								   System.out.println("Thanks for using the programme.");
+								   full++;
+							   }
+						}
+						
+						else
+						{
+							System.out.println("The seat has been booked, please choose another seat.");
+						}
+				    }
+					
+					else
+					{
+						System.out.println("Please enter a valid number.");
+					}
+				}
+				
+				catch(NumberFormatException err) 
+				{
+					System.out.println("Error Converting Number");
+			    } 
+				catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+			    }
+				printSeating(A1,A2,B1,B2,C1,C2,D1,D2,E1,E2);
+				
+			}
+			
+		}
+			
+				catch(NumberFormatException err) 
+				{
+					System.out.println("Error Converting Number");
+			    }
+							
+			
+		
+	}
 
 //If the seat is full, you need a way to allow the attendant to choose another seat
      /**
