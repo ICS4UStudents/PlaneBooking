@@ -502,7 +502,7 @@ public class Plane{
      * Cancel a reservation
      */
 
-  public void Cancel() { 
+  public void Cancel(customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2) { 
  //Revert all the seats that are taken back to null    (needed: able to go back after choosing a seat)
      InputStreamReader inStream = new InputStreamReader(System.in);
   BufferedReader bufRead = new BufferedReader(inStream);
@@ -514,6 +514,9 @@ public class Plane{
       if(A1.firstName != null)
       {
   A1.firstName = null;
+  A1.lastName = null;
+  A1.address = null;
+  A1.phoneNumber =  null;	      
          System.out.println("The seat is now available again!");  
       }
       else 
@@ -527,6 +530,9 @@ public class Plane{
       if(A2.firstName != null)
       {
   A2.firstName = null;
+  A2.lastName = null;	
+  A2.address = null;
+  A2.phoneNumber =  null;
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -539,6 +545,9 @@ public class Plane{
       if(B1.firstName != null)
       {
    B1.firstName = null;
+   B1.lastName = null;
+   B1.address = null;
+   B1.phoneNumber =  null;
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -551,6 +560,9 @@ public class Plane{
       if(B2.firstName != null)
       {
    B2.firstName = null;
+   B2.lastName = null;
+  B2.address = null;
+  B2.phoneNumber =  null
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -563,6 +575,9 @@ public class Plane{
       if(C1.firstName != null)
       {
    C1.firstName = null;
+  C1.lastName = null;
+  C1.address = null;
+  C1.phoneNumber =  null;
       }
       else 
       {
@@ -574,6 +589,9 @@ public class Plane{
       if(C2.firstName != null)
       {
   C2.firstName = null;
+  C2.lastName = null;
+  C2.address = null;
+  C2.phoneNumber =  null;
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -586,6 +604,9 @@ public class Plane{
       if(D1.firstName != null)
       {
      D1.firstName = null;
+     D1.lastName = null;
+     D1.address = null;
+     D1.phoneNumber =  null;
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -598,6 +619,9 @@ public class Plane{
       if(D2.firstName != null)
       {
    D2.firstName = null;
+   D2.lastName = null;
+   D2.address = null;
+   D2.phoneNumber =  null;
        System.out.println("The seat is now available again!"); 
       }
       else 
@@ -610,6 +634,9 @@ public class Plane{
       if(E1.firstName != null)
       {
    E1.firstName = null;
+   E1.lastName = null;
+   E1.address = null;
+   E1.phoneNumber =  null;
      System.out.println("The seat is now available again!"); 
       }
       else 
@@ -622,6 +649,9 @@ public class Plane{
       if(E2.firstName != null)
       {
    E2.firstName = null;
+  E2.lastName = null;
+  E2.address = null;
+  E2.phoneNumber =  null;
        System.out.println("The seat is now available again!"); 
        
       }
