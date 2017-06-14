@@ -3,9 +3,7 @@ Fly-By-Night Airline Booking - Guide
   The six tasks that the system can achieve include booking a seat, canceling a seat, viewing the seats remaining, canceling the 
   entire flight, and terminating the system which serves as a reset. 
   
-     Once opening the software you will be greeted with a choice based on which flight you would like to do the given tasks on. 
-   The airline will always have three options for flights as they are ordered based on flight time so add passengers onto flight one 
-   first. After choosing a flight a basic menu will appear with the six prompts mentioned. 
+     Once opening the software you will be greeted with a menu with the six prompts mentioned. 
 
 Prompt#1
      Choosing prompt one will allow you to book a seat. The program will ask which seat you would like to book, as you must type 
@@ -31,8 +29,9 @@ Prompt#4
 Prompt#5
        This prompt is used when it reaches time for the flight to take off. The plane does not need to be full in order to take off 
        as there might be situations where it’s flight time and some seats might be empty. Once it has reached flight time it and it 
-       is confirmed with the staff you may proceed. Once you enter the corresponding number in the menu it will automatically print 
-       the passengers manifest so be aware when the time is to do so. At this point there is no possible way for you to sell another 
+       is confirmed with the staff you may proceed. Once you enter the corresponding number in the menu it will ask you which flight
+       you wish to cancel. After the flight is chosen it will print the information for the customers that booked a seat in order for 
+       you to provide refunds. At this point there is no possible way for you to sell another 
        seat, as past this point it’s final. The information of the seats will be instantly sent to the staff aboard the plane. After 
        the manifest is printed the flight program must be reopened as this flight will no longer be on the available database.
        If a seat is not reserved the program will report 'null' which declares that the seat is unavailable.
