@@ -1,6 +1,5 @@
 import java.io.*;
 public class Plane{ 
-  public int FULL_PLANE = 10; //Maximum seats
   String[][] seats = new String[2][5];
   /*Plane's seats will resemble
    * | [A1] [B1] [C1] [D1] [E1] |
@@ -33,7 +32,7 @@ public class Plane{
      * Menu
      */
       
-  public void printMenu();
+  public void printMenu()
   {
  System.out.println(" Booking Menu "); 
  System.out.println("                ");
@@ -51,8 +50,6 @@ public class Plane{
   public void makeSeatReservation(String[][] seats, customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2) {
       InputStreamReader inStream = new InputStreamReader(System.in);
   BufferedReader bufRead = new BufferedReader(inStream);
-  
-      String choiceSeat;
   
   String input;
    int full = 0;
@@ -473,13 +470,7 @@ public class Plane{
        }
  
    printSeating(A1,A2,B1,B2,C1,C2,D1,D2,E1,E2);
-   }
-   
-    catch(NumberFormatException err) 
-    {
-     System.out.println("Error Converting Number");
-       }
- 
+   } 
  }
 
 //If the seat is full, you need a way to allow the attendant to choose another seat
