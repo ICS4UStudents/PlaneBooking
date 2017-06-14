@@ -73,7 +73,7 @@ try{
         {
           System.out.println("Invalid number, please type again.")
         }
-    }while(choiceNumber != 6)
+    }while(choiceNumber != 6);
 	    }
          }
 	  
@@ -114,7 +114,7 @@ try{
         {
           System.out.println("Invalid number, please type again.")
         }
-    }while(choiceNumber2 != 6)   
+    }while(choiceNumber2 != 6);   
          }
          if(choiceFlight == 3)
          {         
@@ -153,9 +153,9 @@ try{
         {
           System.out.println("Invalid number, please type again.")
         }
-    }while(choiceNumber3 != 6)
+    }while(choiceNumber3 != 6);
 	     }
-}while(choiceFlight!=3)
+}while(choiceFlight!=3);
      catch(IOException e){
 				 System.out.println("Error Reading");
 				 }
@@ -618,7 +618,7 @@ try{
 	    /**
      * Cancel a Flight
      */
-	    int getFlightCancel(){
+	    
 	
 		    
 		    
