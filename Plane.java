@@ -491,7 +491,7 @@ public class Plane{
  //Revert all the seats that are taken back to null    (needed: able to go back after choosing a seat)
      InputStreamReader inStream = new InputStreamReader(System.in);
   BufferedReader bufRead = new BufferedReader(inStream);
-    
+    try{
      System.out.println("Enter the seat that you wish to cancel:");
       String cancelSeat = bufRead.readLine();
      if(cancelSeat.equals("A1"))
@@ -620,6 +620,11 @@ public class Plane{
   System.out.println("This seat does not exsist.");
      }
     }        
+    catch (IOException e) {
+     // TODO Auto-generated catch block
+     e.printStackTrace();
+       }
+  }
      /**
      * Cancel a Flight
      */
