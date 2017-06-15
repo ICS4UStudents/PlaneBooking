@@ -1451,174 +1451,1199 @@ public class Plane{
      * Cancel a reservation
      */
 
-  public void Cancel(customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2) { 
- //Revert all the seats that are taken back to null    (needed: able to go back after choosing a seat)
-     InputStreamReader inStream = new InputStreamReader(System.in);
-  BufferedReader bufRead = new BufferedReader(inStream);
-    try{
-     System.out.println("Enter the seat that you wish to cancel:");
-      String cancelSeat = bufRead.readLine();
-     if(cancelSeat.equals("A1"))
-     {
-      if(A1.firstName != null)
-      {
-  A1.firstName = null;
-  A1.lastName = null;
-  A1.address = null;
-  A1.phoneNumber =  null;	      
-         System.out.println("The seat is now available again!");  
-      }
-      else 
-      {
-   System.out.println("This seat hasn't been reserved yet");
-         
-      }
-     }
-     if(cancelSeat.equals("A2"))
-     {
-      if(A2.firstName != null)
-      {
-  A2.firstName = null;
-  A2.lastName = null;	
-  A2.address = null;
-  A2.phoneNumber =  null;
-       System.out.println("The seat is now available again!"); 
-      }
-      else 
-      {
-   System.out.println("This seat hasn't been reserved yet");
-      }
-     }     
-   if(cancelSeat.equals("B1"))
-     {
-      if(B1.firstName != null)
-      {
-   B1.firstName = null;
-   B1.lastName = null;
-   B1.address = null;
-   B1.phoneNumber =  null;
-       System.out.println("The seat is now available again!"); 
-      }
-      else 
-      {
-   System.out.println("This seat hasn't been reserved yet");
-      }
-   }
-      if(cancelSeat.equals("B2"))
-     {
-      if(B2.firstName != null)
-      {
-   B2.firstName = null;
-   B2.lastName = null;
-  B2.address = null;
-  B2.phoneNumber =  null;
-       System.out.println("The seat is now available again!"); 
-      }
-      else 
-      {
-   System.out.println("This seat hasn't been reserved yet");
-      }
-   }
-      if(cancelSeat.equals("C1"))
-     {
-      if(C1.firstName != null)
-      {
-   C1.firstName = null;
-  C1.lastName = null;
-  C1.address = null;
-  C1.phoneNumber =  null;
-      }
-      else 
-      {
-   System.out.println("This seat hasn't been reserved yet");
-      }
-   }
-      if(cancelSeat.equals("C2"))
-     {
-      if(C2.firstName != null)
-      {
-  C2.firstName = null;
-  C2.lastName = null;
-  C2.address = null;
-  C2.phoneNumber =  null;
-       System.out.println("The seat is now available again!"); 
-      }
-      else 
-      {
-   System.out.println("This seat hasn't been reserved yet");
-      }
-   }
-       if(cancelSeat.equals("D1"))
-     {
-      if(D1.firstName != null)
-      {
-     D1.firstName = null;
-     D1.lastName = null;
-     D1.address = null;
-     D1.phoneNumber =  null;
-       System.out.println("The seat is now available again!"); 
-      }
-      else 
-      {
-   System.out.println("This seat hasn't been reserved yet");
-      }
-   }
-       if(cancelSeat.equals("D2"))
-     {
-      if(D2.firstName != null)
-      {
-   D2.firstName = null;
-   D2.lastName = null;
-   D2.address = null;
-   D2.phoneNumber =  null;
-       System.out.println("The seat is now available again!"); 
-      }
-      else 
-      {
-   System.out.println("This seat hasn't been reserved yet");
-      }
-   }
-         if(cancelSeat.equals("E1"))
-     {
-      if(E1.firstName != null)
-      {
-   E1.firstName = null;
-   E1.lastName = null;
-   E1.address = null;
-   E1.phoneNumber =  null;
-     System.out.println("The seat is now available again!"); 
-      }
-      else 
-      {
-   System.out.println("This seat hasn't been reserved yet");
-      }
-   }
-         if(cancelSeat.equals("E2"))
-     {
-      if(E2.firstName != null)
-      {
-   E2.firstName = null;
-  E2.lastName = null;
-  E2.address = null;
-  E2.phoneNumber =  null;
-       System.out.println("The seat is now available again!"); 
-       
-      }
-      else 
-      {
-   System.out.println("This seat hasn't been reserved yet");
-      }
-  }
-     else
-     {
-  System.out.println("This seat does not exsist.");
-     }
-    }        
-    catch (IOException e) {
-     // TODO Auto-generated catch block
-     e.printStackTrace();
-       }
-  }
+   public void Cancel(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222) throws IOException { 
+		  //Revert all the seats that are taken back to null    (needed: able to go back after choosing a seat)
+		      InputStreamReader inStream = new InputStreamReader(System.in);
+		   BufferedReader bufRead = new BufferedReader(inStream);
+		     System.out.println("Please select a flight to cancel the seat.");
+		     String enterType = bufRead.readLine();
+			 int flightInput = Integer.parseInt(enterType);
+	
+			 int full = 0;			 
+			 while(full == 0)
+		     {		    	 
+				 if(flightInput == 1)			     
+				 {			    
+					 try{					   			    	
+						 System.out.println("Enter the seat that you wish to cancel:");					      			    		
+						 String cancelSeat = bufRead.readLine();					  
+						 
+						 if(cancelSeat.equals("A1"))					   
+						 {					       
+							 if(A1.firstName != null)					        
+							 {					         
+								 A1.firstName = null;
+					         
+								 A1.lastName = null;
+					         
+								 A1.address = null;
+					        
+								 A1.phoneNumber =  null;	      
+					   					          
+								 System.out.println("You canceled the seat successfully.");
+					          
+								 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+					          
+								 String enterType1 = bufRead.readLine();
+					          
+								 int continueCanceling = Integer.parseInt(enterType);					
+					   					            
+								 if(continueCanceling == 1)					           
+								 {						        
+									 System.out.println("Next seat:");					          
+								 }  
+					          
+								 else				         
+								 {						     
+									 System.out.println("Thanks for using the programme.");						     
+									 full++;					        
+								 }				       
+							 }					        
+							
+							 else 					        
+							 {					       
+								 System.out.println("This seat hasn't been reserved yet");
+					         }					     
+						 }					     
+						 
+						 if(cancelSeat.equals("A2"))					    
+						 {					    	
+							 if(A2.firstName != null)					    	
+							 {					         					    
+								 A2.firstName = null;					   					    
+													
+								 A2.lastName = null;						   					    
+								 
+								 A2.address = null;					   					    
+								 
+								 A2.phoneNumber =  null;
+					   					    
+								 System.out.println("You canceled the seat successfully.");			            
+								 					    
+								 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");			            
+					    									
+								 String enterType1 = bufRead.readLine();			            
+					    
+								 int continueCanceling = Integer.parseInt(enterType);
+						   			            					    		
+								 if(continueCanceling == 1)			            
+								 {							           
+					    			  System.out.println("Next seat:");			            				    		  
+								 }  			            					    		  
+								 else			            					    		  
+								 {					    			  
+									 System.out.println("Thanks for using the programme.");				        					    			  
+									 full++;			          					    		  
+								 }			          								 					    	  
+							 }
+					       					    	  
+							 else 					       					    	  
+							 {				    					    		
+								 System.out.println("This seat hasn't been reserved yet");					      					    	  
+							 }					     					      
+						 }     
+					   					      
+						 if(cancelSeat.equals("B1"))					   
+						 {					      					    	  
+							 if(B1.firstName != null)					    	  
+							 {					    					    		  
+								B1.firstName = null;					  					    		  
+								
+								B1.lastName = null;
+								
+								B1.address = null;
+					    													    		  
+								B1.phoneNumber =  null;					    
+					    				    		  
+								System.out.println("You canceled the seat successfully.");						   
+					    		  
+								System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");						  
+					    		  
+								System.out.println("You canceled the seat successfully.");				           
+					    		  
+								System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");				            
+					    		  
+								String enterType1 = bufRead.readLine();				           
+					    		 
+								int continueCanceling = Integer.parseInt(enterType);				
+				   				            					    		 
+								if(continueCanceling == 1)			            					    		  
+								{					         					    			
+									System.out.println("Next seat:");				          					    		 
+								}  				          								
+					    		 
+								else				          					    		 
+								{					         					    		
+									System.out.println("Thanks for using the programme.");				        					           					         					    		
+									full++;				           					    		 
+								}				          					    	 
+							 }					      
+							 
+							 else 					    					    	 
+							 {					   					    		
+								 System.out.println("This seat hasn't been reserved yet");					     					    	 
+							 }					   					     
+						 }					     
+					     
+						 if(cancelSeat.equals("B2"))					    					     
+						 {					     					    	 
+							 if(B2.firstName != null)					      					    	
+							 {					   					    	
+								 B2.firstName = null;					   
+					    	
+								 B2.lastName = null;					  
+					    	
+								 B2.address = null;					  
+					    	
+								 B2.phoneNumber =  null;					  
+					    	
+								 System.out.println("You canceled the seat successfully.");			           
+					    		
+								 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");			           
+					    		
+								 String enterType1 = bufRead.readLine();			            
+					    	
+								 int continueCanceling = Integer.parseInt(enterType);			
+			   			          					    		
+								 if(continueCanceling == 1)			           					    		
+								 {				       					    		
+									 System.out.println("Next seat:");			          					    		
+								 }  			           
+					    		
+								 else			            					    		
+								 {				        					    		
+									 System.out.println("Thanks for using the programme.");				       					    		
+									 full++;			          					    		
+								 }			        					    	 
+							 }					 
+					    	 
+							 System.out.println("This seat hasn't been reserved yet");					  					   					     
+						 }					 		    				    	 
+					 
+						 if(cancelSeat.equals("C1"))					  
+						 {					  			    		
+							 if(C1.firstName != null)					  			    	
+							 {								    		
+								C1.firstName = null;												 			    		
+								 
+								C1.lastName = null;
+									    			 
+								C1.address = null;					
+				    			
+								C1.phoneNumber =  null;					   					
+				    			
+								System.out.println("You canceled the seat successfully.");			      
+				    		
+								System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+				      			    		
+								String enterType1 = bufRead.readLine();			     
+				    		
+								int continueCanceling = Integer.parseInt(enterType);						   			        
+				    			
+								if(continueCanceling == 1)			        			    			
+								{				     			    			
+									System.out.println("Next seat:");			         			    			
+								}  
+				         			    			
+								else			         			    			
+								{				      			    			
+									System.out.println("Thanks for using the programme.");				     			    			
+									full++;			         			    		
+								}			       										    		
+							 }								    	 
+						 }								    	
+						 else 								    	
+						 {								    	
+							 System.out.println("This seat hasn't been reserved yet");					 
+				    	 }		
+						 
+						 if(cancelSeat.equals("C2"))					  
+				    	 {					  
+				    		 if(C2.firstName != null)					 
+				    		 {					  
+				    			 C2.firstName = null;
+							 
+				    			 C2.lastName = null;
+							
+				    			 C2.address = null;
+							 
+				    			 C2.phoneNumber =  null;
+							 
+				    			 System.out.println("You canceled the seat successfully.");
+					          
+				    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+					          
+				    			 String enterType1 = bufRead.readLine();
+					          
+				    			 int continueCanceling = Integer.parseInt(enterType);			
+					   			           
+				    			 if(continueCanceling == 1)			           
+				    			 {				        
+				    				 System.out.println("Next seat:");			           
+				    			 }  
+					         
+				    			 else			          
+				    			 {				       
+				    				 System.out.println("Thanks for using the programme.");				       
+				    				 full++;			           
+				    			 }			          
+				    		 }
+							    
+				    		 else					    
+				    		 {					    
+				    			 System.out.println("This seat hasn't been reserved yet");				
+				    		 }					   
+				    	 }
+							    
+				    	 if(cancelSeat.equals("D1"))					    
+				    	 {					    
+				    		 if(D1.firstName != null)					     
+				    		 {					    
+				    			 D1.firstName = null;
+							    
+				    			 D1.lastName = null;
+							    
+				    			 D1.address = null;
+							    
+				    			 D1.phoneNumber =  null;
+							     
+				    			 System.out.println("You canceled the seat successfully.");
+						          
+				    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+						        
+				    			 String enterType1 = bufRead.readLine();
+						       
+				    			 int continueCanceling = Integer.parseInt(enterType);								   
+						          
+				    			 if(continueCanceling == 1)				          
+				    			 {					     
+				    				 System.out.println("Next seat:");				         
+				    			 }  				        
+				    			 else				        
+				    			 {					    
+				    				 System.out.println("Thanks for using the programme.");					    
+				    				 full++;				        
+				    			}				        
+				    		 }
+							    
+				    		 else					  
+				    		 {					  
+				    			 System.out.println("This seat hasn't been reserved yet");					  
+				    		 }					 
+				    	 }
+							
+				    	 if(cancelSeat.equals("D2"))					 
+				    	 {					 
+				    		 if(D2.firstName != null)					
+				    		 {					
+				    			 D2.firstName = null;
+							 
+				    			 D2.lastName = null;
+							 
+				    			 D2.address = null;
+							 
+				    			 D2.phoneNumber =  null;
+							 
+				    			 System.out.println("You canceled the seat successfully.");
+					          
+				    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+					          
+				    			 String enterType1 = bufRead.readLine();
+					          
+				    			 int continueCanceling = Integer.parseInt(enterType);			
+					   			          
+				    			 if(continueCanceling == 1)			         
+				    			 {				     
+				    				 System.out.println("Next seat:");			        
+				    			 }  
+					        
+				    			 else			        
+				    			 {				     
+				    				 System.out.println("Thanks for using the programme.");				    
+				    				 full++;			        		    		
+				    			 }			       
+				    		 }
+							
+				    		 else 					
+				    		 {					
+				    			 System.out.println("This seat hasn't been reserved yet");				
+				    		 }				
+				    	 }
+							
+				    	 if(cancelSeat.equals("E1"))				
+				    	 {				
+				    		 if(E1.firstName != null)				
+				    		 {				
+				    			 E1.firstName = null;
+						
+				    			 E1.lastName = null;
+						
+				    			 E1.address = null;
+											 
+				    			 E1.phoneNumber =  null;					 
+							
+				    			 System.out.println("You canceled the seat successfully.");
+					       
+				    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+					     
+				    			 String enterType1 = bufRead.readLine();
+					    
+				    			 int continueCanceling = Integer.parseInt(enterType);			
+					   			           
+				    			 if(continueCanceling == 1)			       
+				    			 {			  
+				    				 System.out.println("Next seat:");			    
+				    			 }  
+				    			 
+				    			 else			   
+				    			 {				
+				    				 System.out.println("Thanks for using the programme.");								
+				    				 full++;			    
+				    			 }			    
+				    		 }				
+				    	
+				    		 else 				
+				    		 {						    			 
+				    			 System.out.println("This seat hasn't been reserved yet");						    		
+				    		 }					
+				    	 }
+						
+				    	 if(cancelSeat.equals("E2"))					    
+				    	 {					 		    		
+				    		 if(E2.firstName != null)					
+				    		 {					
+				    			 E2.firstName = null;
+							
+				    			 E2.lastName = null;
+							
+				    			 E2.address = null;
+							
+				    			 E2.phoneNumber =  null;					
+							 
+				    			 System.out.println("You canceled the seat successfully.");		         
+							 
+				    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+					         
+				    			 String enterType1 = bufRead.readLine();
+					        
+				    			 int continueCanceling = Integer.parseInt(enterType);			
+					   			        
+				    			 if(continueCanceling == 1)			        
+				    			 {			    
+				    				 System.out.println("Next seat:");			       
+				    			 }  
+					         
+				    			 else			        
+				    			 {				    
+				    				 System.out.println("Thanks for using the programme.");				   
+				    				 full++;			       
+				    			 }			      
+				    		 }
+							
+				    		 else 					
+				    		 {					
+				    			 System.out.println("This seat hasn't been reserved yet");					
+				    		 }				
+				    	 }
+						
+				    	 else				
+				    	 {				
+				    		 System.out.println("This seat does not exsist.");				
+				    	 }				
+					 
+				 }
+				 
+				 
+					 else if(flightInput == 2)			     
+					 {			    
+						 try{					   			    	
+							 System.out.println("Enter the seat that you wish to cancel:");					      			    		
+							 String cancelSeat = bufRead.readLine();					  
+							 
+							 if(cancelSeat.equals("A1"))					   
+							 {					       
+								 if(A11.firstName != null)					        
+								 {					         
+									 A11.firstName = null;
+						         
+									 A11.lastName = null;
+						         
+									 A11.address = null;
+						        
+									 A11.phoneNumber =  null;	      
+						   					          
+									 System.out.println("You canceled the seat successfully.");
+						          
+									 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+						          
+									 String enterType1 = bufRead.readLine();
+						          
+									 int continueCanceling = Integer.parseInt(enterType);					
+						   					            
+									 if(continueCanceling == 1)					           
+									 {						        
+										 System.out.println("Next seat:");					          
+									 }  
+						          
+									 else				         
+									 {						     
+										 System.out.println("Thanks for using the programme.");						     
+										 full++;					        
+									 }				       
+								 }					        
+								
+								 else 					        
+								 {					       
+									 System.out.println("This seat hasn't been reserved yet");
+						         }					     
+							 }					     
+							 
+							 if(cancelSeat.equals("A2"))					    
+							 {					    	
+								 if(A22.firstName != null)					    	
+								 {					         					    
+									 A22.firstName = null;					   					    
+														
+									 A22.lastName = null;						   					    
+									 
+									 A22.address = null;					   					    
+									 
+									 A22.phoneNumber =  null;
+						   					    
+									 System.out.println("You canceled the seat successfully.");			            
+									 					    
+									 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");			            
+						    									
+									 String enterType1 = bufRead.readLine();			            
+						    
+									 int continueCanceling = Integer.parseInt(enterType);
+							   			            					    		
+									 if(continueCanceling == 1)			            
+									 {							           
+						    			  System.out.println("Next seat:");			            				    		  
+									 }  			            					    		  
+									 else			            					    		  
+									 {					    			  
+										 System.out.println("Thanks for using the programme.");				        					    			  
+										 full++;			          					    		  
+									 }			          								 					    	  
+								 }
+						       					    	  
+								 else 					       					    	  
+								 {				    					    		
+									 System.out.println("This seat hasn't been reserved yet");					      					    	  
+								 }					     					      
+							 }     
+						   					      
+							 if(cancelSeat.equals("B1"))					   
+							 {					      					    	  
+								 if(B11.firstName != null)					    	  
+								 {					    					    		  
+									B11.firstName = null;					  					    		  
+									
+									B11.lastName = null;
+									
+									B11.address = null;
+						    													    		  
+									B11.phoneNumber =  null;					    
+						    				    		  
+									System.out.println("You canceled the seat successfully.");						   
+						    		  
+									System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");						  
+						    		  
+									System.out.println("You canceled the seat successfully.");				           
+						    		  
+									System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");				            
+						    		  
+									String enterType1 = bufRead.readLine();				           
+						    		 
+									int continueCanceling = Integer.parseInt(enterType);				
+					   				            					    		 
+									if(continueCanceling == 1)			            					    		  
+									{					         					    			
+										System.out.println("Next seat:");				          					    		 
+									}  				          								
+						    		 
+									else				          					    		 
+									{					         					    		
+										System.out.println("Thanks for using the programme.");				        					           					         					    		
+										full++;				           					    		 
+									}				          					    	 
+								 }					      
+								 
+								 else 					    					    	 
+								 {					   					    		
+									 System.out.println("This seat hasn't been reserved yet");					     					    	 
+								 }					   					     
+							 }					     
+						     
+							 if(cancelSeat.equals("B2"))					    					     
+							 {					     					    	 
+								 if(B22.firstName != null)					      					    	
+								 {					   					    	
+									 B22.firstName = null;					   
+						    	
+									 B22.lastName = null;					  
+						    	
+									 B22.address = null;					  
+						    	
+									 B22.phoneNumber =  null;					  
+						    	
+									 System.out.println("You canceled the seat successfully.");			           
+						    		
+									 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");			           
+						    		
+									 String enterType1 = bufRead.readLine();			            
+						    	
+									 int continueCanceling = Integer.parseInt(enterType);			
+				   			          					    		
+									 if(continueCanceling == 1)			           					    		
+									 {				       					    		
+										 System.out.println("Next seat:");			          					    		
+									 }  			           
+						    		
+									 else			            					    		
+									 {				        					    		
+										 System.out.println("Thanks for using the programme.");				       					    		
+										 full++;			          					    		
+									 }			        					    	 
+								 }					 
+						    	 
+								 System.out.println("This seat hasn't been reserved yet");					  					   					     
+							 }					 		    				    	 
+						 
+							 if(cancelSeat.equals("C1"))					  
+							 {					  			    		
+								 if(C11.firstName != null)					  			    	
+								 {								    		
+									C11.firstName = null;												 			    		
+									 
+									C11.lastName = null;
+										    			 
+									C11.address = null;					
+					    			
+									C11.phoneNumber =  null;					   					
+					    			
+									System.out.println("You canceled the seat successfully.");			      
+					    		
+									System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+					      			    		
+									String enterType1 = bufRead.readLine();			     
+					    		
+									int continueCanceling = Integer.parseInt(enterType);						   			        
+					    			
+									if(continueCanceling == 1)			        			    			
+									{				     			    			
+										System.out.println("Next seat:");			         			    			
+									}  
+					         			    			
+									else			         			    			
+									{				      			    			
+										System.out.println("Thanks for using the programme.");				     			    			
+										full++;			         			    		
+									}			       										    		
+								 }								    	 
+							 }								    	
+							 else 								    	
+							 {								    	
+								 System.out.println("This seat hasn't been reserved yet");					 
+					    	 }		
+							 
+							 if(cancelSeat.equals("C2"))					  
+					    	 {					  
+					    		 if(C22.firstName != null)					 
+					    		 {					  
+					    			 C22.firstName = null;
+								 
+					    			 C22.lastName = null;
+								
+					    			 C22.address = null;
+								 
+					    			 C22.phoneNumber =  null;
+								 
+					    			 System.out.println("You canceled the seat successfully.");
+						          
+					    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+						          
+					    			 String enterType1 = bufRead.readLine();
+						          
+					    			 int continueCanceling = Integer.parseInt(enterType);			
+						   			           
+					    			 if(continueCanceling == 1)			           
+					    			 {				        
+					    				 System.out.println("Next seat:");			           
+					    			 }  
+						         
+					    			 else			          
+					    			 {				       
+					    				 System.out.println("Thanks for using the programme.");				       
+					    				 full++;			           
+					    			 }			          
+					    		 }
+								    
+					    		 else					    
+					    		 {					    
+					    			 System.out.println("This seat hasn't been reserved yet");				
+					    		 }					   
+					    	 }
+								    
+					    	 if(cancelSeat.equals("D1"))					    
+					    	 {					    
+					    		 if(D11.firstName != null)					     
+					    		 {					    
+					    			 D11.firstName = null;
+								    
+					    			 D11.lastName = null;
+								    
+					    			 D11.address = null;
+								    
+					    			 D11.phoneNumber =  null;
+								     
+					    			 System.out.println("You canceled the seat successfully.");
+							          
+					    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+							        
+					    			 String enterType1 = bufRead.readLine();
+							       
+					    			 int continueCanceling = Integer.parseInt(enterType);								   
+							          
+					    			 if(continueCanceling == 1)				          
+					    			 {					     
+					    				 System.out.println("Next seat:");				         
+					    			 }  				        
+					    			 else				        
+					    			 {					    
+					    				 System.out.println("Thanks for using the programme.");					    
+					    				 full++;				        
+					    			}				        
+					    		 }
+								    
+					    		 else					  
+					    		 {					  
+					    			 System.out.println("This seat hasn't been reserved yet");					  
+					    		 }					 
+					    	 }
+								
+					    	 if(cancelSeat.equals("D2"))					 
+					    	 {					 
+					    		 if(D22.firstName != null)					
+					    		 {					
+					    			 D22.firstName = null;
+								 
+					    			 D22.lastName = null;
+								 
+					    			 D22.address = null;
+								 
+					    			 D22.phoneNumber =  null;
+								 
+					    			 System.out.println("You canceled the seat successfully.");
+						          
+					    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+						          
+					    			 String enterType1 = bufRead.readLine();
+						          
+					    			 int continueCanceling = Integer.parseInt(enterType);			
+						   			          
+					    			 if(continueCanceling == 1)			         
+					    			 {				     
+					    				 System.out.println("Next seat:");			        
+					    			 }  
+						        
+					    			 else			        
+					    			 {				     
+					    				 System.out.println("Thanks for using the programme.");				    
+					    				 full++;			        		    		
+					    			 }			       
+					    		 }
+								
+					    		 else 					
+					    		 {					
+					    			 System.out.println("This seat hasn't been reserved yet");				
+					    		 }				
+					    	 }
+								
+					    	 if(cancelSeat.equals("E1"))				
+					    	 {				
+					    		 if(E11.firstName != null)				
+					    		 {				
+					    			 E11.firstName = null;
+							
+					    			 E11.lastName = null;
+							
+					    			 E11.address = null;
+												 
+					    			 E11.phoneNumber =  null;					 
+								
+					    			 System.out.println("You canceled the seat successfully.");
+						       
+					    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+						     
+					    			 String enterType1 = bufRead.readLine();
+						    
+					    			 int continueCanceling = Integer.parseInt(enterType);			
+						   			           
+					    			 if(continueCanceling == 1)			       
+					    			 {			  
+					    				 System.out.println("Next seat:");			    
+					    			 }  
+					    			 
+					    			 else			   
+					    			 {				
+					    				 System.out.println("Thanks for using the programme.");								
+					    				 full++;			    
+					    			 }			    
+					    		 }				
+					    	
+					    		 else 				
+					    		 {						    			 
+					    			 System.out.println("This seat hasn't been reserved yet");						    		
+					    		 }					
+					    	 }
+							
+					    	 if(cancelSeat.equals("E2"))					    
+					    	 {					 		    		
+					    		 if(E22.firstName != null)					
+					    		 {					
+					    			 E22.firstName = null;
+								
+					    			 E22.lastName = null;
+								
+					    			 E22.address = null;
+								
+					    			 E22.phoneNumber =  null;					
+								 
+					    			 System.out.println("You canceled the seat successfully.");		         
+								 
+					    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+						         
+					    			 String enterType1 = bufRead.readLine();
+						        
+					    			 int continueCanceling = Integer.parseInt(enterType);			
+						   			        
+					    			 if(continueCanceling == 1)			        
+					    			 {			    
+					    				 System.out.println("Next seat:");			       
+					    			 }  
+						         
+					    			 else			        
+					    			 {				    
+					    				 System.out.println("Thanks for using the programme.");				   
+					    				 full++;			       
+					    			 }			      
+					    		 }
+								
+					    		 else 					
+					    		 {					
+					    			 System.out.println("This seat hasn't been reserved yet");					
+					    		 }				
+					    	 }
+							
+					    	 else				
+					    	 {				
+					    		 System.out.println("This seat does not exsist.");				
+					    	 }				
+					       
+					 }
+					 
+				 
+						 else if(flightInput == 3)			     
+						 {			    
+							 try{					   			    	
+								 System.out.println("Enter the seat that you wish to cancel:");					      			    		
+								 String cancelSeat = bufRead.readLine();					  
+								 
+								 if(cancelSeat.equals("A1"))					   
+								 {					       
+									 if(A111.firstName != null)					        
+									 {					         
+										 A111.firstName = null;
+							         
+										 A111.lastName = null;
+							         
+										 A111.address = null;
+							        
+										 A111.phoneNumber =  null;	      
+							   					          
+										 System.out.println("You canceled the seat successfully.");
+							          
+										 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+							          
+										 String enterType1 = bufRead.readLine();
+							          
+										 int continueCanceling = Integer.parseInt(enterType);					
+							   					            
+										 if(continueCanceling == 1)					           
+										 {						        
+											 System.out.println("Next seat:");					          
+										 }  
+							          
+										 else				         
+										 {						     
+											 System.out.println("Thanks for using the programme.");						     
+											 full++;					        
+										 }				       
+									 }					        
+									
+									 else 					        
+									 {					       
+										 System.out.println("This seat hasn't been reserved yet");
+							         }					     
+								 }					     
+								 
+								 if(cancelSeat.equals("A2"))					    
+								 {					    	
+									 if(A222.firstName != null)					    	
+									 {					         					    
+										 A222.firstName = null;					   					    
+															
+										 A222.lastName = null;						   					    
+										 
+										 A222.address = null;					   					    
+										 
+										 A222.phoneNumber =  null;
+							   					    
+										 System.out.println("You canceled the seat successfully.");			            
+										 					    
+										 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");			            
+							    									
+										 String enterType1 = bufRead.readLine();			            
+							    
+										 int continueCanceling = Integer.parseInt(enterType);
+								   			            					    		
+										 if(continueCanceling == 1)			            
+										 {							           
+							    			  System.out.println("Next seat:");			            				    		  
+										 }  			            					    		  
+										 else			            					    		  
+										 {					    			  
+											 System.out.println("Thanks for using the programme.");				        					    			  
+											 full++;			          					    		  
+										 }			          								 					    	  
+									 }
+							       					    	  
+									 else 					       					    	  
+									 {				    					    		
+										 System.out.println("This seat hasn't been reserved yet");					      					    	  
+									 }					     					      
+								 }     
+							   					      
+								 if(cancelSeat.equals("B1"))					   
+								 {					      					    	  
+									 if(B111.firstName != null)					    	  
+									 {					    					    		  
+										B111.firstName = null;					  					    		  
+										
+										B111.lastName = null;
+										
+										B111.address = null;
+							    													    		  
+										B111.phoneNumber =  null;					    
+							    				    		  
+										System.out.println("You canceled the seat successfully.");						   
+							    		  
+										System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");						  
+							    		  
+										System.out.println("You canceled the seat successfully.");				           
+							    		  
+										System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");				            
+							    		  
+										String enterType1 = bufRead.readLine();				           
+							    		 
+										int continueCanceling = Integer.parseInt(enterType);				
+						   				            					    		 
+										if(continueCanceling == 1)			            					    		  
+										{					         					    			
+											System.out.println("Next seat:");				          					    		 
+										}  				          								
+							    		 
+										else				          					    		 
+										{					         					    		
+											System.out.println("Thanks for using the programme.");				        					           					         					    		
+											full++;				           					    		 
+										}				          					    	 
+									 }					      
+									 
+									 else 					    					    	 
+									 {					   					    		
+										 System.out.println("This seat hasn't been reserved yet");					     					    	 
+									 }					   					     
+								 }					     
+							     
+								 if(cancelSeat.equals("B2"))					    					     
+								 {					     					    	 
+									 if(B222.firstName != null)					      					    	
+									 {					   					    	
+										 B222.firstName = null;					   
+							    	
+										 B222.lastName = null;					  
+							    	
+										 B222.address = null;					  
+							    	
+										 B222.phoneNumber =  null;					  
+							    	
+										 System.out.println("You canceled the seat successfully.");			           
+							    		
+										 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");			           
+							    		
+										 String enterType1 = bufRead.readLine();			            
+							    	
+										 int continueCanceling = Integer.parseInt(enterType);			
+					   			          					    		
+										 if(continueCanceling == 1)			           					    		
+										 {				       					    		
+											 System.out.println("Next seat:");			          					    		
+										 }  			           
+							    		
+										 else			            					    		
+										 {				        					    		
+											 System.out.println("Thanks for using the programme.");				       					    		
+											 full++;			          					    		
+										 }			        					    	 
+									 }					 
+							    	 
+									 System.out.println("This seat hasn't been reserved yet");					  					   					     
+								 }					 		    				    	 
+							 
+								 if(cancelSeat.equals("C1"))					  
+								 {					  			    		
+									 if(C111.firstName != null)					  			    	
+									 {								    		
+										C111.firstName = null;												 			    		
+										 
+										C111.lastName = null;
+											    			 
+										C111.address = null;					
+						    			
+										C111.phoneNumber =  null;					   					
+						    			
+										System.out.println("You canceled the seat successfully.");			      
+						    		
+										System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+						      			    		
+										String enterType1 = bufRead.readLine();			     
+						    		
+										int continueCanceling = Integer.parseInt(enterType);						   			        
+						    			
+										if(continueCanceling == 1)			        			    			
+										{				     			    			
+											System.out.println("Next seat:");			         			    			
+										}  
+						         			    			
+										else			         			    			
+										{				      			    			
+											System.out.println("Thanks for using the programme.");				     			    			
+											full++;			         			    		
+										}			       										    		
+									 }								    	 
+								 }								    	
+								 else 								    	
+								 {								    	
+									 System.out.println("This seat hasn't been reserved yet");					 
+						    	 }		
+								 
+								 if(cancelSeat.equals("C2"))					  
+						    	 {					  
+						    		 if(C222.firstName != null)					 
+						    		 {					  
+						    			 C222.firstName = null;
+									 
+						    			 C222.lastName = null;
+									
+						    			 C222.address = null;
+									 
+						    			 C222.phoneNumber =  null;
+									 
+						    			 System.out.println("You canceled the seat successfully.");
+							          
+						    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+							          
+						    			 String enterType1 = bufRead.readLine();
+							          
+						    			 int continueCanceling = Integer.parseInt(enterType);			
+							   			           
+						    			 if(continueCanceling == 1)			           
+						    			 {				        
+						    				 System.out.println("Next seat:");			           
+						    			 }  
+							         
+						    			 else			          
+						    			 {				       
+						    				 System.out.println("Thanks for using the programme.");				       
+						    				 full++;			           
+						    			 }			          
+						    		 }
+									    
+						    		 else					    
+						    		 {					    
+						    			 System.out.println("This seat hasn't been reserved yet");				
+						    		 }					   
+						    	 }
+									    
+						    	 if(cancelSeat.equals("D1"))					    
+						    	 {					    
+						    		 if(D111.firstName != null)					     
+						    		 {					    
+						    			 D111.firstName = null;
+									    
+						    			 D111.lastName = null;
+									    
+						    			 D111.address = null;
+									    
+						    			 D111.phoneNumber =  null;
+									     
+						    			 System.out.println("You canceled the seat successfully.");
+								          
+						    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+								        
+						    			 String enterType1 = bufRead.readLine();
+								       
+						    			 int continueCanceling = Integer.parseInt(enterType);								   
+								          
+						    			 if(continueCanceling == 1)				          
+						    			 {					     
+						    				 System.out.println("Next seat:");				         
+						    			 }  				        
+						    			 else				        
+						    			 {					    
+						    				 System.out.println("Thanks for using the programme.");					    
+						    				 full++;				        
+						    			}				        
+						    		 }
+									    
+						    		 else					  
+						    		 {					  
+						    			 System.out.println("This seat hasn't been reserved yet");					  
+						    		 }					 
+						    	 }
+									
+						    	 if(cancelSeat.equals("D2"))					 
+						    	 {					 
+						    		 if(D222.firstName != null)					
+						    		 {					
+						    			 D222.firstName = null;
+									 
+						    			 D222.lastName = null;
+									 
+						    			 D222.address = null;
+									 
+						    			 D222.phoneNumber =  null;
+									 
+						    			 System.out.println("You canceled the seat successfully.");
+							          
+						    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+							          
+						    			 String enterType1 = bufRead.readLine();
+							          
+						    			 int continueCanceling = Integer.parseInt(enterType);			
+							   			          
+						    			 if(continueCanceling == 1)			         
+						    			 {				     
+						    				 System.out.println("Next seat:");			        
+						    			 }  
+							        
+						    			 else			        
+						    			 {				     
+						    				 System.out.println("Thanks for using the programme.");				    
+						    				 full++;			        		    		
+						    			 }			       
+						    		 }
+									
+						    		 else 					
+						    		 {					
+						    			 System.out.println("This seat hasn't been reserved yet");				
+						    		 }				
+						    	 }
+									
+						    	 if(cancelSeat.equals("E1"))				
+						    	 {				
+						    		 if(E111.firstName != null)				
+						    		 {				
+						    			 E111.firstName = null;
+								
+						    			 E111.lastName = null;
+								
+						    			 E111.address = null;
+													 
+						    			 E111.phoneNumber =  null;					 
+									
+						    			 System.out.println("You canceled the seat successfully.");
+							       
+						    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+							     
+						    			 String enterType1 = bufRead.readLine();
+							    
+						    			 int continueCanceling = Integer.parseInt(enterType);			
+							   			           
+						    			 if(continueCanceling == 1)			       
+						    			 {			  
+						    				 System.out.println("Next seat:");			    
+						    			 }  
+						    			 
+						    			 else			   
+						    			 {				
+						    				 System.out.println("Thanks for using the programme.");								
+						    				 full++;			    
+						    			 }			    
+						    		 }				
+						    	
+						    		 else 				
+						    		 {						    			 
+						    			 System.out.println("This seat hasn't been reserved yet");						    		
+						    		 }					
+						    	 }
+								
+						    	 if(cancelSeat.equals("E2"))					    
+						    	 {					 		    		
+						    		 if(E222.firstName != null)					
+						    		 {					
+						    			 E222.firstName = null;
+									
+						    			 E222.lastName = null;
+									
+						    			 E222.address = null;
+									
+						    			 E222.phoneNumber =  null;					
+									 
+						    			 System.out.println("You canceled the seat successfully.");		         
+									 
+						    			 System.out.println("Do you want to cancel another seat? Type 1 to continue canceling.");
+							         
+						    			 String enterType1 = bufRead.readLine();
+							        
+						    			 int continueCanceling = Integer.parseInt(enterType);			
+							   			        
+						    			 if(continueCanceling == 1)			        
+						    			 {			    
+						    				 System.out.println("Next seat:");			       
+						    			 }  
+							         
+						    			 else			        
+						    			 {				    
+						    				 System.out.println("Thanks for using the programme.");				   
+						    				 full++;			       
+						    			 }			      
+						    		 }
+									
+						    		 else 					
+						    		 {					
+						    			 System.out.println("This seat hasn't been reserved yet");					
+						    		 }				
+						    	 }
+								
+						    	 else				
+						    	 {				
+						    		 System.out.println("This seat does not exsist.");				
+						    	 }				
+						     }        
+						
+				     catch (IOException e) {				
+				    	 // TODO Auto-generated catch block				
+				    	 e.printStackTrace();							
+					 
+						 }
+						 }
+		     }
+	  }
      /**
      * Cancel a Flight
      */
