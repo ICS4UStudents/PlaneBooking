@@ -67,6 +67,18 @@ public class Plane{
  	   flight3 E111 = new flight3(null, null, null, null);
  	             
  	   flight3 E222 = new flight3(null, null, null, null);
+	  
+	  printMenu();
+	  InputStreamReader inStream = new InputStreamReader(System.in);
+	  BufferedReader bufRead = new BufferedReader(inStream);
+	  try
+	  {
+		  String enter = bufRead.readLine();
+		  int enter1 = Integer.parseInt(enter);
+		  if(enter==1)
+		  {
+ makeSeatReservation(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222)
+		  }
   
   }
        /**
@@ -88,7 +100,7 @@ public class Plane{
   /**
      * Make a reservation
      */
-   public void makeSeatReservation(String[][] seats, flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222) {
+   public void makeSeatReservation(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222) {
 	      InputStreamReader inStream = new InputStreamReader(System.in);
 	  BufferedReader bufRead = new BufferedReader(inStream);
 	  
