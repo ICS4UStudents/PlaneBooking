@@ -70,7 +70,11 @@ public class Plane{
  	   flight3 E222 = new flight3(null, null, null, null);
 	  printMenu();
 	  makeSeatReservation(A1, A2, B1, B2, C1, C2, D1, D2, E1, E2, A11, A22, B11, B22, C11, C22, D11, D22, E11, E22, A111, A222, B111, B222, C111, C222, D111, D222, E111, E222);
-  
+   try{
+   Cancel(A1, A2, B1, B2, C1, C2, D1, D2, E1, E2, A11, A22, B11, B22, C11, C22, D11, D22, E11, E22, A111, A222, B111, B222, C111, C222, D111, D222, E111, E222);fdfet     
+}catch(IOException e){
+  e.printStackTrace();
+}
   }
        /**
      * Menu
@@ -2618,8 +2622,8 @@ public class Plane{
 						    	 else				
 						    	 {				
 						    		 System.out.println("This seat does not exsist.");				
-						    	 }				
-						     }       
+						    	 }
+			}
 		     }
 						
 				     catch (IOException e) {				
@@ -2659,7 +2663,7 @@ public class Plane{
  /**
      * Flight Print out (Take off time)
      */
- public void FlightTakeoff(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222){
+ public static void FlightTakeoff(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222){
   //Prints passengers seats and who has it
     InputStreamReader inStream = new InputStreamReader(System.in);
    BufferedReader bufRead = new BufferedReader(inStream);
