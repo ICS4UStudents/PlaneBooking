@@ -1,5 +1,5 @@
 
-public class customer {
+public class flight1 {
 
     String firstName;
 	String lastName;
@@ -16,7 +16,7 @@ public class customer {
 		
 	}
 	
-	public customer(String f, String l, String a, String p) {
+	public flight1(String f, String l, String a, String p) {
 		// TODO Auto-generated constructor stub
 		this.set(f,l,a,p);
 	
