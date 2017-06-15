@@ -1691,9 +1691,9 @@ else{
        /**
        * View the available seats for sale
        */
-        public static void printSeating(customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2) {
+        public static void printSeating(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222) {
 
-  
+  System.out.println("Flight#1:");
   if(A1.firstName == null)
   {
    System.out.println("Seat A1 is avaliable.");
@@ -1782,6 +1782,189 @@ else{
   else
   {
    System.out.println("Seat E2 is not avaliable.");
+  }
+    }
+	
+ System.out.println("Flight#2:");
+  if(A11.firstName == null)
+  {
+   System.out.println("Seat A11 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat A11 is not avaliable.");
+  }
+  
+  if(A22.firstName == null)
+  {
+   System.out.println("Seat A22 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat A22 is not avaliable.");
+  }
+  
+  if(B11.firstName == null)
+  {
+   System.out.println("Seat B11 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat B11 is not avaliable.");
+  }
+  
+  if(B22.firstName == null)
+  {
+   System.out.println("Seat B22 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat B22 is not avaliable.");
+  }
+  
+  if(C11.firstName == null)
+  {
+   System.out.println("Seat C11 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat C11 is not avaliable.");
+  }
+  
+  if(C22.firstName == null)
+  {
+   System.out.println("Seat C22 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat C22 is not avaliable.");
+  }
+  
+  if(D11.firstName == null)
+  {
+   System.out.println("Seat D11 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat D11 is not avaliable.");
+  }
+  
+  if(D22.firstName == null)
+  {
+   System.out.println("Seat D22 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat D22 is not avaliable.");
+  }
+  
+  if(E11.firstName == null)
+  {
+   System.out.println("Seat E11 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat E11 is not avaliable.");
+  }
+  
+  if(E22.firstName == null)
+  {
+   System.out.println("Seat E22 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat E22 is not avaliable.");
+  }
+    }
+ System.out.println("Flight#3:");
+  if(A111.firstName == null)
+  {
+   System.out.println("Seat A111 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat A111 is not avaliable.");
+  }
+  
+  if(A222.firstName == null)
+  {
+   System.out.println("Seat A222 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat A222 is not avaliable.");
+  }
+  
+  if(B111.firstName == null)
+  {
+   System.out.println("Seat B111 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat B111 is not avaliable.");
+  }
+  
+  if(B222.firstName == null)
+  {
+   System.out.println("Seat B222 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat B222 is not avaliable.");
+  }
+  
+  if(C111.firstName == null)
+  {
+   System.out.println("Seat C111 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat C111 is not avaliable.");
+  }
+  
+  if(C222.firstName == null)
+  {
+   System.out.println("Seat C222 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat C222 is not avaliable.");
+  }
+  
+  if(D111.firstName == null)
+  {
+   System.out.println("Seat D111 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat D111 is not avaliable.");
+  }
+  
+  if(D222.firstName == null)
+  {
+   System.out.println("Seat D222 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat D222 is not avaliable.");
+  }
+  
+  if(E111.firstName == null)
+  {
+   System.out.println("Seat E111 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat E111 is not avaliable.");
+  }
+  
+  if(E222.firstName == null)
+  {
+   System.out.println("Seat E222 is avaliable.");
+  }
+  else
+  {
+   System.out.println("Seat E222 is not avaliable.");
   }
     }
 }
