@@ -2647,6 +2647,370 @@ public class Plane{
      /**
      * Cancel a Flight
      */
+public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222)
+{
+  InputStreamReader inStream = new InputStreamReader(System.in);
+   BufferedReader bufRead = new BufferedReader(inStream);
+   System.out.println("which flight is necessary been cancel?");//not for the customer
+   String Cflight = bufRead.readLine();
+    int  chooseCfight = Integer.parseInt(takeoff);
+    
+    if(choooseCflight <=3 && chooseCflight >=1){
+    if(chooseCflight == 1 ){ //#flight1
+      System.out,println("The entire flight will be cancel,then will outprint the contact information for all the passengers who have reserved seats on this flight.");
+      if(A1.firstName != null)
+      {
+        System.out.println("Name:"+ A1.fristname+A1.lastname);  
+         System.out.println("Address:"+A1.address);
+         System.out.prinyln("Phone number:"+A1.phoneNumber)
+  A1.firstName = null;
+  A1.lastName = null;
+  A1.address = null;
+  A1.phoneNumber =  null;       
+         
+      }
+      if(A2.firstName != null)
+      {
+         System.out.println("Name:"+ A2.fristname+A1.lastname);  
+         System.out.println("Address:"+A2.address);
+         System.out.prinyln("Phone number:"+A2.phoneNumber)
+  A2.firstName = null;
+  A2.lastName = null;
+  A2.address = null;
+  A2.phoneNumber =  null;       
+        
+      }
+      if(B1.firstName != null)
+      {
+        System.out.println("Name:"+ B1.fristname+B1.lastname);  
+         System.out.println("Address:"+B1.address);
+         System.out.prinyln("Phone number:"+B1.phoneNumber)
+        B1.firstName = null;
+  B1.lastName = null;
+  B1.address = null;
+  B1.phoneNumber =  null;       
+         
+      }
+      if(B2.firstName != null)
+      {
+        System.out.println("Name:"+ B2.fristname+B2.lastname);  
+         System.out.println("Address:"+B2.address);
+         System.out.prinyln("Phone number:"+B2.phoneNumber)
+        B2.firstName = null;
+  B2.lastName = null;
+  B2.address = null;
+  B2.phoneNumber =  null;       
+         
+      }
+      
+    if(C1.firstName != null)
+      {
+        System.out.println("Name:"+ C1.fristname+C1.lastname);  
+        System.out.println("Address:"+C1.address);
+        System.out.prinyln("Phone number:"+C1.phoneNumber);
+        C1.firstName = null;
+        C1.lastName = null;
+        C1.address = null;
+        C1.phoneNumber =  null;       
+         
+      }
+    if(C2.firstName != null)
+      {
+        System.out.println("Name:"+ C2.fristname+C2.lastname);  
+        System.out.println("Address:"+C2.address);
+        System.out.prinyln("Phone number:"+C2.phoneNumber)
+       C2.firstName = null;
+        C2.lastName = null;
+        C2.address = null;
+        C2.phoneNumber =  null;       
+         
+      }
+    if(D1.firstName != null)
+      {
+        System.out.println("Name:"+ D1.fristname+D1.lastname);  
+        System.out.println("Address:"+D1.address);
+        System.out.prinyln("Phone number:"+D1.phoneNumber);
+        D1.firstName = null;
+        D1.lastName = null;
+        D1.address = null;
+        D1.phoneNumber =  null;       
+         
+      }
+    if(D2.firstName != null)
+      {
+        System.out.println("Name:"+ D2.fristname+D2.lastname);  
+        System.out.println("Address:"+D2.address);
+        System.out.prinyln("Phone number:"+D2.phoneNumber)
+        D2.firstName = null;
+        D2.lastName = null;
+        D2.address = null;
+        D2.phoneNumber =  null;  
+    }
+    if(E1.firstName != null)
+      {
+        System.out.println("Name:"+ E1.fristname+E1.lastname);  
+        System.out.println("Address:"+E1.address);
+        System.out.prinyln("Phone number:"+E1.phoneNumber);
+        E1.firstName = null;
+        E1.lastName = null;
+        E1.address = null;
+        E1.phoneNumber =  null;       
+         
+      }
+     if(E2.firstName != null)
+      {
+        System.out.println("Name:"+ E2.fristname+E2.lastname);  
+        System.out.println("Address:"+E2.address);
+        System.out.prinyln("Phone number:"+E2.phoneNumber)
+        E2.firstName = null;
+        E2.lastName = null;
+        E2.address = null;
+        E2.phoneNumber =  null;  
+    }
+      System.out.print("over");
+    }
+     if(chooseCflight == 2 ){   //#flight2
+       System.out,println("The entire flight will be cancel,then will outprint the contact information for all the passengers who have reserved seats on this flight.");
+      if(A11.firstName != null)
+      {
+        System.out.println("Name:"+ A11.fristname+A11.lastname);  
+         System.out.println("Address:"+A11.address);
+         System.out.prinyln("Phone number:"+A11.phoneNumber)
+  A11.firstName = null;
+  A11.lastName = null;
+  A11.address = null;
+  A11.phoneNumber =  null;       
+         
+      }
+      if(A22.firstName != null)
+      {
+         System.out.println("Name:"+ A22.fristname+A22.lastname);  
+         System.out.println("Address:"+A22.address);
+         System.out.prinyln("Phone number:"+A22.phoneNumber)
+  A22.firstName = null;
+  A22.lastName = null;
+  A22.address = null;
+  A22.phoneNumber =  null;       
+        
+      }
+      
+      if(B11.firstName != null)
+      {
+        System.out.println("Name:"+ B11.fristname+B11.lastname);  
+         System.out.println("Address:"+B11.address);
+         System.out.prinyln("Phone number:"+B11.phoneNumber)
+        B11.firstName = null;
+  B11.lastName = null;
+  B11.address = null;
+  B1.phoneNumber =  null;       
+         
+      }
+      if(B22.firstName != null)
+      {
+        System.out.println("Name:"+ B22.fristname+B22.lastname);  
+        System.out.println("Address:"+B22.address);
+        System.out.prinyln("Phone number:"+B22.phoneNumber)
+        B22.firstName = null;
+        B22.lastName = null;
+        B22.address = null;
+        B22.phoneNumber =  null;       
+         
+      }
+    if(C11.firstName != null)
+      {
+        System.out.println("Name:"+ C11.fristname+C11.lastname);  
+        System.out.println("Address:"+C11.address);
+        System.out.prinyln("Phone number:"+C11.phoneNumber);
+        C11.firstName = null;
+        C11.lastName = null;
+        1C1.address = null;
+        C11.phoneNumber =  null;       
+         
+      }
+    if(C22.firstName != null)
+      {
+        System.out.println("Name:"+ C22.fristname+C22.lastname);  
+        System.out.println("Address:"+C22.address);
+        System.out.prinyln("Phone number:"+C22.phoneNumber)
+       C22.firstName = null;
+        C22.lastName = null;
+        C22.address = null;
+        C22.phoneNumber =  null;       
+         
+      }
+    if(D11.firstName != null)
+      {
+        System.out.println("Name:"+ D11.fristname+D11.lastname);  
+        System.out.println("Address:"+D11.address);
+        System.out.prinyln("Phone number:"+D11.phoneNumber);
+        D11.firstName = null;
+        D11.lastName = null;
+        D11.address = null;
+        D11.phoneNumber =  null;       
+         
+      }
+    if(D22.firstName != null)
+      {
+        System.out.println("Name:"+ D22.fristname+D22.astname);  
+        System.out.println("Address:"+D22.address);
+        System.out.prinyln("Phone number:"+D22.phoneNumber)
+        D22.firstName = null;
+        D22.lastName = null;
+        D22.address = null;
+        D22.phoneNumber =  null;  
+    }
+    if(E11.firstName != null)
+      {
+        System.out.println("Name:"+ E11.fristname+E11.lastname);  
+        System.out.println("Address:"+E11.address);
+        System.out.prinyln("Phone number:"+E11.phoneNumber);
+        E11.firstName = null;
+        E11.lastName = null;
+        E11.address = null;
+        E11.phoneNumber =  null;       
+         
+      }
+     if(E22.firstName != null)
+      {
+        System.out.println("Name:"+ E22.fristname+E22.lastname);  
+        System.out.println("Address:"+E22.address);
+        System.out.prinyln("Phone number:"+E22.phoneNumber)
+        E22.firstName = null;
+        E22.lastName = null;
+        E22.address = null;
+        E22.phoneNumber =  null;  
+    }
+      System.out.print("over");
+     }
+     if(chooseCflight == 3 ){ //#flight3
+       System.out,println("The entire flight will be cancel,then will outprint the contact information for all the passengers who have reserved seats on this flight.");
+      if(A111.firstName != null)
+      {
+        System.out.println("Name:"+ A111.fristname+A111.lastname);  
+         System.out.println("Address:"+A111.address);
+         System.out.prinyln("Phone number:"+A111.phoneNumber)
+  A111.firstName = null;
+  A111.lastName = null;
+  A111.address = null;
+  A111.phoneNumber =  null;       
+         
+      }
+      if(A222.firstName != null)
+      {
+         System.out.println("Name:"+ A222.fristname+A222.lastname);  
+         System.out.println("Address:"+A222.address);
+         System.out.prinyln("Phone number:"+A222.phoneNumber)
+  A222.firstName = null;
+  A222.lastName = null;
+  A222.address = null;
+  A222.phoneNumber =  null;       
+        
+      }
+      if(B111.firstName != null)
+      {
+        System.out.println("Name:"+ B111.fristname+B111.lastname);  
+         System.out.println("Address:"+B111.address);
+         System.out.prinyln("Phone number:"+B111.phoneNumber)
+        B1.firstName = null;
+  B111.lastName = null;
+  B111.address = null;
+  B111.phoneNumber =  null;       
+         
+      }
+      if(B222.firstName != null)
+      {
+        System.out.println("Name:"+ B222.fristname+B222.lastname);  
+         System.out.println("Address:"+B222.address);
+         System.out.prinyln("Phone number:"+B222.phoneNumber)
+        B2.firstName = null;
+  B222.lastName = null;
+  B222.address = null;
+  B222.phoneNumber =  null;       
+         
+      }
+     
+    if(C111.firstName != null)
+      {
+        System.out.println("Name:"+ C111.fristname+C111.lastname);  
+        System.out.println("Address:"+C111.address);
+        System.out.prinyln("Phone number:"+C111.phoneNumber);
+        C111.firstName = null;
+        C111.lastName = null;
+        C111.address = null;
+        C111.phoneNumber =  null;       
+         
+      }
+    if(C222.firstName != null)
+      {
+        System.out.println("Name:"+ C222.fristname+C222.lastname);  
+        System.out.println("Address:"+C222.address);
+        System.out.prinyln("Phone number:"+C222.phoneNumber)
+       C222.firstName = null;
+        C222.lastName = null;
+        C222.address = null;
+        C222.phoneNumber =  null;       
+         
+      }
+    if(D111.firstName != null)
+      {
+        System.out.println("Name:"+ D111.fristname+D111.lastname);  
+        System.out.println("Address:"+D111.address);
+        System.out.prinyln("Phone number:"+D111.phoneNumber);
+        D111.firstName = null;
+        D111.lastName = null;
+        D111.address = null;
+        D111.phoneNumber =  null;       
+         
+      }
+    if(D222.firstName != null)
+      {
+        System.out.println("Name:"+ D222.fristname+D222.lastname);  
+        System.out.println("Address:"+D222.address);
+        System.out.prinyln("Phone number:"+D222.phoneNumber)
+        D222.firstName = null;
+        D222.lastName = null;
+        D222.address = null;
+        D222.phoneNumber =  null;  
+    }
+    if(E111.firstName != null)
+      {
+        System.out.println("Name:"+ E111.fristname+E111.lastname);  
+        System.out.println("Address:"+E111.address);
+        System.out.prinyln("Phone number:"+E111.phoneNumber);
+        E111.firstName = null;
+        E111.lastName = null;
+        E111.address = null;
+        E111.phoneNumber =  null;       
+         
+      }
+     if(E222.firstName != null)
+      {
+        System.out.println("Name:"+ E222.fristname+E222.lastname);  
+        System.out.println("Address:"+E222.address);
+        System.out.prinyln("Phone number:"+E222.phoneNumber)
+        E222.firstName = null;
+        E222.lastName = null;
+        E222.address = null;
+        E222.phoneNumber =  null;  
+    }
+     System.out.print("over");
+     
+     }
+    }
+    else{
+      System.out.println("error, try again.");
+    }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    }
+}				 
      
  
       
