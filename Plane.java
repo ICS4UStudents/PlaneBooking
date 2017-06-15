@@ -2674,7 +2674,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ A1.fristname+A1.lastname);  
          System.out.println("Address:"+A1.address);
-         System.out.prinyln("Phone number:"+A1.phoneNumber)
+         System.out.prinyln("Phone number:"+A1.phoneNumber);
   A1.firstName = null;
   A1.lastName = null;
   A1.address = null;
@@ -2685,7 +2685,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
          System.out.println("Name:"+ A2.fristname+A1.lastname);  
          System.out.println("Address:"+A2.address);
-         System.out.prinyln("Phone number:"+A2.phoneNumber)
+         System.out.prinyln("Phone number:"+A2.phoneNumber);
   A2.firstName = null;
   A2.lastName = null;
   A2.address = null;
@@ -2696,7 +2696,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ B1.fristname+B1.lastname);  
          System.out.println("Address:"+B1.address);
-         System.out.prinyln("Phone number:"+B1.phoneNumber)
+         System.out.prinyln("Phone number:"+B1.phoneNumber);
         B1.firstName = null;
   B1.lastName = null;
   B1.address = null;
@@ -2707,7 +2707,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ B2.fristname+B2.lastname);  
          System.out.println("Address:"+B2.address);
-         System.out.prinyln("Phone number:"+B2.phoneNumber)
+         System.out.prinyln("Phone number:"+B2.phoneNumber);
         B2.firstName = null;
   B2.lastName = null;
   B2.address = null;
@@ -2730,7 +2730,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ C2.fristname+C2.lastname);  
         System.out.println("Address:"+C2.address);
-        System.out.prinyln("Phone number:"+C2.phoneNumber)
+        System.out.prinyln("Phone number:"+C2.phoneNumber);
        C2.firstName = null;
         C2.lastName = null;
         C2.address = null;
@@ -2752,7 +2752,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ D2.fristname+D2.lastname);  
         System.out.println("Address:"+D2.address);
-        System.out.prinyln("Phone number:"+D2.phoneNumber)
+        System.out.prinyln("Phone number:"+D2.phoneNumber);
         D2.firstName = null;
         D2.lastName = null;
         D2.address = null;
@@ -2773,7 +2773,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ E2.fristname+E2.lastname);  
         System.out.println("Address:"+E2.address);
-        System.out.prinyln("Phone number:"+E2.phoneNumber)
+        System.out.prinyln("Phone number:"+E2.phoneNumber);
         E2.firstName = null;
         E2.lastName = null;
         E2.address = null;
@@ -2782,12 +2782,12 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       System.out.print("over");
     }
      if(chooseCflight == 2 ){   //#flight2
-       System.out,println("The entire flight will be cancel,then will outprint the contact information for all the passengers who have reserved seats on this flight.");
+       System.out.println("The entire flight will be cancel,then will outprint the contact information for all the passengers who have reserved seats on this flight.");
       if(A11.firstName != null)
       {
         System.out.println("Name:"+ A11.fristname+A11.lastname);  
          System.out.println("Address:"+A11.address);
-         System.out.prinyln("Phone number:"+A11.phoneNumber)
+         System.out.prinyln("Phone number:"+A11.phoneNumber);
   A11.firstName = null;
   A11.lastName = null;
   A11.address = null;
@@ -2798,7 +2798,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
          System.out.println("Name:"+ A22.fristname+A22.lastname);  
          System.out.println("Address:"+A22.address);
-         System.out.prinyln("Phone number:"+A22.phoneNumber)
+         System.out.prinyln("Phone number:"+A22.phoneNumber);
   A22.firstName = null;
   A22.lastName = null;
   A22.address = null;
@@ -2810,7 +2810,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ B11.fristname+B11.lastname);  
          System.out.println("Address:"+B11.address);
-         System.out.prinyln("Phone number:"+B11.phoneNumber)
+         System.out.prinyln("Phone number:"+B11.phoneNumber);
         B11.firstName = null;
   B11.lastName = null;
   B11.address = null;
@@ -2821,7 +2821,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ B22.fristname+B22.lastname);  
         System.out.println("Address:"+B22.address);
-        System.out.prinyln("Phone number:"+B22.phoneNumber)
+        System.out.prinyln("Phone number:"+B22.phoneNumber);
         B22.firstName = null;
         B22.lastName = null;
         B22.address = null;
@@ -2835,7 +2835,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
         System.out.prinyln("Phone number:"+C11.phoneNumber);
         C11.firstName = null;
         C11.lastName = null;
-        1C1.address = null;
+        C11.address = null;
         C11.phoneNumber =  null;       
          
       }
@@ -2843,7 +2843,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ C22.fristname+C22.lastname);  
         System.out.println("Address:"+C22.address);
-        System.out.prinyln("Phone number:"+C22.phoneNumber)
+        System.out.prinyln("Phone number:"+C22.phoneNumber);
        C22.firstName = null;
         C22.lastName = null;
         C22.address = null;
@@ -2865,7 +2865,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ D22.fristname+D22.astname);  
         System.out.println("Address:"+D22.address);
-        System.out.prinyln("Phone number:"+D22.phoneNumber)
+        System.out.prinyln("Phone number:"+D22.phoneNumber);
         D22.firstName = null;
         D22.lastName = null;
         D22.address = null;
@@ -2886,7 +2886,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ E22.fristname+E22.lastname);  
         System.out.println("Address:"+E22.address);
-        System.out.prinyln("Phone number:"+E22.phoneNumber)
+        System.out.prinyln("Phone number:"+E22.phoneNumber);
         E22.firstName = null;
         E22.lastName = null;
         E22.address = null;
@@ -2895,12 +2895,12 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       System.out.print("over");
      }
      if(chooseCflight == 3 ){ //#flight3
-       System.out,println("The entire flight will be cancel,then will outprint the contact information for all the passengers who have reserved seats on this flight.");
+       System.out.println("The entire flight will be cancel,then will outprint the contact information for all the passengers who have reserved seats on this flight.");
       if(A111.firstName != null)
       {
         System.out.println("Name:"+ A111.fristname+A111.lastname);  
          System.out.println("Address:"+A111.address);
-         System.out.prinyln("Phone number:"+A111.phoneNumber)
+         System.out.prinyln("Phone number:"+A111.phoneNumber);
   A111.firstName = null;
   A111.lastName = null;
   A111.address = null;
@@ -2911,7 +2911,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
          System.out.println("Name:"+ A222.fristname+A222.lastname);  
          System.out.println("Address:"+A222.address);
-         System.out.prinyln("Phone number:"+A222.phoneNumber)
+         System.out.prinyln("Phone number:"+A222.phoneNumber);
   A222.firstName = null;
   A222.lastName = null;
   A222.address = null;
@@ -2922,7 +2922,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ B111.fristname+B111.lastname);  
          System.out.println("Address:"+B111.address);
-         System.out.prinyln("Phone number:"+B111.phoneNumber)
+         System.out.prinyln("Phone number:"+B111.phoneNumber);
         B1.firstName = null;
   B111.lastName = null;
   B111.address = null;
@@ -2933,7 +2933,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ B222.fristname+B222.lastname);  
          System.out.println("Address:"+B222.address);
-         System.out.prinyln("Phone number:"+B222.phoneNumber)
+         System.out.prinyln("Phone number:"+B222.phoneNumber);
         B2.firstName = null;
   B222.lastName = null;
   B222.address = null;
@@ -2978,7 +2978,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ D222.fristname+D222.lastname);  
         System.out.println("Address:"+D222.address);
-        System.out.prinyln("Phone number:"+D222.phoneNumber)
+        System.out.prinyln("Phone number:"+D222.phoneNumber);
         D222.firstName = null;
         D222.lastName = null;
         D222.address = null;
@@ -2999,7 +2999,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       {
         System.out.println("Name:"+ E222.fristname+E222.lastname);  
         System.out.println("Address:"+E222.address);
-        System.out.prinyln("Phone number:"+E222.phoneNumber)
+        System.out.prinyln("Phone number:"+E222.phoneNumber);
         E222.firstName = null;
         E222.lastName = null;
         E222.address = null;
@@ -3022,7 +3022,7 @@ public void CancelFlight(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1
       
       
     }
-}				 
+}
      
  
       
