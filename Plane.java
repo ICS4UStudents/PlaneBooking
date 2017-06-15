@@ -7,66 +7,66 @@ public class Plane{
   public static void main(String[] args){
                           
   flight1 A1 = new flight1(null, null, null, null);
- +	   
- +	   flight1 A2 = new flight1(null, null, null, null);
- +	            
- +	   flight1 B1 = new flight1(null, null, null, null);
- +	            
- +	   flight1 B2 = new flight1(null, null, null, null);
- +	            
- +	   flight1 C1 = new flight1(null, null, null, null);
- +	            
- +	   flight1 C2 = new flight1(null, null, null, null);
- +	            
- +	   flight1 D1 = new flight1(null, null, null, null);
- +	            
- +	   flight1 D2 = new flight1(null, null, null, null);
- +	           
- +	   flight1 E1 = new flight1(null, null, null, null);
- +	             
- +	   flight1 E2 = new flight1(null, null, null, null);
- +	   
- +
- +	   flight2 A11 = new flight2(null, null, null, null);
- +		 
- +	   flight2 A22 = new flight2(null, null, null, null);
- +	            
- +	   flight2 B11 = new flight2(null, null, null, null);
- +	            
- +	   flight2 B22 = new flight2(null, null, null, null);
- +	            
- +	   flight2 C11 = new flight2(null, null, null, null);
- +	            
- +	   flight2 C22 = new flight2(null, null, null, null);
- +	            
- +	   flight2 D11 = new flight2(null, null, null, null);
- +	            
- +	   flight2 D22 = new flight2(null, null, null, null);
- +	           
- +	   flight2 E11 = new flight2(null, null, null, null);
- +	             
- +	   flight2 E22 = new flight2(null, null, null, null);
- +	  
- +	   
- +	   flight3 A111 = new flight3(null, null, null, null);
- +		 
- +	   flight3 A222 = new flight3(null, null, null, null);
- +	            
- +	   flight3 B111 = new flight3(null, null, null, null);
- +	            
- +	   flight3 B222 = new flight3(null, null, null, null);
- +	            
- +	   flight3 C111 = new flight3(null, null, null, null);
- +	            
- +	   flight3 C222 = new flight3(null, null, null, null);
- +	            
- +	   flight3 D111 = new flight3(null, null, null, null);
- +	            
- +	   flight3 D222 = new flight3(null, null, null, null);
- +	           
- +	   flight3 E111 = new flight3(null, null, null, null);
- +	             
- +	   flight3 E222 = new flight3(null, null, null, null);
+ 
+ 	   flight1 A2 = new flight1(null, null, null, null);
+ 	            
+ 	   flight1 B1 = new flight1(null, null, null, null);
+ 	            
+ 	   flight1 B2 = new flight1(null, null, null, null);
+ 	            
+ 	   flight1 C1 = new flight1(null, null, null, null);
+ 	            
+ 	   flight1 C2 = new flight1(null, null, null, null);
+ 	            
+ 	   flight1 D1 = new flight1(null, null, null, null);
+	            
+ 	   flight1 D2 = new flight1(null, null, null, null);
+ 	           
+ 	   flight1 E1 = new flight1(null, null, null, null);
+ 	             
+ 	   flight1 E2 = new flight1(null, null, null, null);
+ 	   
+ 
+ 	   flight2 A11 = new flight2(null, null, null, null);
+ 		 
+ 	   flight2 A22 = new flight2(null, null, null, null);
+ 	            
+ 	   flight2 B11 = new flight2(null, null, null, null);
+ 	            
+ 	   flight2 B22 = new flight2(null, null, null, null);
+ 	            
+ 	   flight2 C11 = new flight2(null, null, null, null);
+ 	            
+ 	   flight2 C22 = new flight2(null, null, null, null);
+ 	            
+ 	   flight2 D11 = new flight2(null, null, null, null);
+ 	            
+ 	   flight2 D22 = new flight2(null, null, null, null);
+ 	           
+ 	   flight2 E11 = new flight2(null, null, null, null);
+ 	             
+ 	   flight2 E22 = new flight2(null, null, null, null);
+ 	  
+ 	   
+ 	   flight3 A111 = new flight3(null, null, null, null);
+ 		 
+ 	   flight3 A222 = new flight3(null, null, null, null);
+ 	            
+ 	   flight3 B111 = new flight3(null, null, null, null);
+ 	            
+	   flight3 B222 = new flight3(null, null, null, null);
+ 	            
+ 	   flight3 C111 = new flight3(null, null, null, null);
+ 	            
+ 	   flight3 C222 = new flight3(null, null, null, null);
+ 	            
+ 	   flight3 D111 = new flight3(null, null, null, null);
+	            
+ 	   flight3 D222 = new flight3(null, null, null, null);
+ 	           
+ 	   flight3 E111 = new flight3(null, null, null, null);
+ 	             
+ 	   flight3 E222 = new flight3(null, null, null, null);
   
   }
        /**
