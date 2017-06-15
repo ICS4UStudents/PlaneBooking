@@ -88,13 +88,13 @@ public class Plane{
   /**
      * Make a reservation
      */
-   public void makeSeatReservation(String[][] seats, flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222) {
+   public void makeSeatReservation(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222) {
 	      InputStreamReader inStream = new InputStreamReader(System.in);
 	  BufferedReader bufRead = new BufferedReader(inStream);
 	  
 	  System.out.println("Please select which flight you want to choose.");
-	  
-	  if()
+	  flightInput = bufRead.readLine();
+	  if(flightInput == 1)
 	  {
 		  String input;
 			int full = 0;
@@ -541,7 +541,7 @@ public class Plane{
 			
 		}	
 	  
-	  else if()
+	  else if(flightInput == 2)
 	  {
 		  String input;
 			int full = 0;
@@ -988,7 +988,7 @@ public class Plane{
 			
 		}	
 	  
-	  else
+	  else if (flightInput == 3)
 	  {
 		  String input;
 			int full = 0;
@@ -1626,6 +1626,11 @@ public class Plane{
      */
   public void FlightTakeoff(customer A1, customer A2, customer B1, customer B2, customer C1, customer C2, customer D1, customer D2, customer E1, customer E2){
   //Prints passengers seats and who has it
+	   InputStreamReader inStream = new InputStreamReader(System.in);
+	  BufferedReader bufRead = new BufferedReader(inStream);
+System.out.println("Which flight is taking off?");
+	  try{
+	  takeoff = bufRead.readLine();
   System.out.println("The plane will now begin preparation in order to take off");
          System.out.println("Passengers attending the flight:");
   System.out.println("Seat A1: " + A1 + " Information: " + A1.firstName + A1.lastName + A1.address + A1.phoneNumber);
@@ -1640,6 +1645,10 @@ public class Plane{
   System.out.println("Seat E2: " + E2 + " Information: " + E2.firstName + E2.lastName + E2.address + E2.phoneNumber);
   
    System.out.println("Note: This is FINAL no tickets will able to be sold past this point");
+		     catch (IOException e) {
+     // TODO Auto-generated catch block
+     e.printStackTrace();
+       }
   }
  
 
