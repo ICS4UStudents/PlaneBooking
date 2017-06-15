@@ -2814,7 +2814,7 @@ else{
   {
    System.out.println("Seat E2 is not avaliable.");
   }
-    }
+   
   if(A11.firstName == null)
   {
    System.out.println("Seat A11 is avaliable.");
@@ -2904,7 +2904,7 @@ else{
   {
    System.out.println("Seat E22 is not avaliable.");
   }
-    }
+    
   if(A111.firstName == null)
   {
    System.out.println("Seat A111 is avaliable.");
@@ -2994,6 +2994,6 @@ else{
   {
    System.out.println("Seat E222 is not avaliable.");
   }
-    }
+
 }
 
