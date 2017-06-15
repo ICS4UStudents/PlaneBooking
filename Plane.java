@@ -68,13 +68,15 @@ public class Plane{
  	   flight3 E111 = new flight3(null, null, null, null);
  	             
  	   flight3 E222 = new flight3(null, null, null, null);
+	  printMenu();
+	  makeSeatReservation(A1, A2, B1, B2, C1, C2, D1, D2, E1, E2, A11, A22, B11, B22, C11, C22, D11, D22, E11, E22, A111, A222, B111, B222, C111, C222, D111, D222, E111, E222);
   
   }
        /**
      * Menu
      */
       
-  public void printMenu()
+  public static void printMenu()
   {
  System.out.println(" Booking Menu "); 
  System.out.println("                ");
@@ -89,7 +91,7 @@ public class Plane{
   /**
      * Make a reservation
      */
-   public void makeSeatReservation(String[][] seats, flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222) {
+   public static void makeSeatReservation(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222) {
 	      InputStreamReader inStream = new InputStreamReader(System.in);
 	  BufferedReader bufRead = new BufferedReader(inStream);
 	  
@@ -2633,7 +2635,7 @@ public class Plane{
      */
      
  
-      public void cancelFights(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222)
+      public static void cancelFights(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222)
       {
          
     	  
@@ -2667,7 +2669,7 @@ System.out.println("Which flight is taking off?");
   int chooseTakeoff = Integer.parseInt(takeoff);
   if(chooseTakeoff==1){
   System.out.println("The plane will now begin preparation in order to take off");
-         System.out.println("Passengers attending the flight:");
+         System.out.println("Passengers attending the flight #1:");
   System.out.println("Seat A1: " + A1 + " Information: " + A1.firstName + A1.lastName + A1.address + A1.phoneNumber);
   System.out.println("Seat A2: " + A2 + " Information: " + A2.firstName + A2.lastName + A2.address + A2.phoneNumber);
   System.out.println("Seat B1: " + B1 + " Information: " + B1.firstName + B1.lastName + B1.address + B1.phoneNumber);
@@ -2684,34 +2686,34 @@ System.out.println("Which flight is taking off?");
   if(chooseTakeoff == 2)
   {
      System.out.println("The plane will now begin preparation in order to take off");
-         System.out.println("Passengers attending the flight:");
-  System.out.println("Seat A11: " + A11 + " Information: " + A11.firstName + A11.lastName + A11.address + A11.phoneNumber);
-  System.out.println("Seat A22: " + A22 + " Information: " + A22.firstName + A22.lastName + A22.address + A22.phoneNumber);
-  System.out.println("Seat B11: " + B11 + " Information: " + B11.firstName + B11.lastName + B11.address + B11.phoneNumber);
-  System.out.println("Seat B22: " + B22 + " Information: " + B22.firstName + B22.lastName + B22.address + B22.phoneNumber);
-  System.out.println("Seat C11: " + C11 + " Information: " + C11.firstName + C11.lastName + C11.address + C11.phoneNumber);
-  System.out.println("Seat C22: " + C22 + " Information: " + C22.firstName + C22.lastName + C22.address + C22.phoneNumber);
-  System.out.println("Seat D11: " + D11 + " Information: " + D11.firstName + D11.lastName + D11.address + D11.phoneNumber);
-  System.out.println("Seat D22: " + D22 + " Information: " + D22.firstName + D22.lastName + D22.address + D22.phoneNumber);
-  System.out.println("Seat E11: " + E11 + " Information: " + E11.firstName + E11.lastName + E11.address + E11.phoneNumber);
-  System.out.println("Seat E22: " + E22 + " Information: " + E22.firstName + E22.lastName + E22.address + E22.phoneNumber);
+         System.out.println("Passengers attending the flight#2:");
+  System.out.println("Seat A1: " + A11 + " Information: " + A11.firstName + A11.lastName + A11.address + A11.phoneNumber);
+  System.out.println("Seat A2: " + A22 + " Information: " + A22.firstName + A22.lastName + A22.address + A22.phoneNumber);
+  System.out.println("Seat B1: " + B11 + " Information: " + B11.firstName + B11.lastName + B11.address + B11.phoneNumber);
+  System.out.println("Seat B2: " + B22 + " Information: " + B22.firstName + B22.lastName + B22.address + B22.phoneNumber);
+  System.out.println("Seat C1: " + C11 + " Information: " + C11.firstName + C11.lastName + C11.address + C11.phoneNumber);
+  System.out.println("Seat C2: " + C22 + " Information: " + C22.firstName + C22.lastName + C22.address + C22.phoneNumber);
+  System.out.println("Seat D1: " + D11 + " Information: " + D11.firstName + D11.lastName + D11.address + D11.phoneNumber);
+  System.out.println("Seat D2: " + D22 + " Information: " + D22.firstName + D22.lastName + D22.address + D22.phoneNumber);
+  System.out.println("Seat E1: " + E11 + " Information: " + E11.firstName + E11.lastName + E11.address + E11.phoneNumber);
+  System.out.println("Seat E2: " + E22 + " Information: " + E22.firstName + E22.lastName + E22.address + E22.phoneNumber);
   
   System.out.println("Note: This is FINAL no tickets will able to be sold past this point");
   }
    if(chooseTakeoff == 3)
    {
       System.out.println("The plane will now begin preparation in order to take off");
-         System.out.println("Passengers attending the flight:");
-  System.out.println("Seat A111: " + A111 + " Information: " + A111.firstName + A111.lastName + A111.address + A111.phoneNumber);
-  System.out.println("Seat A222: " + A222 + " Information: " + A222.firstName + A222.lastName + A222.address + A222.phoneNumber);
-  System.out.println("Seat B111: " + B111 + " Information: " + B111.firstName + B111.lastName + B111.address + B111.phoneNumber);
-  System.out.println("Seat B222: " + B222 + " Information: " + B222.firstName + B222.lastName + B222.address + B222.phoneNumber);
-  System.out.println("Seat C111: " + C111 + " Information: " + C111.firstName + C111.lastName + C111.address + C111.phoneNumber);
-  System.out.println("Seat C222: " + C222 + " Information: " + C222.firstName + C222.lastName + C222.address + C222.phoneNumber);
-  System.out.println("Seat D111: " + D111 + " Information: " + D111.firstName + D111.lastName + D111.address + D111.phoneNumber);
-  System.out.println("Seat D222: " + D222 + " Information: " + D222.firstName + D222.lastName + D222.address + D222.phoneNumber);
-  System.out.println("Seat E111: " + E111 + " Information: " + E111.firstName + E111.lastName + E111.address + E111.phoneNumber);
-  System.out.println("Seat E222: " + E222 + " Information: " + E222.firstName + E222.lastName + E222.address + E222.phoneNumber);
+         System.out.println("Passengers attending the flight#3:");
+  System.out.println("Seat A1: " + A111 + " Information: " + A111.firstName + A111.lastName + A111.address + A111.phoneNumber);
+  System.out.println("Seat A2: " + A222 + " Information: " + A222.firstName + A222.lastName + A222.address + A222.phoneNumber);
+  System.out.println("Seat B1: " + B111 + " Information: " + B111.firstName + B111.lastName + B111.address + B111.phoneNumber);
+  System.out.println("Seat B2: " + B222 + " Information: " + B222.firstName + B222.lastName + B222.address + B222.phoneNumber);
+  System.out.println("Seat C1: " + C111 + " Information: " + C111.firstName + C111.lastName + C111.address + C111.phoneNumber);
+  System.out.println("Seat C2: " + C222 + " Information: " + C222.firstName + C222.lastName + C222.address + C222.phoneNumber);
+  System.out.println("Seat D1: " + D111 + " Information: " + D111.firstName + D111.lastName + D111.address + D111.phoneNumber);
+  System.out.println("Seat D2: " + D222 + " Information: " + D222.firstName + D222.lastName + D222.address + D222.phoneNumber);
+  System.out.println("Seat E1: " + E111 + " Information: " + E111.firstName + E111.lastName + E111.address + E111.phoneNumber);
+  System.out.println("Seat E2: " + E222 + " Information: " + E222.firstName + E222.lastName + E222.address + E222.phoneNumber);
   
   System.out.println("Note: This is FINAL no tickets will able to be sold past this point");
    }
