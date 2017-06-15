@@ -495,7 +495,6 @@ public class Plane{
 			
 		}				
 		
-	}
 
 //If the seat is full, you need a way to allow the attendant to choose another seat
      /**
@@ -562,7 +561,7 @@ public class Plane{
    B2.firstName = null;
    B2.lastName = null;
   B2.address = null;
-  B2.phoneNumber =  null
+  B2.phoneNumber =  null;
        System.out.println("The seat is now available again!"); 
       }
       else 
