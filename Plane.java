@@ -1,10 +1,10 @@
-	 import java.io.*;
+import java.io.*;
 public class Plane{ 
   /*Plane's seats will resemble
    * | [A1] [B1] [C1] [D1] [E1] |
    * | [A2] [B2] [C2] [D2] [E2] |
    */
-  public static void main(String[] args){
+    public static void main(String[] args){
   InputStreamReader inStream = new InputStreamReader(System.in);
    BufferedReader bufRead = new BufferedReader(inStream);       
   flight1 A1 = new flight1(null, null, null, null);
@@ -68,9 +68,17 @@ public class Plane{
      flight3 E111 = new flight3(null, null, null, null);
                
      flight3 E222 = new flight3(null, null, null, null);
-     
+     System.out.println("You will be sent to the menu (Choose 1 to Confirm, Choose 2 to end)");
+     try{
+      String stopString = bufRead.readLine();
+      int stop = Integer.parseInt(stopString);
+      if(stop==2)
+     {
+    System.out.println("The program will now end");
+    System.exit(0);
+     }
+     do{
    printMenu();
-  try{
     String choiceString = bufRead.readLine();
     int choiceInt = Integer.parseInt(choiceString);
     if(choiceInt==1){
@@ -86,27 +94,24 @@ public class Plane{
     if(choiceInt==3){
       printSeating(A1, A2, B1, B2, C1, C2, D1, D2, E1, E2, A11, A22, B11, B22, C11, C22, D11, D22, E11, E22, A111, A222, B111, B222, C111, C222, D111, D222, E111, E222);
     }
- //  if(choiceInt==4)
-   // {
-     // cancelFlights(A1, A2, B1, B2, C1, C2, D1, D2, E1, E2, A11, A22, B11, B22, C11, C22, D11, D22, E11, E22, A111, A222, B111, B222, C111, C222, D111, D222, E111, E222);
-   //}
+   if(choiceInt==4)
+    {
+      cancelFlights(A1, A2, B1, B2, C1, C2, D1, D2, E1, E2, A11, A22, B11, B22, C11, C22, D11, D22, E11, E22, A111, A222, B111, B222, C111, C222, D111, D222, E111, E222);
+   }
     if(choiceInt==5)
     {
       FlightTakeoff(A1, A2, B1, B2, C1, C2, D1, D2, E1, E2, A11, A22, B11, B22, C11, C22, D11, D22, E11, E22, A111, A222, B111, B222, C111, C222, D111, D222, E111, E222);
-    }
-    if(choiceInt==6)
-    {
-      System.out.println("Program will terminate");
-      System.exit(0);
     }
     else
     {
       System.out.println("Invalid Number");
     }
-  }
+  }while(stop!=2);
+     }  
   catch(IOException e){
     e.printStackTrace();
    }
+ 
   }
        /**
      * Menu
