@@ -2718,7 +2718,7 @@ public class Plane{
         		  }
         		  if(D1.firstName != null)
         		  {
-        			  System.out.println("Seat D1: Information: " + D1.firstName + A1.lastName + A1.address + A1.phoneNumber);
+        			  System.out.println("Seat D1: Information: " + D1.firstName + D1.lastName + D1.address + D1.phoneNumber);
         		  }
         		  if(D2.firstName != null)
         		  {
@@ -2871,27 +2871,12 @@ public class Plane{
       
        }
        
-       
-         
-         
-         
-         
-         
-         
-         
-         
-       }
-   
-       
-      
-      
-      
-      
+       } 
       
  /**
      * Flight Print out (Take off time)
      */
- public static void FlightTakeoff(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222){
+  public static void FlightTakeoff(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222){
   //Prints passengers seats and who has it
     InputStreamReader inStream = new InputStreamReader(System.in);
    BufferedReader bufRead = new BufferedReader(inStream);
@@ -2902,33 +2887,172 @@ System.out.println("Which flight is taking off?");
   if(chooseTakeoff==1){
   System.out.println("The plane will now begin preparation in order to take off");
          System.out.println("Passengers attending the flight #1:");
-  System.out.println("Seat A1: " + A1 + " Information: " + A1.firstName + A1.lastName + A1.address + A1.phoneNumber);
-  System.out.println("Seat A2: " + A2 + " Information: " + A2.firstName + A2.lastName + A2.address + A2.phoneNumber);
-  System.out.println("Seat B1: " + B1 + " Information: " + B1.firstName + B1.lastName + B1.address + B1.phoneNumber);
-  System.out.println("Seat B2: " + B2 + " Information: " + B2.firstName + B2.lastName + B2.address + B2.phoneNumber);
-  System.out.println("Seat C1: " + C1 + " Information: " + C1.firstName + C1.lastName + C1.address + C1.phoneNumber);
-  System.out.println("Seat C2: " + C2 + " Information: " + C2.firstName + C2.lastName + C2.address + C2.phoneNumber);
-  System.out.println("Seat D1: " + D1 + " Information: " + D1.firstName + D1.lastName + D1.address + D1.phoneNumber);
-  System.out.println("Seat D2: " + D2 + " Information: " + D2.firstName + D2.lastName + D2.address + D2.phoneNumber);
-  System.out.println("Seat E1: " + E1 + " Information: " + E1.firstName + E1.lastName + E1.address + E1.phoneNumber);
-  System.out.println("Seat E2: " + E2 + " Information: " + E2.firstName + E2.lastName + E2.address + E2.phoneNumber);
-  
+  if(A1.firstName != null)
+            {
+             A1.firstName = null;
+             A1.lastName = null;
+             A1.address = null;
+             A1.phoneNumber = null;
+             System.out.println("Seat A1: Information: " + A1.firstName + A1.lastName + A1.address + A1.phoneNumber);
+            }
+            if(A2.firstName != null)
+            {
+             A2.firstName = null;
+             A2.lastName = null;
+             A2.address = null;
+             A2.phoneNumber = null;
+             System.out.println("Seat A2: Information: " + A2.firstName + A2.lastName + A2.address + A2.phoneNumber);
+            }
+            if(B1.firstName != null)
+            {
+             B1.firstName = null;
+             B1.lastName = null;
+             B1.address = null;
+             B1.phoneNumber = null;
+             System.out.println("Seat B1: Information: " + B1.firstName + B1.lastName + B1.address + B1.phoneNumber);
+            }
+            if(B2.firstName != null)
+            {
+             B2.firstName = null;
+             B2.lastName = null;
+             B2.address = null;
+             B2.phoneNumber = null;
+             System.out.println("Seat B2: Information: " + B2.firstName + B2.lastName + B2.address + B2.phoneNumber);
+            }
+            if(C1.firstName != null)
+            {
+             C1.firstName = null;
+             C1.lastName = null;
+             C1.address = null;
+             C1.phoneNumber = null;
+             System.out.println("Seat C1: Information: " + C1.firstName + C1.lastName + C1.address + C1.phoneNumber);
+            }
+            if(C2.firstName != null)
+            {
+             C2.firstName = null;
+             C2.lastName = null;
+             C2.address = null;
+             C2.phoneNumber = null;
+             System.out.println("Seat C2: Information: " + C2.firstName + C2.lastName + C2.address + C2.phoneNumber);
+            }
+            if(D1.firstName != null)
+            {
+             D1.firstName = null;
+             D1.lastName = null;
+             D1.address = null;
+             D1.phoneNumber = null;
+             System.out.println("Seat D1: Information: " + D1.firstName + D1.lastName + D1.address + D1.phoneNumber);
+            }
+            if(D2.firstName != null)
+            {
+             D2.firstName = null;
+             D2.lastName = null;
+             D2.address = null;
+             D2.phoneNumber = null;
+             System.out.println("Seat D2: Information: " + D2.firstName + D2.lastName + D2.address + D2.phoneNumber);
+            }
+            if(E1.firstName != null)
+            {
+             E1.firstName = null;
+             E1.lastName = null;
+             E1.address = null;
+             E1.phoneNumber = null;
+             System.out.println("Seat E1: Information: " + E1.firstName + E1.lastName + E1.address + E1.phoneNumber);
+            }
+            if(E2.firstName != null)
+            {
+             E1.firstName = null;
+             E1.lastName = null;
+             E1.address = null;
+             E1.phoneNumber = null;
+             System.out.println("Seat E2: Information: " + E2.firstName + E2.lastName + E2.address + E2.phoneNumber);
+            }
   System.out.println("Note: This is FINAL no tickets will able to be sold past this point");
   }
   if(chooseTakeoff == 2)
   {
      System.out.println("The plane will now begin preparation in order to take off");
          System.out.println("Passengers attending the flight#2:");
-  System.out.println("Seat A1: " + A11 + " Information: " + A11.firstName + A11.lastName + A11.address + A11.phoneNumber);
-  System.out.println("Seat A2: " + A22 + " Information: " + A22.firstName + A22.lastName + A22.address + A22.phoneNumber);
-  System.out.println("Seat B1: " + B11 + " Information: " + B11.firstName + B11.lastName + B11.address + B11.phoneNumber);
-  System.out.println("Seat B2: " + B22 + " Information: " + B22.firstName + B22.lastName + B22.address + B22.phoneNumber);
-  System.out.println("Seat C1: " + C11 + " Information: " + C11.firstName + C11.lastName + C11.address + C11.phoneNumber);
-  System.out.println("Seat C2: " + C22 + " Information: " + C22.firstName + C22.lastName + C22.address + C22.phoneNumber);
-  System.out.println("Seat D1: " + D11 + " Information: " + D11.firstName + D11.lastName + D11.address + D11.phoneNumber);
-  System.out.println("Seat D2: " + D22 + " Information: " + D22.firstName + D22.lastName + D22.address + D22.phoneNumber);
-  System.out.println("Seat E1: " + E11 + " Information: " + E11.firstName + E11.lastName + E11.address + E11.phoneNumber);
-  System.out.println("Seat E2: " + E22 + " Information: " + E22.firstName + E22.lastName + E22.address + E22.phoneNumber);
+   if(A11.firstName != null)
+            {
+             A11.firstName = null;
+             A11.lastName = null;
+             A11.address = null;
+             A11.phoneNumber = null;
+             System.out.println("Seat A1: Information: " + A11.firstName + A11.lastName + A11.address + A11.phoneNumber);
+            }
+            if(A22.firstName != null)
+            {
+             A22.firstName = null;
+             A22.lastName = null;
+             A22.address = null;
+             A22.phoneNumber = null;
+             System.out.println("Seat A2: Information: " + A22.firstName + A22.lastName + A22.address + A22.phoneNumber);
+            }
+            if(B11.firstName != null)
+            {
+             B11.firstName = null;
+             B11.lastName = null;
+             B11.address = null;
+             B11.phoneNumber = null;
+             System.out.println("Seat B1: Information: " + B11.firstName + B11.lastName + B11.address + B11.phoneNumber);
+            }
+            if(B22.firstName != null)
+            {
+             B22.firstName = null;
+             B22.lastName = null;
+             B22.address = null;
+             B22.phoneNumber = null;
+             System.out.println("Seat B2: Information: " + B22.firstName + B22.lastName + B22.address + B22.phoneNumber);
+            }
+            if(C11.firstName != null)
+            {
+              C11.firstName = null;
+             C11.lastName = null;
+             C11.address = null;
+             C11.phoneNumber = null;
+             System.out.println("Seat C1: Information: " + C11.firstName + C11.lastName + C11.address + C11.phoneNumber);
+            }
+            if(C22.firstName != null)
+            {
+              C22.firstName = null;
+             C22.lastName = null;
+             C22.address = null;
+             C22.phoneNumber = null;
+             System.out.println("Seat C2: Information: " + C22.firstName + C22.lastName + C22.address + C22.phoneNumber);
+            }
+            if(D11.firstName != null)
+            {
+              D11.firstName = null;
+             D11.lastName = null;
+             D11.address = null;
+             D11.phoneNumber = null;
+             System.out.println("Seat D1: Information: " + D11.firstName + D11.lastName + D11.address + D11.phoneNumber);
+            }
+            if(D22.firstName != null)
+            {
+             D22.firstName = null;
+             D22.lastName = null;
+             D22.address = null;
+             D22.phoneNumber = null;
+             System.out.println("Seat D2: Information: " + D22.firstName + D22.lastName + D22.address + D22.phoneNumber);
+            }
+            if(E11.firstName != null)
+            {
+             E11.firstName = null;
+             E11.lastName = null;
+             E11.address = null;
+             E11.phoneNumber = null;
+             System.out.println("Seat E1: Information: " + E11.firstName + E11.lastName + E11.address + E11.phoneNumber);
+            }
+            if(E22.firstName != null)
+            {
+              E22.firstName = null;
+             E22.lastName = null;
+             E22.address = null;
+             E22.phoneNumber = null;
+             System.out.println("Seat E2: Information: " + E22.firstName + E22.lastName + E22.address + E22.phoneNumber);
+            }
   
   System.out.println("Note: This is FINAL no tickets will able to be sold past this point");
   }
@@ -2936,16 +3060,86 @@ System.out.println("Which flight is taking off?");
    {
       System.out.println("The plane will now begin preparation in order to take off");
          System.out.println("Passengers attending the flight#3:");
-  System.out.println("Seat A1: " + A111 + " Information: " + A111.firstName + A111.lastName + A111.address + A111.phoneNumber);
-  System.out.println("Seat A2: " + A222 + " Information: " + A222.firstName + A222.lastName + A222.address + A222.phoneNumber);
-  System.out.println("Seat B1: " + B111 + " Information: " + B111.firstName + B111.lastName + B111.address + B111.phoneNumber);
-  System.out.println("Seat B2: " + B222 + " Information: " + B222.firstName + B222.lastName + B222.address + B222.phoneNumber);
-  System.out.println("Seat C1: " + C111 + " Information: " + C111.firstName + C111.lastName + C111.address + C111.phoneNumber);
-  System.out.println("Seat C2: " + C222 + " Information: " + C222.firstName + C222.lastName + C222.address + C222.phoneNumber);
-  System.out.println("Seat D1: " + D111 + " Information: " + D111.firstName + D111.lastName + D111.address + D111.phoneNumber);
-  System.out.println("Seat D2: " + D222 + " Information: " + D222.firstName + D222.lastName + D222.address + D222.phoneNumber);
-  System.out.println("Seat E1: " + E111 + " Information: " + E111.firstName + E111.lastName + E111.address + E111.phoneNumber);
-  System.out.println("Seat E2: " + E222 + " Information: " + E222.firstName + E222.lastName + E222.address + E222.phoneNumber);
+if(A111.firstName != null)
+            {
+             A111.firstName = null;
+             A111.lastName = null;
+             A111.address = null;
+             A111.phoneNumber = null;
+             System.out.println("Seat A1: Information: " + A111.firstName + A111.lastName + A111.address + A111.phoneNumber);
+            }
+            if(A222.firstName != null)
+            {
+              A222.firstName = null;
+             A222.lastName = null;
+             A222.address = null;
+             A222.phoneNumber = null;
+             System.out.println("Seat A2: Information: " + A222.firstName + A222.lastName + A222.address + A222.phoneNumber);
+            }
+            if(B111.firstName != null)
+            {
+             B111.firstName = null;
+             B111.lastName = null;
+             B111.address = null;
+             B111.phoneNumber = null;
+             System.out.println("Seat B1: Information: " + B111.firstName + B111.lastName + B111.address + B111.phoneNumber);
+            }
+            if(B222.firstName != null)
+            {
+             B222.firstName = null;
+             B222.lastName = null;
+             B222.address = null;
+             B222.phoneNumber = null;
+             System.out.println("Seat B2: Information: " + B222.firstName + B222.lastName + B222.address + B222.phoneNumber);
+            }
+            if(C111.firstName != null)
+            {
+              C111.firstName = null;
+             C111.lastName = null;
+             C111.address = null;
+             C111.phoneNumber = null;
+             System.out.println("Seat C1: Information: " + C111.firstName + C111.lastName + C111.address + C111.phoneNumber);
+            }
+            if(C222.firstName != null)
+            {
+              C222.firstName = null;
+             C222.lastName = null;
+             C222.address = null;
+             C222.phoneNumber = null;
+             System.out.println("Seat C2: Information: " + C222.firstName + C222.lastName + C222.address + C222.phoneNumber);
+            }
+            if(D111.firstName != null)
+            {
+             D111.firstName = null;
+             D111.lastName = null;
+             D111.address = null;
+             D111.phoneNumber = null;
+             System.out.println("Seat D1: Information: " + D111.firstName + D111.lastName + D111.address + D111.phoneNumber);
+            }
+            if(D222.firstName != null)
+            {
+             D222.firstName = null;
+             D222.lastName = null;
+             D222.address = null;
+             D222.phoneNumber = null;
+             System.out.println("Seat D2: Information: " + D222.firstName + D222.lastName + D222.address + D222.phoneNumber);
+            }
+            if(E111.firstName != null)
+            {
+             E111.firstName = null;
+             E111.lastName = null;
+             E111.address = null;
+             E111.phoneNumber = null;
+             System.out.println("Seat E1: Information: " + E111.firstName + E111.lastName + E111.address + E111.phoneNumber);
+            }
+            if(E222.firstName != null)
+            {
+              E222.firstName = null;
+              E222.lastName = null;
+              E222.address = null;
+              E222.phoneNumber = null;
+             System.out.println("Seat E2: Information: " + E222.firstName + E222.lastName + E222.address + E222.phoneNumber);
+            }
   
   System.out.println("Note: This is FINAL no tickets will able to be sold past this point");
    }
