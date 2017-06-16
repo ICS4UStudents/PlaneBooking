@@ -3249,137 +3249,137 @@ catch (IOException e) {
    
   if(A11.firstName == null)
   {
-   System.out.println("Seat A11 is avaliable.");
+   System.out.println("Seat A1 is avaliable.");
   }
   else
   {
-   System.out.println("Seat A11 is not avaliable.");
+   System.out.println("Seat A1 is not avaliable.");
   }
   
   if(A22.firstName == null)
   {
-   System.out.println("Seat A22 is avaliable.");
+   System.out.println("Seat A2 is avaliable.");
   }
   else
   {
-   System.out.println("Seat A22 is not avaliable.");
+   System.out.println("Seat A2 is not avaliable.");
   }
   
   if(B11.firstName == null)
   {
-   System.out.println("Seat B11 is avaliable.");
+   System.out.println("Seat B1 is avaliable.");
   }
   else
   {
-   System.out.println("Seat B11 is not avaliable.");
+   System.out.println("Seat B1 is not avaliable.");
   }
   
   if(B22.firstName == null)
   {
-   System.out.println("Seat B22 is avaliable.");
+   System.out.println("Seat B2 is avaliable.");
   }
   else
   {
-   System.out.println("Seat B22 is not avaliable.");
+   System.out.println("Seat B2 is not avaliable.");
   }
   
   if(C11.firstName == null)
   {
-   System.out.println("Seat C11 is avaliable.");
+   System.out.println("Seat C1 is avaliable.");
   }
   else
   {
-   System.out.println("Seat C11 is not avaliable.");
+   System.out.println("Seat C1 is not avaliable.");
   }
   
   if(C22.firstName == null)
   {
-   System.out.println("Seat C22 is avaliable.");
+   System.out.println("Seat C2 is avaliable.");
   }
   else
   {
-   System.out.println("Seat C22 is not avaliable.");
+   System.out.println("Seat C2 is not avaliable.");
   }
   
   if(D11.firstName == null)
   {
-   System.out.println("Seat D11 is avaliable.");
+   System.out.println("Seat D1 is avaliable.");
   }
   else
   {
-   System.out.println("Seat D11 is not avaliable.");
+   System.out.println("Seat D1 is not avaliable.");
   }
   
   if(D22.firstName == null)
   {
-   System.out.println("Seat D22 is avaliable.");
+   System.out.println("Seat D2 is avaliable.");
   }
   else
   {
-   System.out.println("Seat D22 is not avaliable.");
+   System.out.println("Seat D2 is not avaliable.");
   }
   
   if(E11.firstName == null)
   {
-   System.out.println("Seat E11 is avaliable.");
+   System.out.println("Seat E1 is avaliable.");
   }
   else
   {
-   System.out.println("Seat E11 is not avaliable.");
+   System.out.println("Seat E1 is not avaliable.");
   }
   
   if(E22.firstName == null)
   {
-   System.out.println("Seat E22 is avaliable.");
+   System.out.println("Seat E2 is avaliable.");
   }
   else
   {
-   System.out.println("Seat E22 is not avaliable.");
+   System.out.println("Seat E2 is not avaliable.");
   }
     
   if(A111.firstName == null)
   {
-   System.out.println("Seat A111 is avaliable.");
+   System.out.println("Seat A1 is avaliable.");
   }
   else
   {
-   System.out.println("Seat A111 is not avaliable.");
+   System.out.println("Seat A1 is not avaliable.");
   }
   
   if(A222.firstName == null)
   {
-   System.out.println("Seat A222 is avaliable.");
+   System.out.println("Seat A2 is avaliable.");
   }
   else
   {
-   System.out.println("Seat A222 is not avaliable.");
+   System.out.println("Seat A2 is not avaliable.");
   }
   
   if(B111.firstName == null)
   {
-   System.out.println("Seat B111 is avaliable.");
+   System.out.println("Seat B1 is avaliable.");
   }
   else
   {
-   System.out.println("Seat B111 is not avaliable.");
+   System.out.println("Seat B1 is not avaliable.");
   }
   
   if(B222.firstName == null)
   {
-   System.out.println("Seat B222 is avaliable.");
+   System.out.println("Seat B2 is avaliable.");
   }
   else
   {
-   System.out.println("Seat B222 is not avaliable.");
+   System.out.println("Seat B2 is not avaliable.");
   }
   
   if(C111.firstName == null)
   {
-   System.out.println("Seat C111 is avaliable.");
+   System.out.println("Seat C1 is avaliable.");
   }
   else
   {
-   System.out.println("Seat C111 is not avaliable.");
+   System.out.println("Seat C1 is not avaliable.");
   }
   
   if(C222.firstName == null)
@@ -3388,43 +3388,43 @@ catch (IOException e) {
   }
   else
   {
-   System.out.println("Seat C222 is not avaliable.");
+   System.out.println("Seat C2 is not avaliable.");
   }
   
   if(D111.firstName == null)
   {
-   System.out.println("Seat D111 is avaliable.");
+   System.out.println("Seat D1 is avaliable.");
   }
   else
   {
-   System.out.println("Seat D111 is not avaliable.");
+   System.out.println("Seat D1 is not avaliable.");
   }
   
   if(D222.firstName == null)
   {
-   System.out.println("Seat D222 is avaliable.");
+   System.out.println("Seat D2 is avaliable.");
   }
   else
   {
-   System.out.println("Seat D222 is not avaliable.");
+   System.out.println("Seat D2 is not avaliable.");
   }
   
   if(E111.firstName == null)
   {
-   System.out.println("Seat E111 is avaliable.");
+   System.out.println("Seat E1 is avaliable.");
   }
   else
   {
-   System.out.println("Seat E111 is not avaliable.");
+   System.out.println("Seat E1 is not avaliable.");
   }
   
   if(E222.firstName == null)
   {
-   System.out.println("Seat E222 is avaliable.");
+   System.out.println("Seat E2 is avaliable.");
   }
   else
   {
-   System.out.println("Seat E222 is not avaliable.");
+   System.out.println("Seat E2 is not avaliable.");
   }
 
         }
