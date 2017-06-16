@@ -2678,7 +2678,198 @@ public class Plane{
  
       public static void cancelFights(flight1 A1, flight1 A2, flight1 B1, flight1 B2, flight1 C1, flight1 C2, flight1 D1, flight1 D2, flight1 E1, flight1 E2,flight2 A11, flight2 A22, flight2 B11, flight2 B22, flight2 C11, flight2 C22, flight2 D11, flight2 D22, flight2 E11, flight2 E22,flight3 A111, flight3 A222, flight3 B111, flight3 B222, flight3 C111, flight3 C222, flight3 D111, flight3 D222, flight3 E111, flight3 E222)
       {
-         
+         InputStreamReader inStream = new InputStreamReader(System.in);
+	  BufferedReader bufRead = new BufferedReader(inStream);
+      System.out.println("Please select the flight(1-3) to cancel it.");
+      
+      try{
+    	  String enterType = bufRead.readLine();
+    	  int selectFlight = Integer.parseInt(enterType);
+    	  int returnToTop = 0;
+    	  while(returnToTop == 0)
+    	  {
+    		  if(selectFlight == 1)
+        	  {
+        		  System.out.println("The flight # 1 will be close soon. Please contact the customers who have booked seats in this flight.");
+        		  System.out.println("Passengers booked the seats in the flight #1:");
+        		  if(A1.firstName != null)
+        		  {
+        			  System.out.println("Seat A1: Information: " + A1.firstName + A1.lastName + A1.address + A1.phoneNumber);
+        		  }
+        		  if(A2.firstName != null)
+        		  {
+        			  System.out.println("Seat A2: Information: " + A2.firstName + A2.lastName + A2.address + A2.phoneNumber);
+        		  }
+        		  if(B1.firstName != null)
+        		  {
+        			  System.out.println("Seat B1: Information: " + B1.firstName + B1.lastName + B1.address + B1.phoneNumber);
+        		  }
+        		  if(B2.firstName != null)
+        		  {
+        			  System.out.println("Seat B2: Information: " + B2.firstName + B2.lastName + B2.address + B2.phoneNumber);
+        		  }
+        		  if(C1.firstName != null)
+        		  {
+        			  System.out.println("Seat C1: Information: " + C1.firstName + C1.lastName + C1.address + C1.phoneNumber);
+        		  }
+        		  if(C2.firstName != null)
+        		  {
+        			  System.out.println("Seat C2: Information: " + C2.firstName + C2.lastName + C2.address + C2.phoneNumber);
+        		  }
+        		  if(D1.firstName != null)
+        		  {
+        			  System.out.println("Seat D1: Information: " + D1.firstName + A1.lastName + A1.address + A1.phoneNumber);
+        		  }
+        		  if(D2.firstName != null)
+        		  {
+        			  System.out.println("Seat D2: Information: " + D2.firstName + D2.lastName + D2.address + D2.phoneNumber);
+        		  }
+        		  if(E1.firstName != null)
+        		  {
+        			  System.out.println("Seat E1: Information: " + E1.firstName + E1.lastName + E1.address + E1.phoneNumber);
+        		  }
+        		  if(E2.firstName != null)
+        		  {
+        			  System.out.println("Seat E2: Information: " + E2.firstName + E2.lastName + E2.address + E2.phoneNumber);
+        		  }
+        		  System.out.println("The flight is canceled sucessfully.");
+        		  System.out.println("Do you need to cancel another flight?(Type 1 to cancel another flight.");
+        		  String enterType1 = bufRead.readLine();
+        		  int continueCanceling = Integer.parseInt(enterType1);
+        		  
+        		  if(continueCanceling != 1)
+        		  {
+        			  returnToTop++;
+        		  }
+        		  
+        	  }
+        	  
+        	  else if(selectFlight == 2)
+        	  {
+        		  System.out.println("The flight # 2 will be close soon. Please contact the customers who have booked seats in this flight.");
+        		  System.out.println("Passengers booked the seats in the flight #2:");
+        		  if(A11.firstName != null)
+        		  {
+        			  System.out.println("Seat A1: Information: " + A11.firstName + A11.lastName + A11.address + A11.phoneNumber);
+        		  }
+        		  if(A22.firstName != null)
+        		  {
+        			  System.out.println("Seat A2: Information: " + A22.firstName + A22.lastName + A22.address + A22.phoneNumber);
+        		  }
+        		  if(B11.firstName != null)
+        		  {
+        			  System.out.println("Seat B1: Information: " + B11.firstName + B11.lastName + B11.address + B11.phoneNumber);
+        		  }
+        		  if(B22.firstName != null)
+        		  {
+        			  System.out.println("Seat B2: Information: " + B22.firstName + B22.lastName + B22.address + B22.phoneNumber);
+        		  }
+        		  if(C11.firstName != null)
+        		  {
+        			  System.out.println("Seat C1: Information: " + C11.firstName + C11.lastName + C11.address + C11.phoneNumber);
+        		  }
+        		  if(C22.firstName != null)
+        		  {
+        			  System.out.println("Seat C2: Information: " + C22.firstName + C22.lastName + C22.address + C22.phoneNumber);
+        		  }
+        		  if(D11.firstName != null)
+        		  {
+        			  System.out.println("Seat D1: Information: " + D11.firstName + D11.lastName + D11.address + D11.phoneNumber);
+        		  }
+        		  if(D22.firstName != null)
+        		  {
+        			  System.out.println("Seat D2: Information: " + D22.firstName + D22.lastName + D22.address + D22.phoneNumber);
+        		  }
+        		  if(E11.firstName != null)
+        		  {
+        			  System.out.println("Seat E1: Information: " + E11.firstName + E11.lastName + E11.address + E11.phoneNumber);
+        		  }
+        		  if(E22.firstName != null)
+        		  {
+        			  System.out.println("Seat E2: Information: " + E22.firstName + E22.lastName + E22.address + E22.phoneNumber);
+        		  }
+        		  
+        		  System.out.println("The flight is canceled sucessfully.");
+        		  System.out.println("Do you need to cancel another flight?(Type 1 to cancel another flight.");
+        		  String enterType1 = bufRead.readLine();
+        		  int continueCanceling = Integer.parseInt(enterType1);
+        		  
+        		  if(continueCanceling != 1)
+        		  {
+        			  returnToTop++;
+        		  }
+        		  
+        	  }
+        	  
+        	  else if(selectFlight == 3)
+        	  {
+        		  System.out.println("The flight # 3 will be close soon. Please contact the customers who have booked seats in this flight.");
+        		  System.out.println("Passengers booked the seats in the flight #3:");
+        		  if(A111.firstName != null)
+        		  {
+        			  System.out.println("Seat A1: Information: " + A111.firstName + A111.lastName + A111.address + A111.phoneNumber);
+        		  }
+        		  if(A222.firstName != null)
+        		  {
+        			  System.out.println("Seat A2: Information: " + A222.firstName + A222.lastName + A222.address + A222.phoneNumber);
+        		  }
+        		  if(B111.firstName != null)
+        		  {
+        			  System.out.println("Seat B1: Information: " + B111.firstName + B111.lastName + B111.address + B111.phoneNumber);
+        		  }
+        		  if(B222.firstName != null)
+        		  {
+        			  System.out.println("Seat B2: Information: " + B222.firstName + B222.lastName + B222.address + B222.phoneNumber);
+        		  }
+        		  if(C111.firstName != null)
+        		  {
+        			  System.out.println("Seat C1: Information: " + C111.firstName + C111.lastName + C111.address + C111.phoneNumber);
+        		  }
+        		  if(C222.firstName != null)
+        		  {
+        			  System.out.println("Seat C2: Information: " + C222.firstName + C222.lastName + C222.address + C222.phoneNumber);
+        		  }
+        		  if(D111.firstName != null)
+        		  {
+        			  System.out.println("Seat D1: Information: " + D111.firstName + D111.lastName + D111.address + D111.phoneNumber);
+        		  }
+        		  if(D222.firstName != null)
+        		  {
+        			  System.out.println("Seat D2: Information: " + D222.firstName + D222.lastName + D222.address + D222.phoneNumber);
+        		  }
+        		  if(E111.firstName != null)
+        		  {
+        			  System.out.println("Seat E1: Information: " + E111.firstName + E111.lastName + E111.address + E111.phoneNumber);
+        		  }
+        		  if(E222.firstName != null)
+        		  {
+        			  System.out.println("Seat E2: Information: " + E222.firstName + E222.lastName + E222.address + E222.phoneNumber);
+        		  }
+        		  
+        		  System.out.println("The flight is canceled sucessfully.");
+        		  System.out.println("Do you need to cancel another flight?(Type 1 to cancel another flight.");
+        		  String enterType1 = bufRead.readLine();
+        		  int continueCanceling = Integer.parseInt(enterType1);
+        		  
+        		  if(continueCanceling != 1)
+        		  {
+        			  returnToTop++;
+        		  }
+        	  }
+        	  else
+        	  {
+        		  System.out.println("Please enter a valid number");
+        	  }
+    	  }
+    	  
+    	  
+      }
+     
+      catch (IOException e) {    
+          // TODO Auto-generated catch block    
+          e.printStackTrace();       
+      
+       }
        
        
          
